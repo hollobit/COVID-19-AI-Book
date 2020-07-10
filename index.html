@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="tablestyle.css">
+<title>Technology and Standardization Trends on Medical AI for responding to infectious disease disasters, especially COVID-19</title>
+<script class="remove"
+    src="https://www.w3.org/Tools/respec/respec-w3c-common"></script>
+<script class="remove">
+	var respecConfig = {
+		lint : {
+			"no-headingless-sections" : false,
+		},
+		specStatus : "ED",
+		noRecTrack : "true",
+		maxTocLevel : 6,
+		processVersion : 2020,
+		shortName : "covid-19-ai-book",
+		copyrightStart : 2020,
+		// <!-- wg : "Web of Things Working Group",-->
+		// wgURI : "https://www.w3.org/WoT/WG/",
+		// <!-- wgPublicList : "public-wot-wg", -->
+		edDraftURI : "http://hollobit.github.io/covid-19-ai-book",
+		githubAPI : "https://api.github.com/repos/hollobit/covid-19-ai-book/",
+		issueBase : "https://www.github.com/hollobit/covid-19-ai-book//issues",
+		editors : [ {
+			name : "Jonghong Jeon (전종홍)",
+			w3cid : "",
+			company : "ETRI.",
+			companyURL : "http://www.etri.re.kr/eng/main/index.etri"
+		},
+		{
+			name : "권인호",
+			w3cid : "",
+			company : "동아대병원",
+			companyURL : ""
+		},
+		{
+			name : "김휘영",
+			w3cid : "",
+			company : "연세대학교",
+			companyURL : ""
+		},
+		{
+			name : "윤주흥",
+			w3cid : "",
+			company : "피츠버그 대학교",
+			companyURL : ""
+		},
+    {
+			name : "신수용",
+			w3cid : "",
+			company : "성균관대학교",
+			companyURL : ""
+		},
+    {
+			name : "정규환",
+			w3cid : "",
+			company : "Vuno",
+			companyURL : ""
+		},
+    {
+			name : "표경호",
+			w3cid : "",
+			company : "연세대학교",
+			companyURL : ""
+		},
+    {
+			name : "홍헬렌",
+			w3cid : "",
+			company : "서울여자대학교",
+			companyURL : ""
+		},
+    {
+			name : "심규원",
+			w3cid : "",
+			company : "연세대학교",
+			companyURL : ""
+		}
+	],
+
+		otherLinks : [
+				{
+					key : "Contributors",
+					data : [ {
+						value : "In the GitHub repository",
+						href : "https://github.com/w3c/wot-security/graphs/contributors"
+					} ]
+				}, {
+					key : "Repository",
+					data : [ {
+						value : "We are on GitHub",
+						href : "https://github.com/hollobit/covid-19-ai-book/"
+					}, {
+						value : "File a bug",
+						href : "https://github.com/hollobit/covid-19-ai-book/issues"
+					}, {
+						value : "Contribute",
+						href : "https://github.com/hollobit/covid-19-ai-book/pulls"
+					} ]
+				} ],
+		localBiblio : {
+			"JSON-SCHEMA" : {
+				title : "JSON Schema Validation: A Vocabulary for Structural Validation of JSON",
+				href : "https://tools.ietf.org/html/draft-handrews-json-schema-validation-01",
+				authors : [ "Austin Wright", "Henry Andrews", "Geraint Luff" ],
+				status : "Internet-Draft",
+				date : "19 March 2018",
+				publisher : "IETF"
+			},
+			"ISO-6709" : {
+				title : "ISO-6709:2008 : Standard representation of geographic point location by coordinates",
+				href : "https://www.iso.org/standard/39242.html",
+				status : "Published",
+				date : "2008-07",
+				publisher : "ISO"
+			},
+
+		}
+	};
+</script>
+</head>
+<body>
+	<section id="abstract">
+		<p>
+      세계화와 교통발달, 기후변화와 같은 환경 변화 속에서 인류를 위협하는 감염병 재난은 발생 주기가 빨라지고 있고 인류 건강과 사회 안전을 위협하는 큰 요소가 되어가고 있다. 특히 최근 코로나 바이러스(COVID-19) 재난을 통해 알 수 있었던 것과 같이, 재난의 급속한 확산 속에서 보다 빠르게 사전 위험을 탐지 예방하고, 감염병 발생 시에는 신속 분류 진단하고 모니터링하며 조치할 수 있도록 하는 감염병 대응 체계와 이를 지원할 수 있는 ICT 기술에 대한 필요성은 급격하게 높아졌다.
+    </p>
+    <p>
+      규칙 정형화가 어려운 분야에서 딥러닝과 인공지능 기술을 적용하면 빠른 대응을 해볼 수 있다는 큰 장점을 갖는다. 이러한 이유로 감염병 추세 파악, 전파확산 예측, 신속 진단 도구의 개발 등에 인공지능을 적용하기 위한 많은 시도들이 있었다. 그러나 동시에 신뢰성 있는 데이터의 확보와 신뢰도를 보장할 수 있는 응용 개발, 프라이버시에 대한 보호 이슈 등과 같은 많은 이슈들도 부상시켰다.
+    </p>
+    <p>
+      이에 본 보고서에서는 인공지능 기술을 활용하는 감염병 재난 대응 사례과 관련 기술 표준의 연구개발 동향들을 살피고, 국가 감염병 방역체계에 인공지능 기술을 적극 활용하기 위해 필요한 요소들을 살피고자 한다.
+		</p>
+	</section>
+	<section id="keyword">
+		<p> 감염병 재난, COVID-19, 코로나 바이러스, SARS-CoV-2, 전염병, 인공지능, 표준화, 자동진단지원시스템, 음성인식,
+    </P>
+	</section>
+  <section id="executive_summary">
+		<p> 감염병 재난, COVID-19, 코로나 바이러스, SARS-CoV-2, 전염병, 인공지능, 표준화, 자동진단지원시스템, 음성인식,
+    </P>
+	</section>
+	<section id="배경 및 필요성">
+		<h2>배경 및 필요성</h2>
+		<p>
+			세계화와 교통발달, 기후변화와 같은 환경 변화 속에서 인류를 위협하는 감염병 재난은 발생 주기가 빨라지고 있고 인류 건강과 사회 안전을 위협하는 큰 요소가 되어가고 있다. 특히 최근 코로나 바이러스(COVID-19) 재난을 통해 알 수 있었던 것과 같이, 보다 빠르게 사전 위험을 탐지 예방하고, 감염병  발생 시에는 신속 분류 진단하고 모니터링하며 조치할 수 있도록 하는 감염병 대응 체계와 이를 위한 ICT 기술 및 표준화의 필요성이 높아지고 있다.
+		</p>
+    <section id="감염병 재난 현황">
+    <h3>감염병 재난 현황</h3>
+    <p>
+      감염병은 인류를 위협해 온 중요한 재난 중 하나다. 인류는 과학기술을 발전시키며 항생제, 백신 등을 개발하여 감염병 재난을 극복하기 위해 노력해왔지만, 늘 또다른 새로운 감염병이 등장하며 인류를 위협하고 있다 [1-4].
+    </p>
+    <p>
+      14세기 중엽 유럽에서 대유행했던 페스트의 파괴력은 대단했다. ‘페스트’는 1351년까지 유럽 전체 인구의 30~40%를 몰살시키면서 중세 유럽을 초토화시켰다. 16세기 약 천명의 스페인 원정대가 200만명 이상의 멕시코의 아즈텍 제국을 무너뜨리는 데는 ‘천연두’가 결정적인 역할을 하였고, 남미 안데스 고원의 잉카제국도 천연두 바이러스의 확산으로 몰락했다고 알려져 있다.
+    </p>
+    <p>
+      우리나라 역사에서도 감염병의 기록은 고대로부터 지속적으로 등장한다. [삼국사기]에는 고구려에서 3회, 백제 6회, 신라 18회의 전염병 발생을 기록하고 있다. [조선왕조실록]에는 1392년부터 1891년까지 500년 동안 1,000건 이상의 역병에 대한 기록이 있으며, 햇수로는 무려 160년이나 된다. 평균적으로 10년에 3번 이상 전염병이 유행한 셈이다.
+    </p>
+    <p>
+      전세계적인 교류와 이동이 많아진 20세기 들어와서는 그 파괴력이 더욱 커졌다. 1918년 3월 유럽과 미국에서 발생한 스페인독감(1918-1919, H1N1)은 전 세계적으로 4천만~1억 명의 사망자를 만들었으며, 1957~1958년 아시아 독감은 중국에서 시작되어 전 세계적으로 1,400만 명의 사망자를 발생시켰다. 10년 뒤에는 홍콩 독감(H3N2)이 전 세계적으로 140만 명의 사망자를 만들었고, 최근 전인류를 공포에 떨게하고 있는 코로나 바이러스 (COVID-19 )는 불과 3개월만에 300만명의 환자와 20만명의 사망자를 만들었다.
+    </p>
+    <section id="note1" class="ednote">전염병이란 사람과 사람 사이에 병원체가 이동하여 발병하는 경우를 의미하며, 감염병은 사람 간 전파 만이 아니라 공기나 흙 등의 사람 이외의 전파원에서 미생물이 옮아와서 일으키는 병까지 포함 [3]</section>
+    <section id="note2" class="ednote">WHO는 2020년 2월 11일 신종코로나바이러스감염증의 공식명칭을 ‘COVID-19’로 명명함. 우리 정부는 2020년 2월 12일 한글 명칭으로 ‘코로나바이러스감염증-19(약칭: 코로나19)’를 사용한다고 발표</section>
+    </section>
+
+    <section id="감염병 대응 체계">
+    <h3>감염병 대응 체계</h3>
+    <p>
+      감염병에 대한 국가적 대응의 필요성을 인지하고 대응을 시작한 것은 1990년대 미국이었다. 1992년, 미국의학한림원(IOM)이 발간한 「Emerging Infections: Microbial Threats to Health in the United States」 보고서에서는 신종감염병 및 과거 감염병의 재출현 원인에 대해 분석 결과를 토대로 감염병 감시체계 확보, 감염병 연구 체계화, 백신·치료제개발 역량 확보, 보건인력교육 네 개 영역에 대한 개선안을 제시했다. 이를 계기로 미국에서는 1996년 6월 12일 신종 감염병의 감시·예방·대응을 위한 국가적 정책 수립을 시작했다. [1]
+    </p>
+    <p>
+      국제적인 차원에서는 세계보건기구의 2005년 국제보건규약(International Health Regulation, IHR ) 개정이 감염병의 감시 범위 확대와 더불어 국제적 협력을 시작하는 중요한 계기가 되었다. 1969년에 제정된 IHR에서는 3개 감염병(페스트, 콜레라, 황열)에 대한 집중적 감시만 하였으나, 2005년 개정을 통해 공중보건에 위협이 되는 모든 질병들을 대상으로 감시 적용 질병 범위를 확대하였고, 이를 WHO에 보고할 것을 의무화했다 [1]. 더불어 IHR의 주요 핵심 능력을 강화하고 진전시키고자 예방, 조기감지, 대응 분야로 구분된 국가별 위기대응에 대한 세부 측정지표(Joint External Evaluation, JEE)를 개발하여 국가별 대응 수준들을 평가하고 있다 [3].
+    </p>
+    <p>
+      우리나라도 2003년 상반기에 전 세계적으로 확산된 사스를 계기로 국가 차원의 감염병 대응을 시작하였다. 감염병 대응은 국가 핵심과제로 설정되어야 하고 감염병 관리를 위한 전문 운영체계 구축이 반드시 필요하다는 범정부적 인식하에서 검역법 개정(안)이 2003년 12월 29 일 국회 본회의를 통과하였고, 이에 따라 질병관리본부가 2004년 1월 17일자로 출범하였다.
+    </p>
+    <section id="structure" class="ednote">그림 감염병 감시연보 추가</section>
+    <section id="note3" class="ednote">WHO의 모든 회원국 포함, 전세계 196개국 간에 건강을 위협하는 심각한 공중보건 위험을 예방하고 대응할 수 있도록 마련한 규약. 참여국가가 WHO에 특정 질병 발생 및 공중보건 사건을 보고하도록 하여 전세계의 질병감시, 경보상황 및 대응을 준비하고 발생상황을 공유하고 있음</section>
+	</section>
+
+</body>
+</html>
