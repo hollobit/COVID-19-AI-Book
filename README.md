@@ -4,7 +4,7 @@ This is a repository for the opensource book project of [Technology and Standard
 
 # Information 
 
-The project started on the basis of the contents of the [감염병 재난에 대응하기 위한 의료 인공지능의 기술 표준 동향(Korean)] report published by [ETRI](http://www.etri.re.kr) in July 2020.
+The project started on the basis of the contents of the [감염병 재난에 대응하기 위한 의료 인공지능의 기술 표준 동향(Korean)[PDF]](https://ksp.etri.re.kr/ksp/plan-report/file?id=775) report published by [ETRI](http://www.etri.re.kr) in July 2020.
 * DOI: [10.22648/ETRI.2020.B.000005](http://dx.doi.org/10.22648/ETRI.2020.B.000005)
 * ISBN: 978-89-5519-278-0
 
