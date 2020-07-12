@@ -8,6 +8,11 @@ The project started on the basis of the contents of the [감염병 재난에 대
 * DOI: [10.22648/ETRI.2020.B.000005](http://dx.doi.org/10.22648/ETRI.2020.B.000005)
 * ISBN: 978-89-5519-278-0
 
+# Opensource book
+
+* [Korean version(한국어판)](https://hollobit.github.io/COVID-19-AI-Book/KR/index.html)
+* English version 
+
 ## Contributing
 
 * You can contribute even if you don't have access by forking this repository and doing a Pull Request from your fork.
