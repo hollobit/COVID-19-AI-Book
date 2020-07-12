@@ -6,1092 +6,12 @@
 <title>감염병 재난에 대응하기 위한 의료 인공지능의 기술 표준 동향</title>
 <script class="remove"
     src="https://www.w3.org/Tools/respec/respec-w3c-common"></script>
-<script class="remove">
-	var respecConfig = {
-		lint : {
-			"no-headingless-sections" : false,
-		},
-    logos: [
-    {
-      src: "",
-      url: "",
-      alt: "logo",
-      width: 0,
-      height: 0,
-      id: "book-logo",
-      },
-    ],
-    github: "hollobit/COVID-19-AI-Book",
-		specStatus : "unofficial",
-		noRecTrack : "true",
-		maxTocLevel : 6,
-		processVersion : 2020,
-		shortName : "covid-19-ai-book",
-		copyrightStart : 2020,
-		// <!-- wg : "Web of Things Working Group",-->
-		// wgURI : "https://www.w3.org/WoT/WG/",
-		// <!-- wgPublicList : "public-wot-wg", -->
-		edDraftURI : "https://hollobit.github.io/COVID-19-AI-Book/",
-		issueBase : "https://www.github.com/hollobit/COVID-19-AI-Book/issues",
-    license : "w3c-software",
-    editors : [
-      {
-    name : "Jonghong Jeon (전종홍)",
-    w3cid : "",
-    company : "ETRI.",
-    companyURL : "http://www.etri.re.kr/eng/main/index.etri"
-  },
-  {
-    name : "신수용",
-    w3cid : "",
-    company : "성균관대학교",
-    companyURL : ""
-  },
-  {
-    name : "홍헬렌",
-    w3cid : "",
-    company : "서울여자대학교",
-    companyURL : ""
-  },
-  {
-    name : "심규원",
-    w3cid : "",
-    company : "연세대학교",
-    companyURL : ""
-  }
-    ],
-    authors : [
-    		{
-			name : "Jonghong Jeon (전종홍)",
-			w3cid : "",
-			company : "ETRI.",
-			companyURL : "http://www.etri.re.kr/eng/main/index.etri"
-    		},
-		{
-			name : "권인호",
-			w3cid : "",
-			company : "동아대병원",
-			companyURL : ""
-		},
-		{
-			name : "김휘영",
-			w3cid : "",
-			company : "연세대학교",
-			companyURL : ""
-		},
-		{
-			name : "윤주흥",
-			w3cid : "",
-			company : "피츠버그 대학교",
-			companyURL : ""
-		},
-    {
-			name : "정규환",
-			w3cid : "",
-			company : "Vuno",
-			companyURL : ""
-		},
-    {
-			name : "표경호",
-			w3cid : "",
-			company : "연세대학교",
-			companyURL : ""
-		}
-	],
-
-		otherLinks : [
-				{
-					key : "Contributors",
-					data : [ {
-						value : "In the GitHub repository",
-						href : "https://github.com/hollobit/COVID-19-AI-Book/graphs/contributors"
-					} ]
-				}, {
-					key : "Repository",
-					data : [ {
-						value : "We are on GitHub",
-						href : "https://github.com/hollobit/COVID-19-AI-Book/"
-					}, {
-						value : "File a bug",
-						href : "https://github.com/hollobit/COVID-19-AI-Book/issues"
-					}, {
-						value : "Contribute",
-						href : "https://github.com/hollobit/COVID-19-AI-Book/pulls"
-					} ]
-				} ],
-		localBiblio : {
-      "JSON-SCHEMA" : {
-        title : "JSON Schema Validation: A Vocabulary for Structural Validation of JSON",
-        href : "https://tools.ietf.org/html/draft-handrews-json-schema-validation-01",
-        authors : [ "Austin Wright", "Henry Andrews", "Geraint Luff" ],
-        status : "Internet-Draft",
-        date : "19 March 2018",
-        publisher : "IETF"
-      },
-      "ISO-6709" : {
-        title : "ISO-6709:2008 : Standard representation of geographic point location by coordinates",
-        href : "https://www.iso.org/standard/39242.html",
-        status : "Published",
-        date : "2008-07",
-        publisher : "ISO"
-      },
-      "1" : {
-        title : "국내외 감염병 대비.대응 동향, <cite>KIHDI 전문가 리포트</cite>",
-        authors : ["이다은"],
-        href : "",
-        status : "Published",
-        date : "2017-01",
-        publisher : "KIHDI"
-      },
-      "2" : {
-        title : "국가 감염병 공중보건위기 대비와 대응체계, <cite>J Korean Med Assoc</cite>, 2017 April; 60(4):296-299",
-        authors : ["정은경"],
-        href : "https://synapse.koreamed.org/Synapse/Data/PDFData/0119JKMA/jkma-60-296.pdf",
-        status : "Published",
-        date : "2017-04",
-        publisher : "J Korean Med Assoc"
-      },
-      "3" : {
-        title : "신종감염병 유행과 감염병 위기대응체계 구축, <cite>Weekly Issue</cite> 제21호",
-        authors : ["현정희"],
-        href : "",
-        status : "Published",
-        date : "2017.5.25",
-        publisher : "한국건강증진개발원"
-      },
-      "4" : {
-        title : "신종 감염병 감염관리 현황과 대처방안, HIRA 정책동향 9권 5호",
-        authors : ["전병율"],
-        href : "",
-        status : "Published",
-        date : "2015",
-        publisher : "HIRA"
-      },
-      "5" : {
-        title : "2019 연차실적보고서",
-        authors : ["편집부"],
-        href : "https://www.gfid.or.kr/kr/customer/work_view.php?idx=481",
-        status : "Published",
-        date : "2019",
-        publisher : "방역연계범부처감염병연구개발사업단"
-      },
-      "6" : {
-        title : "신종감염병 대응 AI 기술 동향 분석, Bio Economy Brief 81호",
-        authors : ["안세희"],
-        href : "",
-        status : "Published",
-        date : "2020-04",
-        publisher : "한국바이오협회"
-      },
-      "7" : {
-        title : "AI 융합 감염병 연구의 현재와 미래, BioINPro Vol.73",
-        authors : ["안인성"],
-        href : "",
-        status : "Published",
-        date : "2020",
-        publisher : "생명공학정책연구센터"
-      },
-      "8" : {
-        title : "개인 맞춤형 의료: AI 적용과 당면과제",
-        authors : ["박종현"],
-        date : "2019",
-        publisher : "ETRI Insight report, 2019-59"
-      },
-      "9" : {
-        title : "인공지능과 데이터 분석으로 질병 확산을 예측할 수 있는가 ?",
-		href : "https://www.kisa.or.kr/public/library/IS_View.jsp?mode=view&p_No=158&b_No=158&d_No=379&cPage=4&ST=TC&SV=",
-        authors : ["한상기"],
-        date : "2020",
-        publisher : "KISA Report, Vol.2"
-      },
-      "10" : {
-        title : "머신러닝을 활용한 항암신약개발 현황과 향후 전망",
-		href : "https://www.bioin.or.kr/board.do;jsessionid=97AC631EF30D3452D80CA4CE742DF1EF?num=292214&cmd=view&bid=tech&cPage=2&cate1=13&cate2=all2",
-        authors : ["표경호"],
-        date : "2019",
-        publisher : "BRIC view 2019-T32"
-      },
-      "11" : {
-        title : "질병진단 인공지능 개발 동향",
-        authors : ["김규태"],
-        date : "2020",
-        publisher : "BRIC view 2020-T06"
-      },
-      "12" : {
-        title : "인공지능, 코로나19를 만나다",
-        authors : ["https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000152232"],
-        date : "2020.4.15",
-        publisher : "KISDI, AI Trend Watch, 2020-4호"
-      },
-      "13" : {
-        title : "코로나19 대응 최일선에서 인공지능(AI)·데이터·클라우드 기업이 함께 뛴다",
-        authors : ["http://www.korea.kr/news/pressReleaseView.do?newsId=156379825"],
-        date : "2020.3.13",
-        publisher : "과학기술정보통신부 보도자료"
-      },
-      "14" : {
-        title : "중국 의료 인공지능 백서",
-        authors : [""],
-        date : "2019",
-        publisher : "ETRI"
-      },
-      "15" : {
-        title : "중국 의학 영상 인공지능 백서",
-        authors : [""],
-        date : "2019",
-        publisher : "ETRI"
-      },
-      "16" : {
-        title : "2020년 신개발 의료기기 전망 분석 보고서",
-        href : "https://www.nifds.go.kr/brd/m_18/view.do?seq=12504",
-        authors : [""],
-        date : "2020.3",
-        publisher : "식품의약품안전처"
-      },
-      "17" : {
-        title : "글로벌 의료기기 - 디지털 헬스케어(1): 원격의료, 코로나19에 의한 단기테마가 아닌 헬스케어 산업의 장기 트렌드 중 하나",
-        authors : ["https://www.miraeassetdaewoo.com/public/mw/blog/html/20200323130805.html?ver=20200404172547"],
-        date : "2020.3.23",
-        publisher : "미래에셋대우"
-      },
-      "18" : {
-        title : "Development and validation of a deep learning–based automated detection algorithm for major thoracic diseases on chest radiographs",
-		href : "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2728630",
-        authors : ["Hwang", "Eui Jin"],
-        date : "2019",
-        publisher : "JAMA network open 2.3 (2019): e191095-e191095"
-      },
-      "19" : {
-        title : "Applying data-driven imaging biomarker in mammography for breast cancer screening: preliminary study",
-		href : "https://www.nature.com/articles/s41598-018-21215-1",
-        authors : ["Kim, Eun-Kyung"],
-        date : "2018",
-        publisher : "Scientific reports 8.1 (2018): 1-8"
-      },
-      "20" : {
-        title : "",
-        href : "https://insight.lunit.io/",
-        authors : [""],
-        date : "",
-        publisher : "Lunit"
-      },
-      "21" : {
-        title : "An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction",
-        href : "",
-        authors : ["Attia", "Zachi I."],
-        date : "2019",
-        publisher : "The Lancet 394.10201 (2019): 861-867"
-      },
-      "22" : {
-        title : "Handwritten Optical Character Recognition (OCR): A Comprehensive Systematic Literature Review (SLR)",
-        href : "",
-        authors : ["Memon", "Jamshed", "Maira Sami", "Rizwan Ahmed Khan"],
-        date : "2020",
-        publisher : "arXiv:2001.00139"
-      },
-      "23" : {
-        title : "",
-        href : "https://clova.ai/ocr",
-        authors : [""],
-        date : "",
-        publisher : "Naver"
-      },
-      "24" : {
-        title : "Deepid3: Face recognition with very deep neural networks",
-        href : "",
-        authors : ["Sun", "Yi"],
-        date : "2015",
-        publisher : "arXiv:1502.00873"
-      },
-      "25" : {
-        title : "Computerized bone age estimation using deep learning based program: evaluation of the accuracy and efficiency",
-        href : "",
-        authors : ["Kim, Jeong Rye"],
-        date : "2017",
-        publisher : "American Journal of Roentgenology 209.6 (2017): 1374-1380"
-      },
-      "26" : {
-        title : "",
-        href : "https://boneage.vuno.co/",
-        authors : [""],
-        date : "",
-        publisher : "Vuno"
-      },
-      "27" : {
-        title : "Points of significance: statistics versus machine learning",
-        href : "",
-        authors : ["Bzdok", "Danilo", "Naomi Altman", "Martin Krzywinski"],
-        date : "2018",
-        publisher : ""
-      },
-      "28" : {
-        title : "의료 AI, 현실성 없는 의학 드라마가 되지 않으려면",
-        href : "http://ksgd2020.org/webzine/2002/02.php",
-        authors : ["민현석"],
-        date : "2020",
-        publisher : "대한진단유전학회 기고문"
-      },
-      "29" : {
-        title : "Methodologic guide for evaluating clinical performance and effect of artificial intelligence technology for medical diagnosis and prediction",
-        href : "",
-        authors : ["Park, Seong Ho","Kyunghwa Han"],
-        date : "2018",
-        publisher : "Radiology 286.3 (2018): 800-809"
-      },
-      "30" : {
-        title : "Digital technology and COVID-19",
-        href : "",
-        authors : ["Ting", "Daniel Shu Wei"],
-        date : "2020",
-        publisher : "Nature medicine 26.4 (2020): 459-461"
-      },
-      "31" : {
-        title : "Identification of COVID-19 can be quicker through artificial intelligence framework using a mobile phone–based survey when cities and towns are under quarantine",
-        href : "",
-        authors : ["Rao", "Arni SR Srinivasa", "Jose A. Vazquez"],
-        date : "2020",
-        publisher : "Infection Control & Hospital Epidemiology (2020): 1-5"
-      },
-      "32" : {
-        title : "",
-        href : "https://www.worldometers.info/coronavirus/",
-        authors : [""],
-        date : "",
-        publisher : "Worldmeters"
-      },
-      "33" : {
-        title : "The role of imaging in the detection and management of COVID-19: a review",
-        href : "",
-        authors : ["Dong", "Di"],
-        date : "2020",
-        publisher : "IEEE Reviews in Biomedical Engineering (2020)"
-      },
-      "34" : {
-        title : "Artificial intelligence distinguishes COVID-19 from community acquired pneumonia on chest CT",
-        href : "",
-        authors : ["Li", "Lin"],
-        date : "2020",
-        publisher : "Radiology (2020): 200905"
-      },
-      "35" : {
-        title : "Addressing COVID‐19 Drug Development with Artificial Intelligence",
-        href : "",
-        authors : ["Ho", "Dean"],
-        date : "",
-        publisher : "Advanced Intelligent Systems"
-      },
-      "36" : {
-        title : "Prediction models for diagnosis and prognosis of covid-19 infection: systematic review and critical appraisal",
-        href : "",
-        authors : ["Wynants", "Laure"],
-        date : "2020",
-        publisher : "bmj 369 (2020)"
-      },
-      "37" : {
-        title : "Using artificial intelligence to help combat COVID-19",
-        href : "http://www.oecd.org/coronavirus/policy-responses/using-artificial-intelligence-to-help-combat-covid-19",
-        authors : [""],
-        date : "2020",
-        publisher : "OECD Policy Responses to Coronavirus (COVID-19)"
-      },
-      "38" : {
-        title : "How to Use AI to Fight COVID-19 and Beyond",
-        href : "",
-        authors : ["Pieter den Harmer"],
-        date : "2020",
-        publisher : "Gartner Report 723862"
-      },
-      "39" : {
-        title : "人工智能助力新冠疫情防控 调研报告",
-        href : "",
-        authors : [""],
-        date : "2020.3",
-        publisher : "中国人工智能产业发展联盟"
-      },
-      "40" : {
-        title : "False-negative results of initial RT-PCR assays for COVID-19: A systematic review",
-        href : "",
-        authors : ["Ingrid"],
-        date : "April 2020",
-        publisher : "medRxiv 2020.04.16.20066787"
-      },
-      "41" : {
-        title : "CT Imaging of the 2019 Novel Coronavirus (2019-nCoV) Pneumonia",
-        href : "",
-        authors : ["J. Lei"],
-        date : "Jan 2020",
-        publisher : "Radiology"
-      },
-      "42" : {
-        title : "Radiological findings from 81 patients with COVID-19 pneumonia in Wuhan, China: a descriptive study",
-        href : "",
-        authors : ["H. Shi"],
-        date : "Feb 2020",
-        publisher : "The Lancet Infectious Disease"
-      },
-      "43" : {
-        title : "CT Imaging Features of 2019 Novel Coronavirus (2019-nCoV)",
-        href : "",
-        authors : ["M. Chung"],
-        date : "Feb 2020",
-        publisher : "Radiology"
-      },
-      "44" : {
-        title : "Temporal Changes of CT Findings in 90 Patients with COVID-19 Pneumonia : A Longitudinal Study",
-        href : "",
-        authors : ["Y. Wang"],
-        date : "Mar 2020",
-        publisher : "Radiology"
-      },
-      "45" : {
-        title : "Sensitivity of Chest CT for COVID-19: comparison to RT-PCR",
-        href : "",
-        authors : ["Y. Fang"],
-        date : "Feb 2020",
-        publisher : "Radiology"
-      },
-      "46" : {
-        title : "Correlation of Chest CT and RT-PCR Testing in Coronavirus Disease 2019 (COVID-19) in China: A Report of 1014 Cases",
-        href : "",
-        authors : ["T. Ai"],
-        date : "Feb 2020",
-        publisher : "Radiology"
-      },
-      "47" : {
-        title : "Clinically Applicable AI System for Accurate Diagnosis, Quantitative Measurements, and Prognosis of COVID-19 Pneumonia Using Computed Tomography",
-        href : "",
-        authors : ["K. Zhang"],
-        date : "May 2020",
-        publisher : "Cell"
-      },
-      "48" : {
-        title : "",
-        href : "https://radiopaedia.org/cases/covid-19-pneumonia-incidental-finding-in-asymptomatic-patient-2",
-        authors : [""],
-        date : "",
-        publisher : "radiopaedia"
-      },
-      "49" : {
-        title : "Incidental typical COVID-19 appearance on the lung bases, visualized at abdominal CT for a patient that presented with abdominal pain and nausea",
-        href : "",
-        authors : ["A. A. Sendi"],
-        date : "May 2020",
-        publisher : "Radiology Case Reports"
-      },
-      "50" : {
-        title : "Artificial Intelligence Distinguishes COVID-19 from Community Acquired Pneumonia on Chest CT",
-        href : "",
-        authors : ["L. Li"],
-        date : "Mar 2020",
-        publisher : "Radiology"
-      },
-      "51" : {
-        title : "Artificial intelligence–enabled rapid diagnosis of patients with COVID-19",
-        href : "",
-        authors : ["X. Mei"],
-        date : "May 2020",
-        publisher : "Nature Medicine"
-      },
-      "52" : {
-        title : "An artificial intelligence-based first-line defence against COVID-19: digitally screening citizens for risks via a chatbot",
-        href : "https://doi.org/10.1101/2020.03.25.008805",
-        authors : ["Alistair Martin", "Jama Nateqi", "Stefanie Gruarin", "Nicolas Munsch", "Isselmou Abdarahmane", "Bernhard Knapp"],
-        date : "April 2020",
-        publisher : "bioRxiv"
-      },
-      "53" : {
-        title : "Rapidly Bootstrapping a Question Answering Dataset for COVID-19",
-        href : "https://arxiv.org/abs/2004.11339",
-        authors : ["Raphael Tang", "Rodrigo Nogueira", "Edwin Zhang"],
-        date : "23 April 2020",
-        publisher : "arXiv"
-      },
-      "54" : {
-        title : "Chatbots in the fight against the COVID-19 pandemic",
-        href : "https://www.nature.com/articles/s41746-020-0280-0",
-        authors : ["Adam S. Miner", "Liliana Laranjo", "A. Baki Kocaballi"],
-        date : "2020",
-        publisher : "npj Digital Medicine volume 3, Article number: 65"
-      },
-      "55" : {
-        title : "",
-        href : "https://aws.amazon.com/blogs/big-data/a-public-data-lake-for-analysis-of-covid-19-data/",
-        authors : [""],
-        date : "",
-        publisher : "amazon blogs"
-      },
-      "56" : {
-        title : "The Future of Digital Health with Federated Learning",
-        href : "https://arxiv.org/abs/2003.08119",
-        authors : ["Nicola Rieke", "Jonny Hancox", "Wenqi Li"],
-        date : "18 Mar 2020",
-        publisher : "arXiv"
-      },
-      "57" : {
-        title : "The effect of control strategies to reduce social mixing on outcomes of the COVID-19 epidemic in Wuhan, China: a modelling study",
-        href : "https://doi.org/10.1016/S2468-2667(20)30073-6",
-        authors : ["Kiesha Prem", "Yang Liu", "Timothy W Russell", "Adam J Kucharski", "Rosalind M Eggo", "Nicholas Davies"],
-        date : "March 25, 2020",
-        publisher : "The Lancet"
-      },
-      "58" : {
-        title : "",
-        href : "http://www.healthdata.org/covid",
-        authors : [""],
-        date : "",
-        publisher : "healthdata"
-      },
-      "59" : {
-        title : "",
-        href : "https://reichlab.io/covid19-forecast-hub/",
-        authors : [""],
-        date : "",
-        publisher : "reichlab"
-      },
-      "60" : {
-        title : "Projecting the transmission dynamics of SARS-CoV-2 through the postpandemic period",
-        href : "https://science.sciencemag.org/content/368/6493/860",
-        authors : ["Stephen M. Kissler", "Christine Tedijanto", "Edward Goldstein", "Yonatan H. Grad", "Marc Lipsitch"],
-        date : "22 May 2020",
-        publisher : "Science, Vol. 368, Issue 6493, pp. 860-868"
-      },
-      "61" : {
-        title : "",
-        href : "https://www.remapcap.org/coronavirus",
-        authors : [""],
-        date : "",
-        publisher : "remapcap"
-      },
-      "62" : {
-        title : "",
-        href : "https://coronavirus.jhu.edu/data/new-cases",
-        authors : [""],
-        date : "",
-        publisher : "JHU"
-      },
-      "63" : {
-        title : "",
-        href : "https://wwwnc.cdc.gov/eid/article/26/8/20-1093_article",
-        authors : [""],
-        date : "",
-        publisher : "CDC"
-      },
-      "64" : {
-        title : "의료 인공지능 10대 표준화 동향 및 전망",
-        href : "https://ettrends.etri.re.kr/ettrends/182/0905182001/",
-        authors : ["전종홍", "이강찬"],
-        date : "2020.4",
-        publisher : "ETRI 전자통신동향분석, 35권 2호 (통권 182)"
-      },
-      "65" : {
-        title : "ITU-T/WHO FG-AI4H",
-        href : "https://www.itu.int/en/ITU-T/focusgroups/ai4h/",
-        authors : [""],
-        date : "",
-        publisher : "ITU-T/WHO"
-      },
-      "66" : {
-        title : "ICT 융합 표준 프레임워크 - 스마트 헬스 2019",
-        href : "https://ksp.etri.re.kr/ksp/plan-report/read?id=772",
-        authors : ["전종홍", "차홍기"],
-        date : "",
-        publisher : "ETRI"
-      },
-      "67" : {
-        title : "COVID-19 Imaging-based AI Research Collection",
-        href : "https://github.com/HzFu/COVID19_imaging_AI_paper_list",
-        authors : [""],
-        date : "",
-        publisher : ""
-      },
-      "68" : {
-        title : "How artificial intelligence and machine learning can help healthcare systems respond to COVID-19",
-        href : "https://www.vanderschaar-lab.com/NewWebsite/covid-19/post1/paper.pdf",
-        authors : ["Mihaela van der Schaar", "John Humphrey Plummer"],
-        date : "March 27, 2020",
-        publisher : "vanderschaar-lab"
-      },
-      "69" : {
-        title : "Mapping the landscape of artificial intelligence applications against COVID-19",
-        href : "https://arxiv.org/abs/2003.11336",
-        authors : ["Joseph Bullock", "Alexandra Luccioni", "Katherine Hoffmann Pham", "Cynthia Sin Nga Lam", "Miguel Luengo-Oroz"],
-        date : "April 2020",
-        publisher : "ArXiv"
-      },
-      "70" : {
-        title : "Review of Artificial Intelligence Techniques in Imaging Data Acquisition, Segmentation and Diagnosis for COVID-19",
-        href : "https://doi.org/10.1109/RBME.2020.2987975",
-        authors : ["Feng Shi", "Jun Wang", "Jun Shi", "Ziyan Wu", "Qian Wang", "Zhenyu Tang", "Kelei He", "Yinghuan Shi", "Dinggang"],
-        date : "16 April 2020",
-        publisher : "IEEE Reviews in Biomedical Engineering"
-      },
-      "71" : {
-        title : "The role of imaging in the detection and management of COVID-19: a review",
-        href : "https://doi.org/10.1109/RBME.2020.2990959",
-        authors : ["Di Dong", "Zhenchao Tang", "Shuo Wang", "Hui Hui", "Lixin Gong", "Yao Lu", "Zhong Xue"],
-        date : "27 April 2020",
-        publisher : "IEEE Reviews in Biomedical Engineering"
-      },
-      "72" : {
-        title : "Artificial intelligence in the fight against COVID-19",
-        href : "https://www.bruegel.org/2020/03/artificial-intelligence-in-the-fight-against-covid-19/",
-        authors : ["Petropoulos G"],
-        date : "23 March 2020",
-        publisher : "Bruegel"
-      },
-      "73" : {
-        title : "Artificial intelligence vs COVID19: limitations, constraints and pitfalls",
-        href : "https://doi.org/10.1007/s00146-020-00978-0",
-        authors : ["Wim Naudé"],
-        date : "28 April 2020",
-        publisher : "AI & SOCIETY (2020)"
-      },
-      "74" : {
-        title : "Data sharing for novel coronavirus (COVID-19)",
-        href : "http://dx.doi.org/10.2471/BLT.20.251561",
-        authors : ["Vasee Moorthy", "Ana Maria Henao Restrepo", "Marie-Pierre Preziosi", "Soumya Swaminathan"],
-        date : "2020",
-        publisher : "WHO, Bulletin of the World Health Organization 2020;98:150"
-      },
-      "75" : {
-        title : "Global research on coronavirus disease (COVID-19)",
-        href : "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/global-research-on-novel-coronavirus-2019-ncov",
-        authors : [""],
-        date : "",
-        publisher : "WHO"
-      },
-      "76" : {
-        title : "Covid-19: Open-Data Resources for Monitoring, Modeling, and Forecasting the Epidemic",
-        href : "https://doi.org/10.3390/electronics9050827",
-        authors : ["Teodoro Alamo", "Daniel G. Reina", "Martina Mammarella", "Alberto Abella"],
-        date : "2020",
-        publisher : "Electronics 2020, 9(5), 827"
-      },
-      "77" : {
-        title : "Artificial Intelligence against COVID-19: An early review",
-        href : "https://www.iza.org/publications/dp/13110/artificial-intelligence-against-covid-19-an-early-review",
-        authors : ["Naudé W"],
-        date : "2020",
-        publisher : "IZA Discussion Paper no. 13110, Bonn"
-      },
-      "78" : {
-        title : "해외 코로나19 관련 데이터 개방 현황 및 주요 질병관리 통계 기관의 데이터 개방 현황",
-        href : "",
-        authors : [""],
-        date : "2020.4.8",
-        publisher : "NIA Global Open Data Now, 제20호"
-      },
-      "79" : {
-        title : "The 8 Principles of Open Government Data",
-        href : "http://www.opengovdata.org/home/8principles",
-        authors : ["Tauberer, J.", "Lessig, L."],
-        date : "2017",
-        publisher : "opengovdata"
-      },
-      "80" : {
-        title : "MEloda 5: A Metric to Assess Open Data Reusability",
-        href : "http://www.elprofesionaldelainformacion.com/contenidos/2019/nov/abella-ortiz-pablos.pdf",
-        authors : ["Abella, A.", "Ortiz-de Urbina-Criado, M.", "De-Pablos-Heredero, C."],
-        date : "2019",
-        publisher : "elprofesionaldelainformacion"
-      },
-      "81" : {
-        title : "CORD-19: The Covid-19 Open Research Dataset",
-        href : "https://arxiv.org/abs/2004.10706",
-        authors : ["Lucy Lu Wang", "Kyle Lo", "Yoganand Chandrasekhar", "Russell Reas", "Jiangjiang Yang"],
-        date : "April 2020",
-        publisher : "arXiv"
-      },
-      "82" : {
-        title : "왜 오픈사이언스가 대응을 위해 중요한가(Why open science is critical to combatting COVID-19)",
-        href : "http://www.oecd.org/coronavirus/policy-responses/why-open-science-is-critical-to-combatting-covid-19-cd6ab2f9/",
-        authors : [""],
-        date : "2020",
-        publisher : "OECD"
-      },
-      "83" : {
-        title : "COVID-Net: A Tailored Deep Convolutional Neural Network Design for Detection of COVID-19 Cases from Chest X-Ray Images",
-        href : "https://arxiv.org/abs/2003.09871",
-        authors : ["Linda Wang", "Zhong Qiu Lin", "Alexander Wong"],
-        date : "May 2020",
-        publisher : "arXiv"
-      },
-      "84" : {
-        title : "COVID-19 image data collection",
-        href : "https://arxiv.org/abs/2003.11597",
-        authors : ["J. P. Cohen", "P. Morrison", "L. Dao"],
-        date : "2020",
-        publisher : "arXiv"
-      },
-      "85" : {
-        title : "COVID-CT-Dataset: A CT scan dataset about COVID-19",
-        href : "https://arxiv.org/abs/2003.13865",
-        authors : ["J. Zhao", "Y. Zhang", "X. He", "P. Xie"],
-        date : "2020",
-        publisher : "arXiv"
-      },
-      "86" : {
-        title : "Mapping the landscape of artificial intelligence applications against COVID-19",
-        href : "https://arxiv.org/abs/2003.11336",
-        authors : ["Joseph Bullock", "Alexandra Luccioni", "Katherine Hoffmann Pham", "Cynthia Sin Nga Lam", "Miguel Luengo-Oroz"],
-        date : "April 2020",
-        publisher : "ArXiv"
-      },
-      "87" : {
-        title : "인공지능 최신 동향과 시사점",
-        href : "",
-        authors : [""],
-        date : "2020.4.7",
-        publisher : "소프트웨어정책연구소, SPRi AI Brief AIB-011호"
-      },
-      "88" : {
-        title : "工业和信息化部办公厅关于运用新一代信息技术支撑服务疫情防控和复工复产工作的通知",
-        href : "http://www.gov.cn/zhengce/zhengceku/2020-02/19/content_5480843.htm",
-        authors : [""],
-        date : "",
-        publisher : "china"
-      },
-      "89" : {
-        title : "Collection of Artificial Intelligence resources to the fight against Coronavirus (COVID-19)",
-        href : "https://github.com/hollobit/COVID-19-AI/",
-        authors : [""],
-        date : "",
-        publisher : "Jonghong Jeon"
-      },
-      "90" : {
-        title : "COVID-19 Has a Data Governance Problem",
-        href : "https://www.datanami.com/2020/05/06/covid-19-has-a-data-governance-problem/",
-        authors : [""],
-        date : "",
-        publisher : "datanami"
-      },
-      "91" : {
-        title : "한국의 코로나19 대응 ICT사례집 Korean ICT Services against COVID-19 Pandemic",
-        href : "https://www.nia.or.kr/common/board/Download.do?bcIdx=22151&cbIdx=39485&fileNo=7",
-        authors : [""],
-        date : "2020.5.18",
-        publisher : "NIA"
-      },
-      "92" : {
-        title : "한국의 감염병 역학조사 강화방안: 중동호흡기증후군 유행 경험에서의 교훈",
-        href : "https://www.e-sciencecentral.org/articles/pubreader/SC000014359",
-        authors : ["이창환", "기모란"],
-        date : "2015 August",
-        publisher : "J Korean Med Assoc 58(8): 706-713"
-      },
-      "93" : {
-        title : "휴대폰 위치 추적 데이터와 코로나19: Q&A",
-        href : "https://www.hrw.org/ko/news/2020/05/13/375128",
-        authors : [""],
-        date : "",
-        publisher : "Human Rights Watch"
-      },
-      "94" : {
-        title : "Information Technology–Based Tracing Strategy in Response to COVID-19 in South Korea—Privacy Controversies",
-        href : "https://jamanetwork.com/journals/jama/fullarticle/2765252",
-        authors : ["Sangchul Park", "Gina Jeehyun Choi", "Haksoo Ko"],
-        date : "2020",
-        publisher : "JAMA. 2020;323(21):2129-2130"
-      },
-      "95" : {
-        title : "[3.11.수.석간] 코로나19 역학조사 신속 지원 시스템 공동구축에 나서",
-        href : "https://www.cdc.go.kr/board/board.es?mid=a20501000000&bid=0015&list_no=366510&act=view",
-        authors : [""],
-        date : "2020.3.11",
-        publisher : "대한민국 정부, 부처공동 보도자료"
-      },
-      "96" : {
-        title : "MIT Technology Review Covid Tracing Tracker",
-        href : "https://www.technologyreview.com/2020/05/07/1000961/launching-mittr-covid-tracing-tracker/",
-        authors : [""],
-        date : "",
-        publisher : "MIT Technology Review"
-      },
-      "97" : {
-        title : "코로나19 추적 조사와 프라이버시",
-        href : "https://www.bioin.or.kr/board.do?num=296755&cmd=view&bid=policy",
-        authors : ["박미정"],
-        date : "2020",
-        publisher : "BRIC View 2020-TX6"
-      },
-      "98" : {
-        title : "COVID-19 Contact Tracing and Privacy:Studying Opinion and Preferences",
-        href : "https://arxiv.org/abs/2005.06056",
-        authors : ["Lucy Simko", "Ryan Calo"],
-        date : "May 12 2020",
-        publisher : "arXiv"
-      },
-      "99" : {
-        title : "Privacy-Preserving Contact Tracing: current solutions and open questions",
-        href : "https://arxiv.org/abs/2004.06818",
-        authors : ["Qiang Tang"],
-        date : "14 April 2020",
-        publisher : "arXiv"
-      },
-      "100" : {
-        title : "Coronavirus contact-tracing apps: can they slow the spread of COVID-19?",
-        href : "https://www.nature.com/articles/d41586-020-01514-2",
-        authors : ["Mark Zastrow"],
-        date : "19 May 2020",
-        publisher : "Nature"
-      },
-      "101" : {
-        title : "COVID-19 apps",
-        href : "https://en.wikipedia.org/wiki/COVID-19_apps",
-        authors : [""],
-        date : "",
-        publisher : "wikipedia"
-      },
-      "102" : {
-        title : "Security analysis of the covid-19 contact tracing specifications by APPLE INC. and GOOGLE INC.",
-        href : "https://eprint.iacr.org/2020/428",
-        authors : ["G. Yaron"],
-        date : "",
-        publisher : "Cryptomnium LLC ePrint Archive: Report 2020/428"
-      },
-      "103" : {
-        title : "COVI White Paper - Version 1.0",
-        href : "https://arxiv.org/abs/2005.08502",
-        authors : ["Hannah Alsdurf", "Yoshua Bengio", "Tristan Deleu", "Prateek Gupta", "Daphne Ippolito", "Richard Janda"],
-        date : "18 May 2020",
-        publisher : "arXiv"
-      },
-      "104" : {
-        title : "The need for privacy with public digital contact tracing during the COVID-19 pandemic",
-        href : "https://doi.org/10.1016/S2589-7500(20)30133-3",
-        authors : ["Yoshua Bengio", "Richard Janda", "Yun William Yu", "Daphne Ippolito", "Max Jarvie", "Dan Pilat"],
-        date : "June 02, 2020",
-        publisher : "The Lancet"
-      },
-      "105" : {
-        title : "Privacy and Ethics Recommendations for Computing Applications Developed to Mitigate COVID-19",
-        href : "https://epic.org/foia/epic-v-ai-commission/NSCAI-contact-tracing-white-paper.pdf",
-        authors : [""],
-        date : "May 7, 2020",
-        publisher : "인공 지능에 관한 국가 안보위원회 (NSCAI)"
-      },
-      "106" : {
-        title : "Joint civil society statement: States use of digital surveillance technologies to fight pandemic must respect human rights",
-        href : "https://www.amnesty.org/download/Documents/POL3020812020ENGLISH.pdf",
-        authors : [""],
-        date : "",
-        publisher : "Amnesty International"
-      },
-      "107" : {
-        title : "Cellphone tracking could help stem the spread of coronavirus. Is privacy the price?",
-        href : "https://DOI.org/10.1126/science.abb8296",
-        authors : ["Servick K"],
-        date : "March 22, 2020",
-        publisher : "Science"
-      },
-      "108" : {
-        title : "Quantifying SARS-CoV-2 transmission suggests epidemic control with digital contact tracing",
-        href : "",
-        authors : ["Ferretti L", "Wymant C", "Kendall M"],
-        date : "May 8, 2020",
-        publisher : "Science"
-      },
-      "109" : {
-        title : "How Reliable is Smartphone-based Electronic Contact Tracing for COVID-19?",
-        href : "https://arxiv.org/abs/2005.05625",
-        authors : ["Philipp H. Kindt", "Trinad Chakraborty", "Samarjit Chakraborty"],
-        date : "May 22 2020",
-        publisher : "arXiv"
-      },
-      "110" : {
-        title : "Digital Contact Tracing for Pandemic Response: Ethics and Governance Guidance",
-        href : "https://doi.org/10.1353/book.75831",
-        authors : [""],
-        date : "2020",
-        publisher : "Johns Hopkins University Press"
-      },
-      "111" : {
-        title : "의료 인공지능 표준화 동향",
-        href : "https://ettrends.etri.re.kr/ettrends/179/0905179012/",
-        authors : ["전종홍", "이강찬"],
-        date : "2019",
-        publisher : "전자통신동향분석, 34권 5호"
-      },
-      "112" : {
-        title : "An Algorithm based on Deep Learning for Predicting In-Hospital Cardiac Arrest",
-        href : "",
-        authors : ["Kwon JM", "Lee Y", "Lee S"],
-        date : "2018",
-        publisher : "J Am. Heart Assoc. 2018;7(13):e008678"
-      },
-      "113" : {
-        title : "[인간·공감·AI]①신종 감염병의 시대, AI가 데이터를 들여다보기 시작했다",
-        href : "http://dongascience.donga.com/news.php?idx=34798",
-        authors : [""],
-        date : "2020.3.11",
-        publisher : "동아 사이언스"
-      },
-      "114" : {
-        title : "Coronavirus resource center",
-        href : "https://coronavirus.jhu.edu/map.html",
-        authors : [""],
-        date : "",
-        publisher : ""
-      },
-      "115" : {
-        title : "Compassionate Use of Remdesivir for Patients with Severe Covid-19",
-        href : "https://doi.org/10.1056/NEJMoa2007016",
-		doi : "",
-        authors : ["Grein J", "Ohmagari N", "Shin D", "Diaz G", "Asperges E", "Castagna A"],
-        date : "2020",
-        publisher : "N Engl J Med"
-      },
-      "116" : {
-        title : "Remdesivir for severe acute respiratory syndrome coronavirus 2 causing COVID-19: An evaluation of the evidence",
-        href : "https://doi.org/10.1016/j.tmaid.2020.101647",
-        authors : ["Cao YC", "Deng QX", "Dai SX"],
-        date : "",
-        publisher : "Travel Med Infect Dis 2020:101647"
-      },
-      "117" : {
-        title : "Remdesivir as a possible therapeutic option for the COVID-19",
-        href : "https://doi.org/10.1016/j.tmaid.2020.101615",
-		doi : "",
-        authors : ["Al-Tawfiq JA", "Al-Homoud AH", "Memish ZA"],
-        date : "",
-        publisher : "Travel Med Infect Dis 2020;34:101615"
-      },
-      "118" : {
-        title : "Of chloroquine and COVID-19",
-        href : "https://doi.org/10.1016/j.antiviral.2020.104762",
-        authors : ["Touret F", "de Lamballerie X"],
-        date : "2020",
-        publisher : "Antiviral Res 2020;177:104762"
-      },
-      "119" : {
-        title : "New insights on the antiviral effects of chloroquine against coronavirus: what to expect for COVID-19",
-        href : "https://doi.org/10.1016/j.ijantimicag.2020.105938",
-        authors : ["Devaux CA", "Rolain JM", "Colson P", "Raoult D"],
-        date : "2020",
-        publisher : "Int J Antimicrob Agents 2020;55(5):105938"
-      },
-      "120" : {
-        title : "Chloroquine and hydroxychloroquine as available weapons to fight COVID-19",
-        href : "https://DOI.org/10.1016/j.ijantimicag.2020.105932",
-        authors : ["Colson P", "Rolain JM", "Lagier JC", "Brouqui P", "Raoult D"],
-        date : "",
-        publisher : "Int J Antimicrob Agents 2020;55(4):105932"
-      },
-      "121" : {
-        title : "A Trial of Lopinavir-Ritonavir in Adults Hospitalized with Severe Covid-19",
-        href : "https://DOI.org/10.1056/NEJMoa2001282",
-        authors : ["Cao B", "Wang Y", "Wen D", "Liu W", "Wang J", "Fan G"],
-        date : "2020",
-        publisher : "N Engl J Med 2020;382(19):1787-99"
-      },
-      "122" : {
-        title : "Case of the Index Patient Who Caused Tertiary Transmission of COVID-19 Infection in Korea: the Application of Lopinavir/Ritonavir for the Treatment of COVID-19 Infected Pneumonia Monitored by Quantitative RT-PCR",
-        href : "https://doi.org/10.3346/jkms.2020.35.e79",
-        authors : ["Lim J", "Jeon S", "Shin HY", "Kim MJ", "Seong YM", "Lee WJ"],
-        date : "2020",
-        publisher : "J Korean Med Sci 2020;35(6):e79"
-      },
-      "123" : {
-        title : "The correlation between viral clearance and biochemical outcomes of 94 COVID-19 infected discharged patients",
-        href : "https://doi.org/10.1007/s00011-020-01342-0",
-        authors : ["Yuan J", "Zou R", "Zeng L", "Kou S", "Lan J", "Li X"],
-        date : "2020",
-        publisher : "Inflamm Res 2020;69(6):599-606"
-      },
-      "124" : {
-        title : "BenevolentAI",
-        href : "https://www.benevolent.com/",
-        authors : [""],
-        date : "",
-        publisher : ""
-      },
-      "125" : {
-        title : "Techniques of BenevolentAI",
-        href : "https://www.benevolent.com/research",
-        authors : [""],
-        date : "",
-        publisher : ""
-      },
-      "126" : {
-        title : "Innoplexus",
-        href : "https://www.innoplexus.com",
-        authors : [""],
-        date : "",
-        publisher : ""
-      },
-      "127" : {
-        title : "Techniques of Innoplexus",
-        href : "https://www.innoplexus.com/technology/",
-        authors : [""],
-        date : "",
-        publisher : ""
-      },
-      "128" : {
-        title : "VantAI",
-        href : "https://www.vant.ai",
-        authors : [""],
-        date : "",
-        publisher : ""
-      },
-      "129" : {
-        title : "Healx",
-        href : "https://healx.io",
-        authors : [""],
-        date : "",
-        publisher : ""
-      },
-      "130" : {
-        title : "CYCLICA",
-        href : "https://cyclicarx.com",
-        authors : [""],
-        date : "",
-        publisher : ""
-      },
-      "131" : {
-        title : "DEARGEN",
-        href : "https://deargen.me",
-        authors : [""],
-        date : "",
-        publisher : ""
-      },
-      "132" : {
-        title : "Baricitinib as potential treatment for 2019-nCoV acute respiratory disease",
-        href : "https://doi.org/10.1016/S0140-6736(20)30304-4",
-        authors : ["Richardson P", "Griffin I", "Tucker C", "Smith D", "Oechsle O", "Phelan A"],
-        date : "2020",
-        publisher : "Lancet 2020;395(10223):e30-e1"
-      },
-      "133" : {
-        title : "MIT-IBM lab",
-        href : "https://www.onartificialintelligence.com/articles/20744/marshaling-ai-in-the-fight-against-covid-19",
-        authors : [""],
-        date : "",
-        publisher : ""
-      },
-      "134" : {
-        title : "Automated detection of COVID-19 cases using deep neural networks with X-ray images",
-        href : "https://doi.org/10.1016/j.compbiomed.2020.103792",
-        authors : [" Tulin Ozturk", "Muhammed Talo", "Eylul Azra Yildirim"],
-        date : "2020",
-        publisher : "Comput Biol Med. 2020 Jun; 121: 103792"
-      },
-      "135" : {
-        title : "Baricitinib as potential treatment for 2019-nCoV acute respiratory disease",
-        href : "https://doi.org/10.1016/S0140-6736(20)30304-4",
-        authors : ["Peter Richardson", "Ivan Griffin", "Catherine Tucker", "Dan Smith"],
-        date : "",
-        publisher : "Lancet, 2020 15-21 February; 395(10223): e30–e31"
-      }
-  }
-	};
-</script>
-<!--
--->
+<script class="remove" src="./biblio.js"></script>
 </head>
 <body>
 	<section id="abstract">
 		<p>
-      세계화와 교통발달, 기후변화와 같은 환경 변화 속에서 인류를 위협하는 감염병 재난은 발생 주기가 빨라지고 있고 인류 건강과 사회 안전을 위협하는 큰 요소가 되어가고 있다. 특히 최근 코로나 바이러스(COVID-19) 재난을 통해 알 수 있었던 것과 같이, 재난의 급속한 확산 속에서 보다 빠르게 사전 위험을 탐지 예방하고, 감염병 발생 시에는 신속 분류 진단하고 모니터링하며 조치할 수 있도록 하는 감염병 대응 체계와 이를 지원할 수 있는 ICT 기술에 대한 필요성은 급격하게 높아졌다.
+      세계화와 교통발달, 기후변화와 같은 환경 변화 속에서 인류를 위협하는 감염병 재난은 발생 주기가 빨라지고 있고 인류 건강과 사회 안전을 위협하는 큰 요소가 되어가고 있다. 특히 최근 코로나 바이러스(<a>COVID-19</a>) 재난을 통해 알 수 있었던 것과 같이, 재난의 급속한 확산 속에서 보다 빠르게 사전 위험을 탐지 예방하고, 감염병 발생 시에는 신속 분류 진단하고 모니터링하며 조치할 수 있도록 하는 감염병 대응 체계와 이를 지원할 수 있는 ICT 기술에 대한 필요성은 급격하게 높아졌다.
     </p>
     <p>
       규칙 정형화가 어려운 분야에서 딥러닝과 인공지능 기술을 적용하면 빠른 대응을 해볼 수 있다는 큰 장점을 갖는다. 이러한 이유로 감염병 추세 파악, 전파확산 예측, 신속 진단 도구의 개발 등에 인공지능을 적용하기 위한 많은 시도들이 있었다. 그러나 동시에 신뢰성 있는 데이터의 확보와 신뢰도를 보장할 수 있는 응용 개발, 프라이버시에 대한 보호 이슈 등과 같은 많은 이슈들도 부상시켰다.
@@ -1101,7 +21,7 @@
 		</p>
 
     <h3>Keyword</h3>
-		<p> 감염병 재난, COVID-19, 코로나 바이러스, SARS-CoV-2, 전염병, 인공지능, 표준화, 자동진단지원시스템, 음성인식,
+		<p> 감염병 재난, <a>COVID-19</a>, 코로나 바이러스, SARS-CoV-2, 전염병, 인공지능, 표준화, 자동진단지원시스템, 음성인식,
     </P>
 
     <h3>Executive Summary</h3>
@@ -1152,7 +72,7 @@
 	<section id="배경 및 필요성">
 		<h1>배경 및 필요성</h1>
 		<p>
-			세계화와 교통발달, 기후변화와 같은 환경 변화 속에서 인류를 위협하는 감염병 재난은 발생 주기가 빨라지고 있고 인류 건강과 사회 안전을 위협하는 큰 요소가 되어가고 있다. 특히 최근 코로나 바이러스(COVID-19) 재난을 통해 알 수 있었던 것과 같이, 보다 빠르게 사전 위험을 탐지 예방하고, 감염병  발생 시에는 신속 분류 진단하고 모니터링하며 조치할 수 있도록 하는 감염병 대응 체계와 이를 위한 ICT 기술 및 표준화의 필요성이 높아지고 있다.
+			세계화와 교통발달, 기후변화와 같은 환경 변화 속에서 인류를 위협하는 감염병 재난은 발생 주기가 빨라지고 있고 인류 건강과 사회 안전을 위협하는 큰 요소가 되어가고 있다. 특히 최근 코로나 바이러스(<a>COVID-19</a>) 재난을 통해 알 수 있었던 것과 같이, 보다 빠르게 사전 위험을 탐지 예방하고, 감염병  발생 시에는 신속 분류 진단하고 모니터링하며 조치할 수 있도록 하는 감염병 대응 체계와 이를 위한 ICT 기술 및 표준화의 필요성이 높아지고 있다.
 		</p>
     <section id="감염병 재난 현황">
     <h2>감염병 재난 현황</h2>
@@ -1166,10 +86,10 @@
       우리나라 역사에서도 감염병의 기록은 고대로부터 지속적으로 등장한다. [삼국사기]에는 고구려에서 3회, 백제 6회, 신라 18회의 전염병 발생을 기록하고 있다. [조선왕조실록]에는 1392년부터 1891년까지 500년 동안 1,000건 이상의 역병에 대한 기록이 있으며, 햇수로는 무려 160년이나 된다. 평균적으로 10년에 3번 이상 전염병이 유행한 셈이다.
     </p>
     <p>
-      전세계적인 교류와 이동이 많아진 20세기 들어와서는 그 파괴력이 더욱 커졌다. 1918년 3월 유럽과 미국에서 발생한 스페인독감(1918-1919, H1N1)은 전 세계적으로 4천만~1억 명의 사망자를 만들었으며, 1957~1958년 아시아 독감은 중국에서 시작되어 전 세계적으로 1,400만 명의 사망자를 발생시켰다. 10년 뒤에는 홍콩 독감(H3N2)이 전 세계적으로 140만 명의 사망자를 만들었고, 최근 전인류를 공포에 떨게하고 있는 코로나 바이러스 (COVID-19 )는 불과 3개월만에 300만명의 환자와 20만명의 사망자를 만들었다.
+      전세계적인 교류와 이동이 많아진 20세기 들어와서는 그 파괴력이 더욱 커졌다. 1918년 3월 유럽과 미국에서 발생한 스페인독감(1918-1919, H1N1)은 전 세계적으로 4천만~1억 명의 사망자를 만들었으며, 1957~1958년 아시아 독감은 중국에서 시작되어 전 세계적으로 1,400만 명의 사망자를 발생시켰다. 10년 뒤에는 홍콩 독감(H3N2)이 전 세계적으로 140만 명의 사망자를 만들었고, 최근 전인류를 공포에 떨게하고 있는 코로나 바이러스 (<a>COVID-19</a> )는 불과 3개월만에 300만명의 환자와 20만명의 사망자를 만들었다.
     </p>
     <section id="note1" class="note">1) 전염병이란 사람과 사람 사이에 병원체가 이동하여 발병하는 경우를 의미하며, 감염병은 사람 간 전파 만이 아니라 공기나 흙 등의 사람 이외의 전파원에서 미생물이 옮아와서 일으키는 병까지 포함 [[3]]</section>
-    <section id="note2" class="note">2) WHO는 2020년 2월 11일 신종코로나바이러스감염증의 공식명칭을 ‘COVID-19’로 명명함. 우리 정부는 2020년 2월 12일 한글 명칭으로 ‘코로나바이러스감염증-19(약칭: 코로나19)’를 사용한다고 발표</section>
+    <section id="note2" class="note">2) WHO는 2020년 2월 11일 신종코로나바이러스감염증의 공식명칭을 ‘<a>COVID-19</a>’로 명명함. 우리 정부는 2020년 2월 12일 한글 명칭으로 ‘코로나바이러스감염증-19(약칭: 코로나19)’를 사용한다고 발표</section>
     </section>
 
     <section id="감염병 대응 체계">
@@ -1239,7 +159,7 @@
       확산 방지를 위하여 감염병의 대응은 신속해야 하므로, 필연적으로 위 과제들은 공통적으로 신속성이 요구된다. 그러면서도 그 목표 달성을 위해 빅데이터 분석이 필요한 과제들이므로 인공지능 기술의 도움이 절실하다고 할 수 있다.
     </p>
     <p>
-      특히 감염병의 예측 및 전파경로/현황을 파악하는데 있어서 IoT 와 5G 등의 차세대 통신망을 활용하여 실시간으로 누적되는 데이터들을 처리하고 분석하는 기술이 필요하다 [[31]]. 대표적으로 ‘Worldometer’ [[32]] 나 US Centers for Disease Control and Prevention (CDC) 와 같은 각국의 질병관리기관에서 신종 코로나 바이러스의 감염 현황이 실시간으로 보고되고 있다. 이러한 데이터들의 실시간 획득과 분석을 통해 지역별로 감염병의 추세나 전파확산 경로 등의 현황을 신속히 파악하는 것뿐 아니라 미래의 상황에 대한 예측을 통해 정부나 기관에서 적절히 대응할 수 있도록 인공지능 기술을 활용하는 것이 필요하다.
+      특히 감염병의 예측 및 전파경로/현황을 파악하는데 있어서 <a>IoT</a> 와 5G 등의 차세대 통신망을 활용하여 실시간으로 누적되는 데이터들을 처리하고 분석하는 기술이 필요하다 [[31]]. 대표적으로 ‘Worldometer’ [[32]] 나 US Centers for Disease Control and Prevention (<a>CDC</a>) 와 같은 각국의 질병관리기관에서 신종 코로나 바이러스의 감염 현황이 실시간으로 보고되고 있다. 이러한 데이터들의 실시간 획득과 분석을 통해 지역별로 감염병의 추세나 전파확산 경로 등의 현황을 신속히 파악하는 것뿐 아니라 미래의 상황에 대한 예측을 통해 정부나 기관에서 적절히 대응할 수 있도록 인공지능 기술을 활용하는 것이 필요하다.
     </p>
     <p>
       신종 감염병의 진단 및 치료법 개발의 신속성은 재차 강조해도 지나치지 않다. 하지만 그 진단 및 치료법의 개발은 현재로서는 전문가로서도 어렵거나 답이 없는 문제를 풀어야 하는 경우가 많아 이 역시 인공지능의 도움이 필요한 영역이라 할 수 있다. 예컨대 신종 감염병과 기존의 알려진 감염병과의 감별진단과 같은 과제는 증상 등의 임상소견에 덧붙여 X-ray나 CT와 같은 영상소견을 포함하여도 전문가로서도 쉽지 않다 [[33]]. 환자의 X-ray나 CT상에서 눈에 보이지 않는 영상 표현형(phenotype)을 정의하고 분류할 수 있는 인공지능 모델을 통해 신종 코로나 바이러스로 인한 폐렴과 기존의 바이러스성 폐렴의 감별진단이 가능하다 [[34]]. 특히 치료제 개발은 현재로서는 답이 없는 문제를 푸는 것으로, 수많은 신약 후보 물질 중에서 가장 유용할 것으로 기대되는 것들을 인공지능을 통해 screening하는 기술로서 신종 감염병의 신약개발을 가속화하는데 일조할 수 있다 [[35]].
@@ -1259,9 +179,9 @@
       최근 인공 지능 기술이 전 산업 분야에 걸쳐 다양하게 적용되고 활용되고 있는 것처럼, 감염병 재난 환경에 대해서도 다양하게 활용될 수 있는 많은 가능성들을 갖고 있다. 이러한 이유로, 전세계적으로 많은 기술 연구개발과 응용 서비스 개발이 진행되고 있다 [[89]].
     </p>
     <p>
-      OECD 보고서[[37]]에서는 [그림]과 같이 COVID-19와의 싸움에 다양한 방역 단계별로 AI 활용이 도움이 될 수 있다고 분석하고 있고, Gartner의 보고서[[38]]에서도 유사하게 1) 조기 발견 및 전염병 분석 2) 격리 3) 심사 및 진단 4) 건강 관리 운영 5) 백신 연구 개발 분야에서 인공지능의 활용 가능성이 높다고 분석하고 있다.
+      <a>OECD</a> 보고서[[37]]에서는 [그림]과 같이 <a>COVID-19</a>와의 싸움에 다양한 방역 단계별로 AI 활용이 도움이 될 수 있다고 분석하고 있고, Gartner의 보고서[[38]]에서도 유사하게 1) 조기 발견 및 전염병 분석 2) 격리 3) 심사 및 진단 4) 건강 관리 운영 5) 백신 연구 개발 분야에서 인공지능의 활용 가능성이 높다고 분석하고 있다.
     </p>
-    <section id="structure" class="ednote">그림 3: OECD의 COVID-19 위기 단계별 AI 응용 에 [[37]]</section>
+    <section id="structure" class="ednote">그림 3: <a>OECD</a>의 <a>COVID-19</a> 위기 단계별 AI 응용 에 [[37]]</section>
     <p>
       중국 인공지능산업개발연합에서는 중국내 코로나 바이러스 대응을 위해 전염병 상황 모니터링 및 분석, 인력 및 재료 관리 및 제어, 물류 지원, 약물 연구 및 개발, 치료 및 생산 재개 등의 분야에서 인공지능을 활용한 자국내 사례 분석 결과 보고서를 공개하였다. 그리고 감염병 재난 상황이 인공지능 기술의 발전뿐 아니라 다양한 산업 자체를 강화시키는 인공지능의 역할이 확장되고 있다고 분석하고 있다 [[39]].
     </p>
@@ -1277,10 +197,10 @@
     <section id="자동 진단 보조">
     <h2>자동 진단 보조</h2>
     <p>
-      감염병 방역에서 가장 중요한 기술 중 하나는 바로 감염자에 대한 빠르고 정확한 진단이다. 바이러스성 감염병인 코로나19의 경우 실시간 역전사 중합효소 연쇄반응(Real time reverse transcription polymerase chain reaction: RT-PCR)이 표준적인 진단 검사 방법으로 활용되고 있지만, 결과 확인까지 약 6시간 이상이 소요되며, 고가의 전용 장비와 음압환경시설을 갖춰야 하므로 국가와 지역별에 따라 검사에 대한 접근성의 편차가 크다. 또한 감염 초기 잠복기 상태이거나 검체 채취 및 취급 과정의 문제로 인한 RT-PCR검사의 위음성 판정의 사례들이 보고되는 등, 검사 자체의 한계도 보고되고 있다 [[40]]. 이러한 DNA 기반 진단 검사 방법의 접근성과 오류 가능성을 보완하기 위해 다양한 연구와 노력들이 진행되어 왔으며, 그 중 인공지능 기반의 흉부 X-ray와 폐 CT영상 분석 기반 진단 보조 솔루션들이 대안으로 주목받고 있다.
+      감염병 방역에서 가장 중요한 기술 중 하나는 바로 감염자에 대한 빠르고 정확한 진단이다. 바이러스성 감염병인 코로나19의 경우 실시간 역전사 중합효소 연쇄반응(Real time reverse transcription polymerase chain reaction: <a>RT-PCR</a>)이 표준적인 진단 검사 방법으로 활용되고 있지만, 결과 확인까지 약 6시간 이상이 소요되며, 고가의 전용 장비와 음압환경시설을 갖춰야 하므로 국가와 지역별에 따라 검사에 대한 접근성의 편차가 크다. 또한 감염 초기 잠복기 상태이거나 검체 채취 및 취급 과정의 문제로 인한 <a>RT-PCR</a>검사의 위음성 판정의 사례들이 보고되는 등, 검사 자체의 한계도 보고되고 있다 [[40]]. 이러한 DNA 기반 진단 검사 방법의 접근성과 오류 가능성을 보완하기 위해 다양한 연구와 노력들이 진행되어 왔으며, 그 중 인공지능 기반의 흉부 X-ray와 폐 CT영상 분석 기반 진단 보조 솔루션들이 대안으로 주목받고 있다.
     </p>
     <p>
-      코로나19 감염병의 대표적인 증상인 바이러스성 폐렴은 폐포 손상을 유발하며 손상의 범위나 심각도에 따라 X-ray나 CT등의 흉부 영상 검사로 감염 부위의 관찰이 가능하다. 특히 이번 코로나19 폐렴의 경우 특징적인 영상의학적 소견들을 나타내고 있으며, 간유리 음영(Ground-glass Opacity), 폐경화(Consolidation)의 소견이 양쪽 폐의 후측 주변부에 나타나는 특징을 가지고 있다 [[41]][[42]][[43]]. 또한 폐렴의 진행 경과에 따라 간유리 음영 대비 폐경화의 비율이 높아지다가 회복기에 폐경화 영역이 소멸되는 패턴을 보인다 [[44]]. 따라서 이러한 영상의학적 특징을 인공지능을 통해 학습시키면, 코로나19 폐렴 의심환자의 영상에서 폐렴 소견을 탐지하여 RT-PCR 검사를 통한 진단을 보완하는데 활용할 수 있다 [[45]][[46]]. 또한 감염 여부만을 판단할 수 있는 RT-PCR 검사에 반해 폐렴 소견을 보이는 영역의 범위를 정량화 함으로써 감염병의 중증도를 판단할 수 있으며, 연속적으로 촬영된 영상을 기반으로 치료에 대한 반응이나 질환의 경과도 객관적으로 관찰할 수 있다는 장점이 있다 [[47]]. 뿐만 아니라, 암환자와 같이 주기적인 영상 검사를 시행하거나[[48]] 코로나 감염병 외의 질환으로 시행한 영상 검사를 통해[[49]] 의심환자로 분류되고 RT-PCR을 통해 확진되는 사례가 보고되고 있어, 인공지능 기반 진단 보조 솔루션이 이러한 무증상 환자의 우연적 선별에도 도움을 줄 수 있다.
+      코로나19 감염병의 대표적인 증상인 바이러스성 폐렴은 폐포 손상을 유발하며 손상의 범위나 심각도에 따라 X-ray나 CT등의 흉부 영상 검사로 감염 부위의 관찰이 가능하다. 특히 이번 코로나19 폐렴의 경우 특징적인 영상의학적 소견들을 나타내고 있으며, 간유리 음영(Ground-glass Opacity), 폐경화(Consolidation)의 소견이 양쪽 폐의 후측 주변부에 나타나는 특징을 가지고 있다 [[41]][[42]][[43]]. 또한 폐렴의 진행 경과에 따라 간유리 음영 대비 폐경화의 비율이 높아지다가 회복기에 폐경화 영역이 소멸되는 패턴을 보인다 [[44]]. 따라서 이러한 영상의학적 특징을 인공지능을 통해 학습시키면, 코로나19 폐렴 의심환자의 영상에서 폐렴 소견을 탐지하여 <a>RT-PCR</a> 검사를 통한 진단을 보완하는데 활용할 수 있다 [[45]][[46]]. 또한 감염 여부만을 판단할 수 있는 <a>RT-PCR</a> 검사에 반해 폐렴 소견을 보이는 영역의 범위를 정량화 함으로써 감염병의 중증도를 판단할 수 있으며, 연속적으로 촬영된 영상을 기반으로 치료에 대한 반응이나 질환의 경과도 객관적으로 관찰할 수 있다는 장점이 있다 [[47]]. 뿐만 아니라, 암환자와 같이 주기적인 영상 검사를 시행하거나[[48]] 코로나 감염병 외의 질환으로 시행한 영상 검사를 통해[[49]] 의심환자로 분류되고 <a>RT-PCR</a>을 통해 확진되는 사례가 보고되고 있어, 인공지능 기반 진단 보조 솔루션이 이러한 무증상 환자의 우연적 선별에도 도움을 줄 수 있다.
     </p>
     <P>
       이러한 목적에 따라 코로나19 확진 환자 데이터를 활용하여 진단 및 정량화 모델을 개발하고자 하는 연구가 활발하게 진행되어 왔는데, 중국 우한의 의료진과 선전의 의료인공지능 기업의 협력 연구팀은 CT영상을 바탕으로 코로나19로 인한 폐렴과 일반적인 지역사회획득 폐렴을 구분하는 인공지능 모델 COVNet을 개발, 영상의학분야 최고권위 학술지인 Radiology에 발표하였다 [[50]]. 최근 뉴욕 사이나이의 아이칸 의과대학(Icahn School of Medicine at Mount Sinai)에서는 CT영상뿐 아니라 열과 기침 등의 증상 및 혈액검사 결과 등의 임상정보를 동시에 활용하여 CT영상만 학습한 인공지능의 정확도뿐 아니라, 흉부 영상 전문의의 판독 정확도를 뛰어 넘는 성능을 보이는 인공지능 모델을 개발하여 의학분야 최고권위 학술지 중 하나인 Nature Medicine에 발표하였다 [[51]].
@@ -1294,7 +214,7 @@
     <p>
       이러한 인공지능 기반 진단 보조 솔루션의 장점에도 불구하고 이를 임상에 현장에 적극적으로 활용하기에는 몇 가지 한계가 있다. 우선 감염병 의심환자의 영상의학 검사를 시행하기 위해서는 기존의 영상 진단검사 장비를 활용하게 되는데, 이때 필요한 검사 장비의 방역 조치 및 검사 후 소독, 검사실의 환기에 많은 인력과 시간 소요되어 선별 검사로서 운용의 효율성이 낮다. 따라서 방역 조치가 간편하며, 공간 운영의 유연성이 있는 이동형 진단 영상 장비와 인공지능 소프트웨어가 통합된 지능형 의료기기 개발의 필요성이 높아지고 있다.
     </p>
-    <section id="structure" class="ednote">표 2: COVID-19 딥러닝 학습 모델 및 영상 유형, 데이터 활용 사례 비교 [[[134]] 재정리]</section>
+    <section id="structure" class="ednote">표 2: <a>COVID-19</a> 딥러닝 학습 모델 및 영상 유형, 데이터 활용 사례 비교 [[[134]] 재정리]</section>
     <p>
       또한 감염병 진단 보조를 위한 인공지능 솔루션의 정확도 검증을 위해 감염병 확산 초기부터 확진 환자의 데이터를 수집하고 공유할 수 있는 표준 체계 및 플랫폼 구축이 필요하다. 현재 논문으로 발표된 연구나 제공하고 있는 서비스는 제한된 숫자의 병원과 협력을 통해 확보된 소수의 확진 환자 데이터에 기반하여 개발 및 검증이 이루어지고 있다 (표2 참조). 따라서 인공지능 모델의 성능이 일반화되기 어렵고 영상 촬영의 프로토콜이 상이한 경우 성능이 보장되지 않을 가능성이 높다.
     </p>
@@ -1306,16 +226,16 @@
     <section id="원격 환자 모니터링 및 예후 예측">
     <h2>원격 환자 모니터링 및 예후 예측</h2>
     <p>
-      2020년에는 SARS-CoV의 범유행(Pandemic)처럼 신종 감염병이 다수의 환자를 발생시켜 재난 상황을 유발하는 사례는 2009년의 신종인플루엔자 범유행이 최근에 발생했었으며, 앞으로 점점 증가할 것으로 예측되고 있다.
+      2020년에는 SARS-CoV-2의 범유행(Pandemic)처럼 신종 감염병이 다수의 환자를 발생시켜 재난 상황을 유발하는 사례는 2009년의 신종인플루엔자 범유행이 최근에 발생했었으며, 앞으로 점점 증가할 것으로 예측되고 있다.
     </p>
     <p>
-      특히 이번 코로나-19의 범유행 사례에서 보면 다수의 국가에서 의료자원의 소진으로 인해 신종 감염병으로 인한 재난 상황이 발생하였다. 많은 국가에서 환자들은 진단을 받지 못하고 자택에 기거하거나, 진단이 되었다 하더라도 경증에서 중등도의 환자들은 의료기관이 아닌 자택 혹은 생활치료시설 같은 비 의료기관에서 격리되는 상황이 발생하게 되었다.
+      특히 이번 코로나19의 범유행 사례에서 보면 다수의 국가에서 의료자원의 소진으로 인해 신종 감염병으로 인한 재난 상황이 발생하였다. 많은 국가에서 환자들은 진단을 받지 못하고 자택에 기거하거나, 진단이 되었다 하더라도 경증에서 중등도의 환자들은 의료기관이 아닌 자택 혹은 생활치료시설 같은 비 의료기관에서 격리되는 상황이 발생하게 되었다.
     </p>
     <p>
-      의료기관에 입원한 환자는 상태가 의료진에 의해서 감시되고, 필요시 처치가 이루어질 수 있으나, 자택이나 생활치료시설 같은 곳에 격리된 환자들의 경우는 적절한 감시가 이루어지기 어렵고, 이에 따라 상태가 악화되더라도 적기에 필요한 처치를 받기 어려운 것이 사실이다. 특히, 2020년에 유행중인 코로나-19의 사례를 보면 폐렴이 심하게 진행되더라도 환자가 자각증상이 없는 경우 들이 다수 보고되고 있어, 비 의료기관에 격리되어 있는 환자의 상태를 평가하는 것이 필요할 것으로 생각된다.
+      의료기관에 입원한 환자는 상태가 의료진에 의해서 감시되고, 필요시 처치가 이루어질 수 있으나, 자택이나 생활치료시설 같은 곳에 격리된 환자들의 경우는 적절한 감시가 이루어지기 어렵고, 이에 따라 상태가 악화되더라도 적기에 필요한 처치를 받기 어려운 것이 사실이다. 특히, 2020년에 유행중인 코로나19의 사례를 보면 폐렴이 심하게 진행되더라도 환자가 자각증상이 없는 경우 들이 다수 보고되고 있어, 비 의료기관에 격리되어 있는 환자의 상태를 평가하는 것이 필요할 것으로 생각된다.
     </p>
     <p>
-      원격 환자 모니터링의 개념은 과거부터 있어오던 개념이나, 전용장비가 아닌 IoT를 활용한 Smart Device들이 개발되기 시작하면서 조금 더 쉽게 접근할 수 있게 되었다.
+      원격 환자 모니터링의 개념은 과거부터 있어오던 개념이나, 전용장비가 아닌 <a>IoT</a>를 활용한 Smart Device들이 개발되기 시작하면서 조금 더 쉽게 접근할 수 있게 되었다.
     </p>
     <p>
       먼저 환자의 활력징후 및 산소포화도를 측정할 수 있는 장비들을 보면, 애플워치, 갤럭시워치등에 포함되어 있는 맥박수 확인기능은 광혈류측정기(PPG:Photoplethysomography)를 기반으로 하는 펄스옥시미터(Pulse oximetry)에서 맥박수만 확인하고 있으며, 환자의 심전도를 클라우드에 저장 분석 할 수 있는 S-patch Cardio  같은 Device도 개발되어 시장에 나와 있다. 또한 혈압과 체온을 측정하여 각종 클라우드에 기록을 할 수 있는 스마트 혈압계 및 체온계들도 시장에 다수 출시되어 있다.
@@ -1331,13 +251,13 @@
       여기에 활용할 수 있는 가능성이 높은 기술은 뷰노와 세종병원이 함께 개발하여 여러 기관에서 사용하고 있는 DEWS(DeepEWS)가 있다 [[112]][[113]]. 쉽게 측정할 수 있는 체온, 수축기혈압, 호흡수, 심박수 네가지 인자만을 사용해서 심정지예측을 하는 인공지능 기반의 Alert 시스템으로 자택 혹은 생활치료센터에서 격리되어 있는 환자들에게 적용하여, 환자의 상태가 급변하는 것을 예측하고 예방할 수 있을 것이다. 또한, PPG를 기반으로 하는 산소포화도 감시 또한 이번 코로나19 같은 폐렴을 유발하는 전염성 질환에서 환자의 상태를 감시할 수 있을 것이다.
     </p>
     <p>
-      국제적으로는 스위스 집중 치료 의학 협의(SGI/SSMI )의 후원으로 진행되고 있는 RISC-19-ICU  레지스트리에 현재 16개국 97개 센터가 참여하여 ICU에 있는 COVID-19 중환자들의 특성과 치료 과정에 대한 EHR 정보를 공유하는 작업을 진행하고 있다. 이를 통해 환자의 위험도를 계층화하고 AI/ML 기술을 이용해 합병증과 발생할 위험을 예측하고 예방할 수 있도록 하는 것을 목표로 하고 있다.
+      국제적으로는 스위스 집중 치료 의학 협의(SGI/SSMI )의 후원으로 진행되고 있는 RISC-19-ICU  레지스트리에 현재 16개국 97개 센터가 참여하여 ICU에 있는 <a>COVID-19</a> 중환자들의 특성과 치료 과정에 대한 EHR 정보를 공유하는 작업을 진행하고 있다. 이를 통해 환자의 위험도를 계층화하고 AI/ML 기술을 이용해 합병증과 발생할 위험을 예측하고 예방할 수 있도록 하는 것을 목표로 하고 있다.
     </p>
     <section id="structure" class="note">6) <a href="https://www.sgi-ssmi.ch/de/">https://www.sgi-ssmi.ch/de/</a>, accessed on 4th. June. 2020 </section>
     <section id="structure" class="note">7) <a href="https://www.risc-19-icu.net/">https://www.risc-19-icu.net/</a>, accessed on 4th. June. 2020 </section>
     <section id="structure" class="note">8) <a href="https://edition.cnn.com/2020/03/23/health/arizona-coronavirus-chloroquine-death/index.html">https://edition.cnn.com/2020/03/23/health/arizona-coronavirus-chloroquine-death/index.html</a>, accessed on 18th. May. 2020. </section>
     <p>
-      이번 코로나-19유행에서 치료제 후보 군으로 큰 관심을 가지고 있는 Chloroquine 계열의 약물. 특히 Chloroquine phosphate 및 Hydroxychloroquine은 용량을 잘 조절하지 못하면, 부정맥을 유발할 수 있는 것으로 잘 알려있으며, 함께 사용하는 것이 검토되었던 Azithromycin의 경우도 QT 간격을 연장시켜 부정맥의 위험을 높이는 약물이다. 이 경우 발생되는 부정맥은 다형심실빈맥으로 최악의 경우 환자가 목숨을 잃을 수도 있다. 미국에서는 실제로 이 약물을 자가 투약한 환자가 사망하는 사례도 발생하였다.  이러한 부정맥을 유발할 위험이 있는 약물로 치료받는 환자들은 병원에 입원하여 심전도를 감시하에 투약하는 것이 안전하지만, 다수의 환자가 발생하여 모든 환자가 병원에 입원치료를 받을 수 없는 상황에서 외래 투약시에는 S-patch Cardio 같은 장비를 활용하여 심전도 감시를 하고, 필요시 응급의료체계를 자동활성화 시켜 구급대를 출동하게 하는 등의 조치를 취하는 것이 필요하다.
+      이번 코로나19유행에서 치료제 후보 군으로 큰 관심을 가지고 있는 Chloroquine 계열의 약물. 특히 Chloroquine phosphate 및 Hydroxychloroquine은 용량을 잘 조절하지 못하면, 부정맥을 유발할 수 있는 것으로 잘 알려있으며, 함께 사용하는 것이 검토되었던 Azithromycin의 경우도 QT 간격을 연장시켜 부정맥의 위험을 높이는 약물이다. 이 경우 발생되는 부정맥은 다형심실빈맥으로 최악의 경우 환자가 목숨을 잃을 수도 있다. 미국에서는 실제로 이 약물을 자가 투약한 환자가 사망하는 사례도 발생하였다.  이러한 부정맥을 유발할 위험이 있는 약물로 치료받는 환자들은 병원에 입원하여 심전도를 감시하에 투약하는 것이 안전하지만, 다수의 환자가 발생하여 모든 환자가 병원에 입원치료를 받을 수 없는 상황에서 외래 투약시에는 S-patch Cardio 같은 장비를 활용하여 심전도 감시를 하고, 필요시 응급의료체계를 자동활성화 시켜 구급대를 출동하게 하는 등의 조치를 취하는 것이 필요하다.
     </p>
     <p>
       현재 유행중인 코로나19의 진단 및 치료에 도움을 줄 수 있는 기술 및 환자 상태의 급변을 감시할 수 있는 여러 기술들은 시장에 출시되어 있으나, 감염성 질환의 예후를 예측할 수 있는 기술은 아직 현장에 나와 있지 않다. 예후 예측을 위해 필요한 각종 데이터들을 수집해서 분석해야 우리가 아직까지 실체를 잘 알지 못하는 이러한 신종 감염병의 예후 인자들을 찾아낼 수 있을 것이다. 그러기 위해서는 환자유래의료데이터 (Patient Generated Health Data, PGHD)와 유전체 정보 (Genomic Data)를 아우를 수 있는 개인건강기록 (Personal Health Record, PHR)이 반드시 필요하다고 하겠다.
@@ -1365,17 +285,17 @@
         <li>네이버 ‘클로버' 와 IBM ‘왓슨 어시스턴트 포 시티즌’ 등에서는 코로나19에 대해 자주 묻는 질문(FAQ)을 이해하고 이에 응답하는 기능을 제공하고 있다. ‘코로나19 현황’, ‘코로나 바이러스 확진자 수’, ‘우리 동네 확진자 수는 몇 명인가요?’, ‘학교는 얼마 동안 폐쇄될 예정인가요?’, ‘검사는 어디에서 받을 수 있나요?’ 등과 같은 동향 정보도 자동으로 가이드할 수 있고, ‘코로나19의 증상에는 어떤 것들이 있나요?’, ‘집을 어떻게 청소해야 할까요?’, ‘바이러스에 감염되지 않으려면 어떻게 해야 하나요?’ 등과 같은 대응 문의 답변도 가능하다.</li>
         <li>한국 질병관리본부에서는 카카오톡채널에 AI 챗봇 기능을 활용한 질문 자동 상담 및 답변을 운영하고 있고, 동시에 와이즈넛에서는 코로나19 챗봇 을 운영하고 있다. 코로나19 챗봇은 질병관리본부에서 제공하는 확진자 현황 및 국외현황, 선별진료소 정보, 공적마스크 관련 정보 등에 대한 자동 응답을 제공하고 있다. </li>
         <section id="structure" class="note">9) <a href="https://answerny.ai/corona19.html">https://answerny.ai/corona19.html</a></section>
-        <li>WHO / 유럽 및 유엔 어린이 기금 (UNICEF) 유럽 및 중앙 아시아 지역 사무소 (ECARO)가 공동 개발한 다국어 대화식 채팅 봇인 HealthBuddy 는 COVID-19 전염병에 대응하여 유럽 및 중앙 아시아 국가를 대상으로 대화식 문답을 제공한다.</li>
+        <li>WHO / 유럽 및 유엔 어린이 기금 (UNICEF) 유럽 및 중앙 아시아 지역 사무소 (ECARO)가 공동 개발한 다국어 대화식 채팅 봇인 HealthBuddy 는 <a>COVID-19</a> 전염병에 대응하여 유럽 및 중앙 아시아 국가를 대상으로 대화식 문답을 제공한다.</li>
         <section id="structure" class="note">10) <a href="http://www.euro.who.int/en/health-topics/health-emergencies/coronavirus-covid-19/healthbuddy">http://www.euro.who.int/en/health-topics/health-emergencies/coronavirus-covid-19/healthbuddy</a></section>
         <li>대중적인 메신저 기반의 챗봇 서비스도 적극적으로 활용되고 있다. 독일 연방 보건부, 바이에른 주, WHO, Telangana, 영국, 인도, 프랑스, 브라질 등도 WhatsApp 메신저 내의 챗봇을 활용한 서비스를 제공하고 있다.</lI>
-        <li>미국 질병통제예방센터(CDC)는 마이크로소프트(MS)의 챗봇 플랫폼을 기반으로 Coronavirus Self-Checker 를 활용하고 있다. Self-checker에서는 사용자에게 증상(호흡 곤란이나 현기증)과 위험 요소(타인과의 접촉)을 확인하고 응급실을 방문할 것인지 자가격리 조치나 원격의료 진료를 받을 것인지 가이드한다. CDC는 관련 개발 내용을 github 에 오픈소스로 공개하고 있다.</li>
+        <li>미국 질병통제예방센터(<a>CDC</a>)는 마이크로소프트(MS)의 챗봇 플랫폼을 기반으로 Coronavirus Self-Checker 를 활용하고 있다. Self-checker에서는 사용자에게 증상(호흡 곤란이나 현기증)과 위험 요소(타인과의 접촉)을 확인하고 응급실을 방문할 것인지 자가격리 조치나 원격의료 진료를 받을 것인지 가이드한다. <a>CDC</a>는 관련 개발 내용을 github 에 오픈소스로 공개하고 있다.</li>
         <section id="structure" class="note">11) <a href="https://www.cdc.gov/coronavirus/2019-ncov/testing/diagnostic-testing.html">https://www.cdc.gov/coronavirus/2019-ncov/testing/diagnostic-testing.html</a></section>
         <section id="structure" class="note">12) <a href="https://github.com/CDCgov/covid19healthbot
 ">https://github.com/CDCgov/covid19healthbot</a></section>
-        <li>파스퇴르 연구소, 그레이터 파리 대학 병원 및 클레비 등은 COVID-19 자동 진단 챗봇인 COVID- bot 을 오픈 소스 로 발표했다. Covid-bot을 통해 응답자는 설문지를 작성하여 COVID-19 오염 위험을 평가할 수 있습니다.  Covid-bot 사용자는 COVID-19 오염에 대한 위험 분석을 수행하기 위해 현재 증상, 병력 및 사용자의 나이 및 신체 관련 정보 등 23 가지 질문에 응답하면 위험/의심/안전의 세가지 유형 중 하나로 판단하여 결과를 알려준다.</li>
+        <li>파스퇴르 연구소, 그레이터 파리 대학 병원 및 클레비 등은 <a>COVID-19</a> 자동 진단 챗봇인 COVID- bot 을 오픈 소스 로 발표했다. Covid-bot을 통해 응답자는 설문지를 작성하여 <a>COVID-19</a> 오염 위험을 평가할 수 있습니다.  Covid-bot 사용자는 <a>COVID-19</a> 오염에 대한 위험 분석을 수행하기 위해 현재 증상, 병력 및 사용자의 나이 및 신체 관련 정보 등 23 가지 질문에 응답하면 위험/의심/안전의 세가지 유형 중 하나로 판단하여 결과를 알려준다.</li>
         <section id="structure" class="note">13) <a href="https://www.covidbot.fr/">https://www.covidbot.fr/</a></section>
         <section id="structure" class="note">14) <a href="https://github.com/CSML-by-Clevy/covidbot-autodiagnostic">https://github.com/CSML-by-Clevy/covidbot-autodiagnostic</a></section>
-        <li>이 밖에도 24개국 언어로 제공되는 Infermedica의 Symptomate , 이탈리아의 Paginemediche 사이트 , HealthSaaS의 Covid19 online checkup , CDC/FEMA 등과 함께 개발한 애플의 COVID-19 검사 도구  등의 사례들과 같이 다양한 사전 자가 진단용 챗봇들이 개발되어 제공되고 있다.</li>
+        <li>이 밖에도 24개국 언어로 제공되는 Infermedica의 Symptomate , 이탈리아의 Paginemediche 사이트 , HealthSaaS의 Covid19 online checkup , <a>CDC</a>/FEMA 등과 함께 개발한 애플의 <a>COVID-19</a> 검사 도구  등의 사례들과 같이 다양한 사전 자가 진단용 챗봇들이 개발되어 제공되고 있다.</li>
         <section id="structure" class="note">15) <a href="https://symptomate.com/">https://symptomate.com/</a></section>
         <section id="structure" class="note">16) <a href="https://www.paginemediche.it/coronavirus">https://www.paginemediche.it/coronavirus</a></section>
         <section id="structure" class="note">17) <a href="https://www.covid19checkup.net/">https://www.covid19checkup.net/</a></section>
@@ -1409,7 +329,7 @@
       <section id="음성 의료 기록 작성">
       <h3>음성 의료 기록 작성</h3>
       <p>
-        음성으로 전자 의무 기록과 전자 간호 기록을 작성하고 환자 정보 등을 검색할 수 있도록 하는 다양한 도구 들이 등장하고 실제 의료 환경에 적용되고 있다. suki.ai와 같은 경우에서는 COVID-19에 특화된 템플릿을 제공하는 시도도 하고 있다.
+        음성으로 전자 의무 기록과 전자 간호 기록을 작성하고 환자 정보 등을 검색할 수 있도록 하는 다양한 도구 들이 등장하고 실제 의료 환경에 적용되고 있다. suki.ai와 같은 경우에서는 <a>COVID-19</a>에 특화된 템플릿을 제공하는 시도도 하고 있다.
       </p>
       <p>
         국내의 경우 뷰노에서 개발한 ‘뷰노메드 딥에이에스알(VUNO Med®-DeepASR™)’와 셀바스AI에서 개발한 셀비 메디보이스(Selvy MediVoice)와 같이 음성 녹음부터 자동 Text 변환, 교정 및 저장까지 의료녹취를 위한 모든 과정을 지원하는 통합 의료 음성 인식 솔루션을 비롯해 은평성모병원 등에서 적용한 ‘음성인식 전자간호기록(Voice ENR) 같은 사례가 있다.
@@ -1421,11 +341,11 @@
       <p>
         기타 다양한 소리를 이용한 인공지능 기반 진단 연구들도 진행되고 있다.
       <ul>
-        <li>미국 카네기 멜론 대학(CMU)에서는 COVID-19 감염 진단을 위해 사용자의 목소리를 분석하는 앱인 COVID Voice Detector  를 개발하고 있다. 이 연구에서는 COVID-19로 진단된 음성과의 유사성을 비교 분석하여 평가하는 방식으로 진행하고 크라우드 소싱으로 데이터를 수집하고 있다. 이 연구에서는 음성으로 진단 가능한 바이오마커의 발견과 보다 간단한 방식의 사전 진단 기술 개발을 목표로 하고 있다.</li>
+        <li>미국 카네기 멜론 대학(CMU)에서는 <a>COVID-19</a> 감염 진단을 위해 사용자의 목소리를 분석하는 앱인 COVID Voice Detector  를 개발하고 있다. 이 연구에서는 <a>COVID-19</a>로 진단된 음성과의 유사성을 비교 분석하여 평가하는 방식으로 진행하고 크라우드 소싱으로 데이터를 수집하고 있다. 이 연구에서는 음성으로 진단 가능한 바이오마커의 발견과 보다 간단한 방식의 사전 진단 기술 개발을 목표로 하고 있다.</li>
         <section id="structure" class="note">24) <a href="https://cvd.lti.cmu.edu/">https://cvd.lti.cmu.edu/</a></section>
         <li>미국 AI 헬스케어 스타트업인 Eko의 AI 원격 청진기 의 개발 사례도 있다. Eko는 심층 신경망을 사용하여 심장을 통한 혈액 흐름으로 생성되는 정상 음과 비정상 음을 구분하고, EKG (labeled echocardiogram) 데이터를 기존 데이터베이스 사례와 비교하는 방식으로 동작한다.</li>
         <section id="structure" class="note">25) <a href="https://www.ekohealth.com/beatcovid">https://www.ekohealth.com/beatcovid</a></section>
-        <li>이외에도 기침 소리를 이용한 COVID-19 진단 기술 연구   등과 같은 다양한 연구들도 시작되고 있다.</li>
+        <li>이외에도 기침 소리를 이용한 <a>COVID-19</a> 진단 기술 연구   등과 같은 다양한 연구들도 시작되고 있다.</li>
         <section id="structure" class="note">26) <a href="https://coughforthecure.com/">https://coughforthecure.com/</a></section>
         <section id="structure" class="note">27) <a href="https://coughvid.epfl.ch/">https://coughvid.epfl.ch/</a></section>
       </ul>
@@ -1460,7 +380,7 @@
         특별히 질병의 전파 예측을 하는 경우, 여러 기관에서 공유하고 있는 데이터를 모아서 써야 하는 경우가 많다. 이 경우 데이터를 통합 서버로 보내는 대신, 학습된 모델을 각 데이터가 있는 서버로 보내고, 학습된 결과를 받아서 모델을 업데이트 시키는 연합학습 (federated learning) 기법이 이용될 수 있다 (그림7) [[56]]. 이는 데이터의 프라이버시 문제를 해결하며, 동시에 각 센터의 데이터 거버넌스 문제도 다룰 수 있게 한다. 연합학습의 개발 초기에는 모델의 신뢰도 (받은 데이터로 모델이 올바로 학습되었는지 알기 어려움) 와 데이터의 전송 속도 (학습된 결과가 양이 방대할 경우 실시간 추적이 어려워짐) 가 문제가 되었지만, 데이터 표준화가 진행되고, 5G 네트워크 등의 고속 전송 등을 통해 기술적 문제들은 해결이 가능하다고 할 수 있다.
       </p>
       <p>
-        그리고, 유전체 데이터 표준화를 진행하는 GA4GH에서는 “Responsible Data Sharing to Respond to the COVID-19 Pandemic”이라는 제목으로 COVID-19 해결을 위한 다양한 연구활동에서 데이터 공유를 위한 전세계 연구자들의 공동 선언문을 작성하고 있는 중이다. 연합학습과 같은 기술적 대안과 더불어 연구 윤리 측면에서 고려해야 하는 점들을 제시하고 있다.
+        그리고, 유전체 데이터 표준화를 진행하는 GA4GH에서는 “Responsible Data Sharing to Respond to the <a>COVID-19</a> Pandemic”이라는 제목으로 <a>COVID-19</a> 해결을 위한 다양한 연구활동에서 데이터 공유를 위한 전세계 연구자들의 공동 선언문을 작성하고 있는 중이다. 연합학습과 같은 기술적 대안과 더불어 연구 윤리 측면에서 고려해야 하는 점들을 제시하고 있다.
       </p>
       <section id="structure" class="ednote">그림7: 연합 학습 프로토콜</section>
       </section>
@@ -1513,7 +433,7 @@
         싱가포르의 SQREEM 사가 출시한 AI 기반의 실시간 접촉 추적 및 통신 시스템인 SQREEM COVID 추적 플랫폼은 개인 정보 보호 기능을 갖고 있으며 별도 앱이 아닌 AI 및 머신 러닝 모델을 사용해 일정 기간 동안 감염된 환자와 밀접 접촉을 한 다른 사람들을 찾고 잠재적인 감염 클러스터를 식별한다.
       </p>
       <p>
-        해외 국가들에서는 스마트폰을 대상으로 하는 다양한 COVID Tracing Tracker 앱을 개발하여 운영하고 있다 [[96]][[97]][[101]]. 현재 29개국 이상에서 정부 기관을 중심으로 관련 앱들이 개발되어 배포되고 있으며 대부분 근접 통신 기술인 Bluetooth를 기반으로 DP-3T , Google/Apple 프로토콜 [[102]]을 사용하고 있고, GPS 위치 데이타와 데이터마이닝 기술도 함께 활용하고 있다 미국의 경우, CDC에서 디지털 접촉 추적 도구의 평가를 위한 최소 기준을 가이드 하고 있기도 하다.
+        해외 국가들에서는 스마트폰을 대상으로 하는 다양한 COVID Tracing Tracker 앱을 개발하여 운영하고 있다 [[96]][[97]][[101]]. 현재 29개국 이상에서 정부 기관을 중심으로 관련 앱들이 개발되어 배포되고 있으며 대부분 근접 통신 기술인 Bluetooth를 기반으로 DP-3T , Google/Apple 프로토콜 [[102]]을 사용하고 있고, GPS 위치 데이타와 데이터마이닝 기술도 함께 활용하고 있다 미국의 경우, <a>CDC</a>에서 디지털 접촉 추적 도구의 평가를 위한 최소 기준을 가이드 하고 있기도 하다.
       </p>
       <section id="structure" class="note">29) <a href="https://github.com/DP-3T/">https://github.com/DP-3T/</a></section>
       <section id="structure" class="note">30) <a href="https://www.cdc.gov/coronavirus/2019-ncov/downloads/php/prelim-eval-criteria-digital-contact-tracing.pdf">https://www.cdc.gov/coronavirus/2019-ncov/downloads/php/prelim-eval-criteria-digital-contact-tracing.pdf</a></section>
@@ -1545,7 +465,7 @@
       <section id="structure" class="note">36) <a href="https://github.com/DP-3T/">https://github.com/DP-3T/</a></section>
 	  <li>MIT는 각 개인의 스마트 폰에서 방출되는 임의의 '처프(chirp)'를 활용하는 PACT (Private Automated Contact Tracing) 프로토콜을 개발. 처프는 BLE 통신 과정에서 생성되며 수신된 신호 강도는 두 장치 사이의 근접 거리도로 계산되어 활용</li>
       <section id="structure" class="note">37) <a href="https://pact.mit.edu/"> https://pact.mit.edu/</a></section>
-	  <li>애플과 구글은 블루투스를 기반으로 하는 프라이버시 보호 COVID-19 접촉 추적(Privacy-Preserving COVID-19 Contact Tracing)’ API 공동 개발 계획을 발표했고, 이를 반영한 시스템 을 출시 [[102]]</li>
+	  <li>애플과 구글은 블루투스를 기반으로 하는 프라이버시 보호 <a>COVID-19</a> 접촉 추적(Privacy-Preserving <a>COVID-19</a> Contact Tracing)’ API 공동 개발 계획을 발표했고, 이를 반영한 시스템 을 출시 [[102]]</li>
       <section id="structure" class="note">38) 애플은 추적 기능을 반영한 iOS 13.5 업데이트 제공(2020.5.20).  구글도 5월에 안드로이드에 반영 업데이트</section>
 	  <li>ETSI(European Telecommunications Standards Institute)에서는 스마트폰 기반 근접 추적 시스템을 위한 표준 개발을 위해 E4P (Europe for Privacy-Preserving Pandemic Protection) 그룹을 신설하고 근접성 탐지 및 익명 식별을 위해 상호 운용 가능한 모바일 앱 구축에 필요한 표준 개발을 시작 </li>
       <section id="structure" class="note">39) <a href="https://www.etsi.org/committee/1769-e4p">https://www.etsi.org/committee/1769-e4p</a></section>
@@ -1582,33 +502,33 @@
 	신약 개발의 경우, 보통 2~5년간의 후보 약물 발굴을 거치고, 그 이후로도 6년에서 15년간의 약물 개발 과정을 거쳐야 시장에 출시가 가능하다. 이러한 장기간의 후보 약물 검색 기간과 전임상 연구, 독성 연구가 필요하기에 많은 비용과 시간이 소모되기 때문에 AI를 이용한 다양한 신약 파이프라인 플랫폼 연구개발이 진행되고 있다 [[10]][[113]]. 이러한 기술은 약물 검색 기간과 전임상 연구 및 독성 연구 등의 시간을 단축시키기 위한 중요한 툴로서 사용된다.
 	</p>
 	<p>
-	신종 감염병인 COVID-19에 대응하기 위한 치료제의 개발을 위해, WHO 필두로 세계 곳곳에서 글로벌 기업을 비롯해 국가적 차원에서의 많은 투자와 연구개발이 진행되고 있다 [[6]][[35]][[113]]. 현재 2020년 6월 7일을 기준으로 7백만명의 감염자와 40만명의 사망자를 내고 있는 시점 [[114]] 에서 치료제나 백신이 공식적으로 개발되어 공급되기 전까지, 대부분의 국민들은 사회적 거리두기나 위생관리 개념에서의 수동적 감염 예방이 유일한 해결책이며, 이는 경제적, 사회적으로 상당한 피해를 가지고 온다. 따라서 한국을 비롯하여, 많은 국가들이 치료제를 찾기 위한 노력을 하고 있다.
+	신종 감염병인 <a>COVID-19</a>에 대응하기 위한 치료제의 개발을 위해, WHO 필두로 세계 곳곳에서 글로벌 기업을 비롯해 국가적 차원에서의 많은 투자와 연구개발이 진행되고 있다 [[6]][[35]][[113]]. 현재 2020년 6월 7일을 기준으로 7백만명의 감염자와 40만명의 사망자를 내고 있는 시점 [[114]] 에서 치료제나 백신이 공식적으로 개발되어 공급되기 전까지, 대부분의 국민들은 사회적 거리두기나 위생관리 개념에서의 수동적 감염 예방이 유일한 해결책이며, 이는 경제적, 사회적으로 상당한 피해를 가지고 온다. 따라서 한국을 비롯하여, 많은 국가들이 치료제를 찾기 위한 노력을 하고 있다.
 	</p>
 	<p>
-	현재 최적화된 치료제는 아니지만, 렘데시비르 [[115]][[116]][[117]], 클로로퀸과[[118]][[119]] 히드록시클로로퀸[[120]], 리토나비르/로피나비르[[121]][[122]] 그리고 리토나비르와 IFN-a[[123]]와의 병용치료 등이 COVID-19의 치료를 위한 후보 군으로 연구 중이다. 정확한 임상결과를 토대로 하여 치료제확보를 위한 생산가동이 집중적으로 이루어질 것으로 기대한다. 실험을 토대로 항 바이러스 효과를 확인하는 것이 가장 적합한 방법이지만, 바이러스를 배양하고, 바이러스에 감염된 FCWF-4세포 등에 다양한 치료제를 적용하여 항바이러스효과를 검증까지, 시간과 비용 그리고 기술적인 셋팅과 기전확인까지 빠른 시일 내로 검증하는데 어려움이 있다.
+	현재 최적화된 치료제는 아니지만, 렘데시비르 [[115]][[116]][[117]], 클로로퀸과[[118]][[119]] 히드록시클로로퀸[[120]], 리토나비르/로피나비르[[121]][[122]] 그리고 리토나비르와 IFN-a[[123]]와의 병용치료 등이 <a>COVID-19</a>의 치료를 위한 후보 군으로 연구 중이다. 정확한 임상결과를 토대로 하여 치료제확보를 위한 생산가동이 집중적으로 이루어질 것으로 기대한다. 실험을 토대로 항 바이러스 효과를 확인하는 것이 가장 적합한 방법이지만, 바이러스를 배양하고, 바이러스에 감염된 FCWF-4세포 등에 다양한 치료제를 적용하여 항바이러스효과를 검증까지, 시간과 비용 그리고 기술적인 셋팅과 기전확인까지 빠른 시일 내로 검증하는데 어려움이 있다.
 	</p>
 	<p>
 	현재까지의 유행 상황을 해결하기 위해서 환자에게 효과가 있는 시판 중 약물을 확인하기 위하여 인공지능 (AI) 기술이 적용되고 있다. 특히 약물의 용도변경을 통한 치료방법은 새로운 약물에 대한 독성등이 이미 보고된 상태에서, 약물의 효능을 기대하는 방법으로, 시간과 비용을 상당히 단축할 수 있을 뿐만 아니라, 약물 생산 인프라가 갖추어져 있는 제약회사로 하여금 신속한 생산을 기대할 수 있다.
 	</p>
 	<p>
-	인공지능 (AI) 플렛폼의 성공적인 적용을 위하여 알고리즘을 ‘훈련’하기 위한 데이터의 정확도가 중요하다. 현재까지도 타겟이 되는 COVID-19에 대한 제한된 수준의 데이터가 현재 수준에서의 인공지능 플렛폼의 적용은 도전적인 성격이 높다. 현재 이러한 도전을 진행하고 있는 대표적인 인공지능 기반 플렛폼을 통해 COVID-19에 대한 치료제를 개발하고 있는 회사들이 있으며, 이들이 가진 인공지능 기술에 대하여 살펴 보았다. 
+	인공지능 (AI) 플렛폼의 성공적인 적용을 위하여 알고리즘을 ‘훈련’하기 위한 데이터의 정확도가 중요하다. 현재까지도 타겟이 되는 <a>COVID-19</a>에 대한 제한된 수준의 데이터가 현재 수준에서의 인공지능 플렛폼의 적용은 도전적인 성격이 높다. 현재 이러한 도전을 진행하고 있는 대표적인 인공지능 기반 플렛폼을 통해 <a>COVID-19</a>에 대한 치료제를 개발하고 있는 회사들이 있으며, 이들이 가진 인공지능 기술에 대하여 살펴 보았다. 
 	</p>
 	<p>
-	BenevolentAI [[124]]는 최근 COVID-19를 타겟으로 한 Baricitinib이 중요한 약물후보군임을 밝혔다. 영국에 본사가 있는 이 회사는 캠브리지대학과 함께 관련 빅데이터에 대한 분석 및 알고리즘을 개발하고 있으며, 특히 기존의 문헌을 토대로 하여 데이터마이닝과 데이터필터기술을 통해 좀더 정확한 데이터베이스구축을 수행한다 [125]. 고품질의 데이터베이스를 토대로 하여 심층신경망모델 및 symbolic AI를 적용하고 있고, 분자수준의 분석을 토대로 하여 기존의 약물의 리포지셔닝뿐만 아니라, 약물후보군을 도출할 수 있는 시스템을 가지고 있다 [[125]].
+	BenevolentAI [[124]]는 최근 <a>COVID-19</a>를 타겟으로 한 Baricitinib이 중요한 약물후보군임을 밝혔다. 영국에 본사가 있는 이 회사는 캠브리지대학과 함께 관련 빅데이터에 대한 분석 및 알고리즘을 개발하고 있으며, 특히 기존의 문헌을 토대로 하여 데이터마이닝과 데이터필터기술을 통해 좀더 정확한 데이터베이스구축을 수행한다 [125]. 고품질의 데이터베이스를 토대로 하여 심층신경망모델 및 symbolic AI를 적용하고 있고, 분자수준의 분석을 토대로 하여 기존의 약물의 리포지셔닝뿐만 아니라, 약물후보군을 도출할 수 있는 시스템을 가지고 있다 [[125]].
 	</p>
-      <section id="structure" class="ednote">표 4:  인공지능 플렛폼기반의 COVID-19치료제를 개발중인 회사와 기술</section>
+      <section id="structure" class="ednote">표 4:  인공지능 플렛폼기반의 <a>COVID-19</a>치료제를 개발중인 회사와 기술</section>
 	<p>
 	INNOPLEXUS는 Gunjan Bhardway 박사를 필두로 설립된 인공지능기반 플렛폼은 지닌 회사이다. 약 300명의 다분야 팀 전문가들로 구성된 이 팀은 독일 및 미국 등지에 회사가 있으며, 특허는 약 100여개, 분석을 위한 임상/생명관련 빅데이터는 약 300테라바이트에 육박한다 [[126]]. 약물 용도변경, 리드물질발굴, 치료타겟 식별 등에 대한 전문성 [[127]]을 가진 이 팀에서는 클로로퀸, 렘데시비르, 클라리트로마이신 단독 혹은 병용치료에 대한 조합을 환자의 데이터를 토대로 예측하였고, 더불어 in vitro 스크리닝을 통한 검증을 통해 가장 적합한 약물 후보군을 제안한 회사이다. 
 	</p>
 	<p>
-	VantAI는 미국에 본사를 두고 있는 회사로서, 감염과정에서 확인되는 바이러스 유래 단백질과 이와 연관된 인간의 500개 이상의 단백질의 상호작용을 이해하기 위한 시스템생물학기반의 접근법을 가지고 있다 [[128]]. 현재 300개 정도의 리드 물질에 대한 결과를 도출 중이다. 이 밖에 영국의 Healx [[129]], 케나다의 Cyclica [[130]], 한국의 Deargen [[131]] 등이 COVID-19를 타겟으로 AI를 이용한 신약발굴 플렛폼으로 소개되고 있는 회사들이다. 
+	VantAI는 미국에 본사를 두고 있는 회사로서, 감염과정에서 확인되는 바이러스 유래 단백질과 이와 연관된 인간의 500개 이상의 단백질의 상호작용을 이해하기 위한 시스템생물학기반의 접근법을 가지고 있다 [[128]]. 현재 300개 정도의 리드 물질에 대한 결과를 도출 중이다. 이 밖에 영국의 Healx [[129]], 케나다의 Cyclica [[130]], 한국의 Deargen [[131]] 등이 <a>COVID-19</a>를 타겟으로 AI를 이용한 신약발굴 플렛폼으로 소개되고 있는 회사들이다. 
 	</p>
       <section id="structure" class="ednote">그림9. 인공지능으로 확인된 Baricitinib의 이중 효과. 류마티즘치료제인 Baricitinib은 2019-nCoV의 세포내 침입경로의 차단과 동시에 인체내에서 병증을 유발하는 사이토카인스톰의 하위 신호전달기전인 JAK1/2를 억제함으로서, 염증을 감소시켜, 감염환자의 병증을 감소시키는 기전을 갖는다   [[[135]] 수정]</section>
 	<p>
-	현재까지 COVID-19에 대한 치료효과를 검증할 수 있는 방법으로 코로나바이러스와 코로나바이러스에 감염된 세포와의 상관관계에 초점이 맞추어져 있었다. 따라서, in vitro 실험에서 세포에 대한 독성, 그리고 바이러스의 증식 감소 등과 같이 간단한 결과들이 데이터베이스화 되어 머신러닝으로 적용되어 결과를 중심으로 적합한 치료제들이 발굴되는 형태를 띄고 있다. 특히, Baricitinib이 주목을 받는 것은 바이러스 감염기전의 차단과 함께, 바이러스감염에 의하여 사망에 이르게 하는 주요 병증인 사이토카인스톰을 제어할 수 있다는 점이며, 이는 항바이러스 및 항염증의 두 가지 목적을 달성할 수 있다. 다중목적 결과를 도출하기 위한 네트워크 분석의 중요성을 보여주고 있다 [[132]]. 인공지능 플렛폼의 대부분은 심층학습분석 및 symbolic AI 등을 활용한 자체적으로 최적화된 모델을 사용하고 있고, 적용되고 있는 데이터베이스의 양과 질이 높은 수준이 약물 후보군 발굴의 정확도를 높이고 있음을 제시하고 있다.
+	현재까지 <a>COVID-19</a>에 대한 치료효과를 검증할 수 있는 방법으로 코로나바이러스와 코로나바이러스에 감염된 세포와의 상관관계에 초점이 맞추어져 있었다. 따라서, in vitro 실험에서 세포에 대한 독성, 그리고 바이러스의 증식 감소 등과 같이 간단한 결과들이 데이터베이스화 되어 머신러닝으로 적용되어 결과를 중심으로 적합한 치료제들이 발굴되는 형태를 띄고 있다. 특히, Baricitinib이 주목을 받는 것은 바이러스 감염기전의 차단과 함께, 바이러스감염에 의하여 사망에 이르게 하는 주요 병증인 사이토카인스톰을 제어할 수 있다는 점이며, 이는 항바이러스 및 항염증의 두 가지 목적을 달성할 수 있다. 다중목적 결과를 도출하기 위한 네트워크 분석의 중요성을 보여주고 있다 [[132]]. 인공지능 플렛폼의 대부분은 심층학습분석 및 symbolic AI 등을 활용한 자체적으로 최적화된 모델을 사용하고 있고, 적용되고 있는 데이터베이스의 양과 질이 높은 수준이 약물 후보군 발굴의 정확도를 높이고 있음을 제시하고 있다.
 	</p>
 	<p>
-	이 모든 결과들을 종합하여 보았을 때, 이번 COVID-19에서는 인공지능기반 감염병 신약의 개발은 임상현장에서 검증 중이며, 그 무한한 가능성을 확인하기 위한 도마 위에 서 있다. 하지만 최근 가능성이 있다고 보여지는 클로로퀸 등 일부 약물이 효과적인 결과를 보여주지 못하고 있다. 그 원인에 있어, 바이러스의 특성상, 변이가 다양하게 나타난다는 점, 새로운 클론에 대한 인체 감염 기전과 면역회피기전 그리고 병증의 다양한 변화와 같은 변수들이 존재한다는 점에서 머신러닝을 통한 학습과 예측을 어렵게 하고 있다. 이외에도 인체내 복잡한 면역 기전과 바이러스의 면역회피기전, 생물학적인 요소들에 대한 한정적인 정보들 또한 해결해야 하는 부분이다. 미국 MIT-IBM Watson AI lab에서 COVID-19 환자 중 패혈증으로 심각하게 영향을 받을 수 있는 환자에 대한 진단기술이 개발되었다 [[133]]. 이는 특정한 환자에서만 나타나는 과도한 면역반응을 이해할 수 있고, 그리고 이를 효과적으로 차단할 수 있는 약물을 확보한다는 점에서 지금 인공지능으로 개발중인 약물 또한 사람에 따라서 치료효과가 달라질 수 있음을 의미한다. 따라서 이번 환자들 가운데, 완치된 환자와 사망한 환자에 대한 면역반응에 대한 이해와 데이터베이스 확보가 추후 동일한 혹은 비슷한 감염성 바이러스 질환에 대한 열쇠가 될 수 있다. 
+	이 모든 결과들을 종합하여 보았을 때, 이번 <a>COVID-19</a>에서는 인공지능기반 감염병 신약의 개발은 임상현장에서 검증 중이며, 그 무한한 가능성을 확인하기 위한 도마 위에 서 있다. 하지만 최근 가능성이 있다고 보여지는 클로로퀸 등 일부 약물이 효과적인 결과를 보여주지 못하고 있다. 그 원인에 있어, 바이러스의 특성상, 변이가 다양하게 나타난다는 점, 새로운 클론에 대한 인체 감염 기전과 면역회피기전 그리고 병증의 다양한 변화와 같은 변수들이 존재한다는 점에서 머신러닝을 통한 학습과 예측을 어렵게 하고 있다. 이외에도 인체내 복잡한 면역 기전과 바이러스의 면역회피기전, 생물학적인 요소들에 대한 한정적인 정보들 또한 해결해야 하는 부분이다. 미국 MIT-IBM Watson AI lab에서 <a>COVID-19</a> 환자 중 패혈증으로 심각하게 영향을 받을 수 있는 환자에 대한 진단기술이 개발되었다 [[133]]. 이는 특정한 환자에서만 나타나는 과도한 면역반응을 이해할 수 있고, 그리고 이를 효과적으로 차단할 수 있는 약물을 확보한다는 점에서 지금 인공지능으로 개발중인 약물 또한 사람에 따라서 치료효과가 달라질 수 있음을 의미한다. 따라서 이번 환자들 가운데, 완치된 환자와 사망한 환자에 대한 면역반응에 대한 이해와 데이터베이스 확보가 추후 동일한 혹은 비슷한 감염성 바이러스 질환에 대한 열쇠가 될 수 있다. 
 	</p>
     </section>
   </section>
@@ -1682,15 +602,15 @@
 	  관련 문서: A-020, B-021, C-019, C-025, I-021-A01, I-021-A02 
 	  </p>
 
-	  <h4>3) COVID-19 Ad-hoc group</h4>
+	  <h4>3) <a>COVID-19</a> Ad-hoc group</h4>
 	  <p>
-	   최근 발생한 코로나 바이러스(COVID-19) 팬더믹은 5월13일 현재 213개국으로 확산되어 432만명의 확진자와 30만명의 사망자, 그리고 평균 6.8%에 이르는 높은 치사율을 보여주며 인류에게 큰 위협으로 다가오고 있다. 
+	   최근 발생한 코로나 바이러스(<a>COVID-19</a>) 팬더믹은 5월13일 현재 213개국으로 확산되어 432만명의 확진자와 30만명의 사망자, 그리고 평균 6.8%에 이르는 높은 치사율을 보여주며 인류에게 큰 위협으로 다가오고 있다. 
 	  </p>
 	  <p>
-	  이런 상황에서 인공지능 등 디지털 기술을 활용한 빠른 대응은 인류 생존을 위한 주요 과제가 되고 있으며, 이번 5월 회의에서 제안된 COVID-19 건강 응급 상황 ad-hoc WG은 전염병 비상 사태의 전주기에서 인공지능을 어떻게 효과적으로 활용하며 대응할 것인가에 대한 관련 정보를 수집/분석/공유하며 협력하는 것을 목적으로 하고 있다.
+	  이런 상황에서 인공지능 등 디지털 기술을 활용한 빠른 대응은 인류 생존을 위한 주요 과제가 되고 있으며, 이번 5월 회의에서 제안된 <a>COVID-19</a> 건강 응급 상황 ad-hoc WG은 전염병 비상 사태의 전주기에서 인공지능을 어떻게 효과적으로 활용하며 대응할 것인가에 대한 관련 정보를 수집/분석/공유하며 협력하는 것을 목적으로 하고 있다.
 	  </p>
 	  <p>
-	  단기적으로는 COVID-19 대응 사례와 경험 공유 체계를 구축하고 협업, 웨비나, 프로젝트 협력 등을 추진하는 것으로 목표로 하며, 중장기적으로는 전염병 예방 및 준비, 조기발생 대응 등 전염병 비상 사태 전주기에 인공지능과 디지털 기술 활용 프레임워크를 만드는 것으로 목표로 한다. 
+	  단기적으로는 <a>COVID-19</a> 대응 사례와 경험 공유 체계를 구축하고 협업, 웨비나, 프로젝트 협력 등을 추진하는 것으로 목표로 하며, 중장기적으로는 전염병 예방 및 준비, 조기발생 대응 등 전염병 비상 사태 전주기에 인공지능과 디지털 기술 활용 프레임워크를 만드는 것으로 목표로 한다. 
 	  </p>
 	  <p>
 	  FG-AI4H에서는 이 밖에도 종합적인 의료 인공지능에 대한 표준화를 추진하고 있으며, 다양한 응용 사례들에 대한 통합적인 벤치마킹 및 성능평가 표준 체계를 만들기 위한 노력들을 진행하고 있어, 지속적인 관심과 대응 노력이 필요하다 
@@ -1713,12 +633,12 @@
       <section id="HL7/FHIR">
       <h3>HL7/FHIR</h3>
 	  <p>
-	  이기종 의료정보시스템간의 정보 교환을 표준 제정을 위해 설립된 HL7(Health Level 7)에서 좀더 손쉽게 시스템간 인터페이스를 할 수 있도록 웹서비스와 자원 기반으로 하는 RESTful 인터페이스 방식으로 만든 규격이 FHIR(Fast Healthcare Interoperability Resources) 표준이다. COVID-19 팬더믹 상황을 맞이하면서 다양한 HL7/FHIR 신규 프로파일들을 만들기 위한 그룹들이 제안되고 있으며, 관련 오픈소스 프로젝트들도 활발하게 진행되고 있다. 
+	  이기종 의료정보시스템간의 정보 교환을 표준 제정을 위해 설립된 HL7(Health Level 7)에서 좀더 손쉽게 시스템간 인터페이스를 할 수 있도록 웹서비스와 자원 기반으로 하는 RESTful 인터페이스 방식으로 만든 규격이 FHIR(Fast Healthcare Interoperability Resources) 표준이다. <a>COVID-19</a> 팬더믹 상황을 맞이하면서 다양한 HL7/FHIR 신규 프로파일들을 만들기 위한 그룹들이 제안되고 있으며, 관련 오픈소스 프로젝트들도 활발하게 진행되고 있다. 
 	  </p>
 	  
 	  <h4>1) SANER (Sterational Awareness for Novel Epidemic Response: SANER)</h4>
 	  <p>
-	  SANER 프로젝트는 COVID-19 감염병 상황을 포함해 미래 공중 보건 환경에서의 의료 자원 현황과 시스템 현황 정보들을 실시간으로 파악하고 대응할 수 있도록 하기 위한 목적으로 추진되고 있다.  HL7/FHIR 표준을 기반으로 재난 발생시 의료 시설, 중요 인프라 및 정부 대응 기관간에 자원 정보 교환에 필요한 상호호환성 확보를 목표로 하며, 이를 위한 오픈소스 개발 프로젝트를 함께 추진하고 있다. 
+	  SANER 프로젝트는 <a>COVID-19</a> 감염병 상황을 포함해 미래 공중 보건 환경에서의 의료 자원 현황과 시스템 현황 정보들을 실시간으로 파악하고 대응할 수 있도록 하기 위한 목적으로 추진되고 있다.  HL7/FHIR 표준을 기반으로 재난 발생시 의료 시설, 중요 인프라 및 정부 대응 기관간에 자원 정보 교환에 필요한 상호호환성 확보를 목표로 하며, 이를 위한 오픈소스 개발 프로젝트를 함께 추진하고 있다. 
 	  </p>
 	  <ul>
 	  <li>HL7 프로젝트 정의서 : <a href="https://confluence.hl7.org/display/PA/Situation+Awareness+for+Novel+Epidemic+Response+FHIR+IG">https://confluence.hl7.org/display/PA/Situation+Awareness+for+Novel+Epidemic+Response+FHIR+IG</a>  
@@ -1729,12 +649,12 @@
       <section id="structure" class="ednote">그림 11:  SANER 프로젝트 개념도 </section>
       <section id="structure" class="note">42) <a href="https://ainq.com/thesanerproject/">https://ainq.com/thesanerproject/</a></section>
 
-	  <h4>2) COVID-19 Interoperability Project</h4>
+	  <h4>2) <a>COVID-19</a> Interoperability Project</h4>
 	  <p>
-	  COVID-19 상호호환성 프로젝트는 COVID-19 (이전의 '2019 소설 코로나 바이러스') 질환과 SARS-CoV-2 (심한 급성 호흡기 증후군 코로나 바이러스 2) 관련 증상, 선별, 검사실, 인구 통계 및 관련 자료를 HL7/FHIR 기반으로 교환할 수 있도록 상호 운용 가능한 사항들을 정의하는 것을 목표로 한다. 
+	  <a>COVID-19</a> 상호호환성 프로젝트는 <a>COVID-19</a> (이전의 '2019 소설 코로나 바이러스') 질환과 SARS-CoV-2 (심한 급성 호흡기 증후군 코로나 바이러스 2) 관련 증상, 선별, 검사실, 인구 통계 및 관련 자료를 HL7/FHIR 기반으로 교환할 수 있도록 상호 운용 가능한 사항들을 정의하는 것을 목표로 한다. 
 	  </P>
 	  <p>
-	  이 프로젝트는 COVID-19 Interoperability Alliance 활동의 일부로 연계하여 진행되고 있다. 
+	  이 프로젝트는 <a>COVID-19</a> Interoperability Alliance 활동의 일부로 연계하여 진행되고 있다. 
 	  </p>
 	  <ul>
 	  <li>연관 프로젝트: <a href="https://covid19ia.org/">https://covid19ia.org/</a></li>
@@ -1744,27 +664,27 @@
 	  </ul>
 	  
 	  <p>
-	  이밖에도 다양한 HL7/FHIR 기반의 COVID-19 대응 프로젝트들은 관련 링크를 통해 정보를 확인해볼 수 있다. <a href="https://confluence.hl7.org/display/CR/COVID-19+Related+Projects">https://confluence.hl7.org/display/CR/COVID-19+Related+Projects</a>
+	  이밖에도 다양한 HL7/FHIR 기반의 <a>COVID-19</a> 대응 프로젝트들은 관련 링크를 통해 정보를 확인해볼 수 있다. <a href="https://confluence.hl7.org/display/CR/COVID-19+Related+Projects">https://confluence.hl7.org/display/CR/COVID-19+Related+Projects</a>
 	  </p>	  
       </section>
 
       <section id="미국">
       <h3>미국</h3>
 	  <p>
-	  미국에서는 COVID-19 팬더믹 환경에서의 연방 정부 내의 의료 정보 교환 상호호환성 확보를 위한 표준화를 진행하였다.  
+	  미국에서는 <a>COVID-19</a> 팬더믹 환경에서의 연방 정부 내의 의료 정보 교환 상호호환성 확보를 위한 표준화를 진행하였다.  
 	  </p>
 	  <ul>
 	  <li>LOINC: <a href="https://loinc.org/sars-coronavirus-2/">https://loinc.org/sars-coronavirus-2/</a></li>
 	  <li>SNOMED CT: <a href="https://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html">https://www.nlm.nih.gov/research/umls/Snomed/snomed_main.html</a></li>
 	  <li>ICD-10-CM: <a href="https://www.cms.gov/Medicare/Coding/ICD10/index">https://www.cms.gov/Medicare/Coding/ICD10/index</a></li>
-	  <li>Current Procedural Terminology (CPT) COVID-19 coding and guidance: <a href="https://www.ama-assn.org/practice-management/cpt/covid-19-coding-and-guidance">https://www.ama-assn.org/practice-management/cpt/covid-19-coding-and-guidance</a></li>
+	  <li>Current Procedural Terminology (CPT) <a>COVID-19</a> coding and guidance: <a href="https://www.ama-assn.org/practice-management/cpt/covid-19-coding-and-guidance">https://www.ama-assn.org/practice-management/cpt/covid-19-coding-and-guidance</a></li>
 	  <li>HCPCS Codes: <a href="https://www.cms.gov/newsroom/press-releases/cms-develops-additional-code-coronavirus-lab-tests">https://www.cms.gov/newsroom/press-releases/cms-develops-additional-code-coronavirus-lab-tests</a></li>
       </section>
 
       <section id="중국">
       <h3>중국</h3>
 	  <p>
-	  중국 정부는 COVID-19 재난 극복을 위해 인공지능과 ICT 기술을 적극 활용하여 전염병 모니터링 및 분석, 바이러스 추적, 예방 및 치료, 자원 할당 등을 잘 할 수 있도록 하는 권고문을 2월에 발표하였다 [[88]]. 이를 시작으로 CAICT(中国信息通信研究院, China Academy of Information and Communications Technology), AIIA(Artificial Intelligence Industry Alliance) 등은 COVID-19 대응을 위한 인공지능 제품 정보 포털을 개설하고, 13개 인공지능 응용 제품 분류(AI 온도측정, AI 진단보조, 지능형 로봇, 지능형 음성 서비스, 순찰 로봇, 게놈 테스트, 의약품 R&D 등)를 중심으로 인공지능 제품 사례들을 모으고, 이를 종합하는 보고서[[39]]도 발간하였다. 
+	  중국 정부는 <a>COVID-19</a> 재난 극복을 위해 인공지능과 ICT 기술을 적극 활용하여 전염병 모니터링 및 분석, 바이러스 추적, 예방 및 치료, 자원 할당 등을 잘 할 수 있도록 하는 권고문을 2월에 발표하였다 [[88]]. 이를 시작으로 CAICT(中国信息通信研究院, China Academy of Information and Communications Technology), AIIA(Artificial Intelligence Industry Alliance) 등은 <a>COVID-19</a> 대응을 위한 인공지능 제품 정보 포털을 개설하고, 13개 인공지능 응용 제품 분류(AI 온도측정, AI 진단보조, 지능형 로봇, 지능형 음성 서비스, 순찰 로봇, 게놈 테스트, 의약품 R&D 등)를 중심으로 인공지능 제품 사례들을 모으고, 이를 종합하는 보고서[[39]]도 발간하였다. 
 	  </p>
 	  <p>
 	  이중 시급하게 자국내 표준화가 필요한 “AI 기반의 인체온도측정 시스템에 대한 평가 사양”과 공동 시험 방법을 개발하였고, 기타 추가 표준 개발을 추진하고 있다. 
@@ -1860,10 +780,10 @@
 	<li>(Mihaela) 논문에서는 1) 한정된 의료 자원 관리, 2) 개인화된 환자 관리 및 치료 계회 개발, 3) 정책 홍보 및 협업 장려, 4) 불확실성 이해와 계산 5) 신속한 임상 시험이라는 5가지 측면에서 인공지능 기술의 적용 사례들을 분석하였다 [[68]].</li>
 	<li>(Joseph) 논문에서는 분자적(Molecular), 임상적(clinical), 사회적(societal) 관점으로 나누어 단백질 구조 분석, 신약 개발, 유전체 분석, 영상 진단 기술, 비침습형 질병 추적, 환자 예후 예측, 역학 모델링 및 전망, 위험 평가 등의 다양한 주제별 연구 동향들을 정리하였다 [[69]].</li>
 	<li>(Feng) 연구에서는 AI 기반 비접촉 의료영상 워크플로우와 이미지 데이터 획득, 분할과 X-Ray와 CT 기반 진단 방법에 대한 다양한 연구들을 비롯해 학습에 필요한 공개 데이터셋의 개방까지도 다양하게 이루어졌다 [[70]].</li>
-	<li>(Di) 연구에서는 인공지능 기반으로 COVID-19 검출방법 연구들에 대한 조사 분석을 하였다 [[71]].</li>
+	<li>(Di) 연구에서는 인공지능 기반으로 <a>COVID-19</a> 검출방법 연구들에 대한 조사 분석을 하였다 [[71]].</li>
 	</ul>
 	<p>
-	현재까지의 검토만으로 아직 AI 예측 결과를 완벽하게 신뢰할 수 없거나 의료 현장에서 안심하고 사용할 수 없다는 한계점이 많다는 결론들도 도출되고 있다 [[87]]. UNGP와 세계 보건기구 (WHO), 몬트리얼 대학 등이 공동 발표한 논문에서도 COVID-19 대응을 위한 다양한 AI 응용 연구 결과들을 분석했지만 아주 소수만 “완성도"를 달성하고 있다고 결론을 맺은바 있다 [[68]]. 또다른 연구에서도 AI 시스템이 아직 예비 단계에 있을 뿐이란 평가도 내리고 있다 [[72]]. 현재 공개 데이터 세트에는 AI 알고리즘의 훈련 및 테스트를위한 이미지 수가 매우 제한되어 있으며 데이터 세트의 품질이 충분하지 않다는 점은 주목할 필요가 있고[[70]], 많은 진단 도구들이 중국에서 개발되었고 병원에서 활용되고 있다고는 하지만 객관적으로 검증된 결과가 나오지 않았다며, AI 시스템 완성도 한계에 있다는 지적도 있다 [[73]]
+	현재까지의 검토만으로 아직 AI 예측 결과를 완벽하게 신뢰할 수 없거나 의료 현장에서 안심하고 사용할 수 없다는 한계점이 많다는 결론들도 도출되고 있다 [[87]]. UNGP와 세계 보건기구 (WHO), 몬트리얼 대학 등이 공동 발표한 논문에서도 <a>COVID-19</a> 대응을 위한 다양한 AI 응용 연구 결과들을 분석했지만 아주 소수만 “완성도"를 달성하고 있다고 결론을 맺은바 있다 [[68]]. 또다른 연구에서도 AI 시스템이 아직 예비 단계에 있을 뿐이란 평가도 내리고 있다 [[72]]. 현재 공개 데이터 세트에는 AI 알고리즘의 훈련 및 테스트를위한 이미지 수가 매우 제한되어 있으며 데이터 세트의 품질이 충분하지 않다는 점은 주목할 필요가 있고[[70]], 많은 진단 도구들이 중국에서 개발되었고 병원에서 활용되고 있다고는 하지만 객관적으로 검증된 결과가 나오지 않았다며, AI 시스템 완성도 한계에 있다는 지적도 있다 [[73]]
 	</p>
 	<p>
 	각 감염병 재난 단계별로 주요 AI 응용들에 대한 기술 난이도와 제품화 수준, 시장 가능성과 국내 경쟁력은 <그림17>과 같이 요약해볼 수 있다. 이때 각 지표별 수준은 낮음(1)으로부터 높음(5)의 숫자로 수치화하여 표시하였다.
@@ -1904,10 +824,10 @@
       <section id="발생 통계 및 사례 데이터">
       <h3>발생 통계 및 사례 데이터</h3>
 	  <p>
-	  우선 현재 발생 사례 수와 위치, 지역별/국가별 상황 등에 대한 정보는 COVID-19 전염병의 진행 상황을 추적하고 새로운 감염의 성장률을 계산하며 예방 조치의 영향을 관찰하는 데 필수적인 데이터라 할 수 있다.
+	  우선 현재 발생 사례 수와 위치, 지역별/국가별 상황 등에 대한 정보는 <a>COVID-19</a> 전염병의 진행 상황을 추적하고 새로운 감염의 성장률을 계산하며 예방 조치의 영향을 관찰하는 데 필수적인 데이터라 할 수 있다.
 	  </p>
 	  <p>
-	  존스홉킨스대학을 비롯해 ECDC, MIDAS 등의 다양한 곳에서 전세계 데이터를 통합하는 시도들을 한 사례들도 있었고, 개별 국가별/지역별로 통계 데이터들도 공개되고 취합되고 공유되었다 [[76]]. 이런 자발적 개방 데이터셋은 현황을 더욱 빨리 판단하고, 향후 전망을 빠르게 분석하고 예측하는데 많은 도움을 주고 있다. 그러나 한편으로는 데이터 부족과 노이즈를 포함한 데이터들로 COVID-19의 확산에 대한 AI 예측은 아직 정확하지 않거나 신뢰할 수 없고[[77]], 결국 지금까지 추적 및 예측에 사용되는 대부분의 모델은 AI 방법을 사용하지 않는다는 평가도 있다.
+	  존스홉킨스대학을 비롯해 ECDC, MIDAS 등의 다양한 곳에서 전세계 데이터를 통합하는 시도들을 한 사례들도 있었고, 개별 국가별/지역별로 통계 데이터들도 공개되고 취합되고 공유되었다 [[76]]. 이런 자발적 개방 데이터셋은 현황을 더욱 빨리 판단하고, 향후 전망을 빠르게 분석하고 예측하는데 많은 도움을 주고 있다. 그러나 한편으로는 데이터 부족과 노이즈를 포함한 데이터들로 <a>COVID-19</a>의 확산에 대한 AI 예측은 아직 정확하지 않거나 신뢰할 수 없고[[77]], 결국 지금까지 추적 및 예측에 사용되는 대부분의 모델은 AI 방법을 사용하지 않는다는 평가도 있다.
 	  </p>
       </section>
 
@@ -1918,27 +838,27 @@
 	  </p>
       <section id="structure" class="note">43) <a href="https://hira-covid19.net/">https://hira-covid19.net/</a></section>
 	  <p>
-	  데이터의 가치를 지속적으로 극대화시키기 위해서는 재사용할 수 있도록 제공하는 것이 필요하다. 이를 위해 정부 공공 데이터는 공개 데이터의 8 가지 원칙[[79]]을 고려해야 하고, 공개 데이터 세트의 재사용성을 높일 수 있도록 재사용성을 평가하기 위한 MELODA 5 지표[[80]]에 대한 고려도 필요하다. 아직 현재 전세계적으로 공개되었던 COVID-19 관련 공공 데이터셋을 평가했을 때, 재사용성이 잘 보장되는 데이터셋이 없었다는 분석 결과[[76]]는 향후 공공데이터가 AI에 잘 활용될 수 있도록 하기위해 반드시 짚어봐야 할 점이다.
+	  데이터의 가치를 지속적으로 극대화시키기 위해서는 재사용할 수 있도록 제공하는 것이 필요하다. 이를 위해 정부 공공 데이터는 공개 데이터의 8 가지 원칙[[79]]을 고려해야 하고, 공개 데이터 세트의 재사용성을 높일 수 있도록 재사용성을 평가하기 위한 MELODA 5 지표[[80]]에 대한 고려도 필요하다. 아직 현재 전세계적으로 공개되었던 <a>COVID-19</a> 관련 공공 데이터셋을 평가했을 때, 재사용성이 잘 보장되는 데이터셋이 없었다는 분석 결과[[76]]는 향후 공공데이터가 AI에 잘 활용될 수 있도록 하기위해 반드시 짚어봐야 할 점이다.
 	  </p>
       </section>
 
       <section id="오픈 리서치 데이터셋과 챌린지">
       <h3>오픈 리서치 데이터셋과 챌린지</h3>
 	  <p>
-	  2020년 3월17일, 미국 알랜 연구소와 백악관 과학기술정책사무국(OSTP), 국립의학도서관(NLM), 주커버거 이니셔티브(CZI), Microsoft, 조지타운 대학의 CSET은 기계 판독 가능 코로나 바이러스 문헌 컬렉션인 CORD-19 공개 데이터셋을 발표하면서 kaggle challenge를 진행하였다. 초기 버전에는 29,000 개이상의 논문, 13,000 개 이상이 전체 텍스트가 포함된 자료를 공개하였다 [[81]].
+	  2020년 3월17일, 미국 알랜 연구소와 백악관 과학기술정책사무국(OSTP), 국립의학도서관(NLM), 주커버거 이니셔티브(CZI), Microsoft, 조지타운 대학의 CSET은 기계 판독 가능 코로나 바이러스 문헌 컬렉션인 <a>CORD-19</a> 공개 데이터셋을 발표하면서 kaggle challenge를 진행하였다. 초기 버전에는 29,000 개이상의 논문, 13,000 개 이상이 전체 텍스트가 포함된 자료를 공개하였다 [[81]].
 	  </p>
 	  <p>
-	  CORD-19에 대한 반응은 폭발적이었다. 한달만에 데이터넷은 150만회 이상 조회되었고, 7.5만회 이상 다운로드되었다. 그리고 CORD-19 데이터 기반으로 시맨틱 검색이 가능하도록 하는 다양한 도구들도 출시되었다. 아마존과 구글, Microsof, C3.ai 등은 클라우드 기반으로 좀더 효과적으로 데이터를 접근할 수 있는 방법도 제공하였다.
+	  <a>CORD-19</a>에 대한 반응은 폭발적이었다. 한달만에 데이터넷은 150만회 이상 조회되었고, 7.5만회 이상 다운로드되었다. 그리고 <a>CORD-19</a> 데이터 기반으로 시맨틱 검색이 가능하도록 하는 다양한 도구들도 출시되었다. 아마존과 구글, Microsof, C3.ai 등은 클라우드 기반으로 좀더 효과적으로 데이터를 접근할 수 있는 방법도 제공하였다.
 	  </p>
 	  <p>
-	  이번 CORD-19 개방형 문헌 데이터셋 공유를 통해 (i) 문헌들 속에서 텍스트를 발견하는 데 가장 적합한 방법, (ii) 파이프 라인에 전문가 큐레이터를 참여시키는 방법 및 (iii) 추출 된 결과를 성공적인 COVID-19 치료와 관리 정책으로 변환시키는 방법 등에 대한 보완이 필요하다는 점도 발견되었고, 나아가 kaggle과 TREK을 통한 다양한 도전 기회들을 만들면서 개방형 데이터를 이용한 개방형 연구, 그리고 개방형 혁신으로 이어지는 것이 어떻게 가능한지도 보여주고 있다.
+	  이번 <a>CORD-19</a> 개방형 문헌 데이터셋 공유를 통해 (i) 문헌들 속에서 텍스트를 발견하는 데 가장 적합한 방법, (ii) 파이프 라인에 전문가 큐레이터를 참여시키는 방법 및 (iii) 추출 된 결과를 성공적인 <a>COVID-19</a> 치료와 관리 정책으로 변환시키는 방법 등에 대한 보완이 필요하다는 점도 발견되었고, 나아가 kaggle과 TREK을 통한 다양한 도전 기회들을 만들면서 개방형 데이터를 이용한 개방형 연구, 그리고 개방형 혁신으로 이어지는 것이 어떻게 가능한지도 보여주고 있다.
 	  </p>
 	  <p>
 	  한국에서도 AI Hub를 통해 포스트코로나 AI챌린지 를 개최하였는데, KT의 해외로밍데이터를 기반으로 하여 해외의 감염병이 국내로 유입될 위험도를 산출하는 모델을 개발하는 것을 목적으로 진행되었다 
 	  </p>
       <section id="structure" class="note">44) <a href="http://www.aihub.or.kr/problem_contest/covid19">http://www.aihub.or.kr/problem_contest/covid19</a></section>
 	  <p>
-	  COVID-19와 같은 글로벌 비상상황에서 오픈 사이언스 정책은 질병 대응 연구 속도를 가속화 시키지만, 아직 데이터 공유 및 협력에서 국경을 초월하는 협력을 통해 데이터 신뢰도, 표준, 호환성, 품질 및 해석기준상이 등과 같은 많은 문제점의 해결이 필요하다. 이를 위해 OECD에서 제안하는 지속적인 오픈사이언스 정책 제고에 대한 권고사항은 참조할만하다 [[82]][[87]].
+	  <a>COVID-19</a>와 같은 글로벌 비상상황에서 오픈 사이언스 정책은 질병 대응 연구 속도를 가속화 시키지만, 아직 데이터 공유 및 협력에서 국경을 초월하는 협력을 통해 데이터 신뢰도, 표준, 호환성, 품질 및 해석기준상이 등과 같은 많은 문제점의 해결이 필요하다. 이를 위해 <a>OECD</a>에서 제안하는 지속적인 오픈사이언스 정책 제고에 대한 권고사항은 참조할만하다 [[82]][[87]].
 	  </p>
       </section>
 
@@ -1950,17 +870,17 @@
 	  <ul>
 	  <li>CNN 기반의 코로나 진단용 오픈소스 네트워크 모델인 COVID-NET 은 13,870 명의 환자 사례에서 추출한 13,975 개의 CXR 이미지로 구성된COVIDx라는 데이터셋을 함께 공개하고 있다 [[83]].</li>
       <section id="structure" class="note">45) <a href="https://github.com/lindawangg/COVID-Net">https://github.com/lindawangg/COVID-Net</a></section>
-	  <li>Covid Chest X-Ray 데이터 세트  는 COVID-19 또는 기타 바이러스 성 및 세균성 폐렴 (MERS , SARS 및 ARDS) 이 양성이거나 의심되는 환자의 흉부 X- 선 및 CT 이미지에 대한 공개 데이터 세트를 구축하고 있다 [[84]].</li>
+	  <li>Covid Chest X-Ray 데이터 세트  는 <a>COVID-19</a> 또는 기타 바이러스 성 및 세균성 폐렴 (MERS , SARS 및 ARDS) 이 양성이거나 의심되는 환자의 흉부 X- 선 및 CT 이미지에 대한 공개 데이터 세트를 구축하고 있다 [[84]].</li>
       <section id="structure" class="note">46) <a href="https://github.com/ieee8023/covid-chestxray-dataset">https://github.com/ieee8023/covid-chestxray-dataset</a></section>
-	  <li>COVID-CT 데이터 세트  는 지금까지 216 명의 환자에서 COVID-19의 임상 소견이 포함 된 349 개의 CT 이미지가 포함하고 있고, medRxiv, bioRxiv, NEJM, JAMA, Lancet 등의 COVID19 관련 논문에서 이미지를 수집하고 있다 [[85]].</li>
+	  <li>COVID-CT 데이터 세트  는 지금까지 216 명의 환자에서 <a>COVID-19</a>의 임상 소견이 포함 된 349 개의 CT 이미지가 포함하고 있고, medRxiv, bioRxiv, NEJM, JAMA, Lancet 등의 COVID19 관련 논문에서 이미지를 수집하고 있다 [[85]].</li>
       <section id="structure" class="note">47) <a href="https://github.com/UCSD-AI4H/COVID-CT">https://github.com/UCSD-AI4H/COVID-CT</a></section>
-	  <li>Coronacases Initiative 는 웹 사이트에서 확인 된 COVID-19 사례를 공유한다. 현재 10 개의 확인 된 COVID-19 사례의 3D CT 이미지가 포함되어 있다 [[86]].</li>
+	  <li>Coronacases Initiative 는 웹 사이트에서 확인 된 <a>COVID-19</a> 사례를 공유한다. 현재 10 개의 확인 된 <a>COVID-19</a> 사례의 3D CT 이미지가 포함되어 있다 [[86]].</li>
       <section id="structure" class="note">48) <a href="https://coronacases.org">https://coronacases.org</a></section>
-	  <li>또한 COVID-19 CT 세그먼테이션 데이터 세트  에는 JPG 이미지 형식으로 수동 세그먼테이션한 60 명의 환자에서 얻은 100 개의 axial CT 이미지가 포함되어 있다.</li>
+	  <li>또한 <a>COVID-19</a> CT 세그먼테이션 데이터 세트  에는 JPG 이미지 형식으로 수동 세그먼테이션한 60 명의 환자에서 얻은 100 개의 axial CT 이미지가 포함되어 있다.</li>
       <section id="structure" class="note">49) <a href="http://medicalsegmentation.com/covid19/">http://medicalsegmentation.com/covid19/</a></section>
-	  <li>유럽 의료영상정보학회(EuSoMII)의 지원을 받으며 네덜란드 암 연구소를 중심으로 진행되고 있는 Imaging COVID-19 AI 프로젝트 에서는 유럽내 20여개 기관들과 함께 익명화된 CT 영상 데이터 공유를 통한 COVID-19 자동 진단 및 정량 분석을 추진 중에 있다.</li>
+	  <li>유럽 의료영상정보학회(EuSoMII)의 지원을 받으며 네덜란드 암 연구소를 중심으로 진행되고 있는 Imaging <a>COVID-19</a> AI 프로젝트 에서는 유럽내 20여개 기관들과 함께 익명화된 CT 영상 데이터 공유를 통한 <a>COVID-19</a> 자동 진단 및 정량 분석을 추진 중에 있다.</li>
       <section id="structure" class="note">50) <a href="https://imagingcovid19ai.eu/">https://imagingcovid19ai.eu/</a></section>
-	  <li>RSNA(북미영상의학회)에서는 COVID-19의 진단 및 이미징 기반 치료를 해결하기 위해 이미징 데이터 공유를 위한 데이터 리포지토리 개발 을 진행 중에 있다.</li>
+	  <li><a>RSNA</a>(북미영상의학회)에서는 <a>COVID-19</a>의 진단 및 이미징 기반 치료를 해결하기 위해 이미징 데이터 공유를 위한 데이터 리포지토리 개발 을 진행 중에 있다.</li>
       <section id="structure" class="note">51) <a href="https://www.rsna.org/covid-19/COVID-19-Imaging-Data-Sets">https://www.rsna.org/covid-19/COVID-19-Imaging-Data-Sets</a></section>
       <section id="structure" class="note">24) <a href=""></a></section>
 	  </ul>
@@ -2014,106 +934,108 @@
 
   <section id="약어">
   <h1>약어</h1>
-  <dt>AGI</dt><dd>Artificial General Intelligence</dd>
-  <dt>AI</dt><dd>Artificial Intelligence</dd>
-  <dt>AI</dt><dd>Augmented Intelligence</dd>
-  <dt>AIIA</dt><dd>Artificial Intelligence Industry Alliance</dd>
-  <dt>ANSI</dt><dd>American National Standards Institute</dd>
-  <dt>API</dt><dd>Application Programming Interface</dd>
-  <dt>ARDS</dt><dd>Acute Respiratory Distress Syndrome</dd>
-  <dt>AUC</dt><dd>Area Under the Curve</dd>
-  <dt>AWS</dt><dd>Amazon Web Services</dd>
-  <dt>BLE</dt><dd>Bluetooth Low Energy</dd>
-  <dt>CAD</dt><dd>Computer Aided Diagnosis</dd> 
-  <dt>CAICT</dt><dd>China Academy of Information and Communications Technology</dd>
-  <dt>CCTV</dt><dd>Closed-Circuit TeleVision</dd>
-  <dt>CDC</dt><dd>Centers for Disease Control and Prevention</dd>
-  <dt>CDSS</dt><dd>Clinical Decision Support System</dd>
-  <dt>CNN</dt><dd>Convolutional Neural Network</dd>
-  <dt>COVID</dt><dd>CoronaVirus Disease</dd>
-  <dt>CPT</dt><dd>Current Procedural Terminology</dd>
-  <dt>CSV</dt><dd>Comma-Separated Values</dd>
-  <dt>CT</dt><dd>Computerized Tomography</dd>
-  <dt>CTA</dt><dd>Consumer Technology Association</dd>
-  <dt>DCTT</dt><dd>Digital Contact-Tracing Technologies</dd>
-  <dt>D.N.A</dt><dd>Data, Network, AI</dd>
-  <dt>DNA</dt><dd>DeoxyriboNucleic Acid</dd>
-  <dt>DICOM</dt><dd>Digital Imaging and COmmunication in Medicine</dd>
-  <dt>DL</dt><dd>Deep Learning</dd>
-  <dt>DP-3T</dt><dd>Decentralized Privacy-Preserving Proximity Tracing</dd>
-  <dt>ECARO</dt><dd>Europe and Central Asia Region Office</dd>
-  <dt>ECDC</dt><dd>European Centre for Disease Prevention and Control</dd>
-  <dt>ECG</dt><dd>Electrocardiogram</dd>
-  <dt>EDI</dt><dd>Electronic data interchange</dd>
-  <dt>EHR</dt><dd>Electronic Healthcare Record</dd>
-  <dt>EMR</dt><dd>Electronic Medical Record</dd>
-  <dt>EMS</dt><dd>Emergency medical system</dd>
-  <dt>ENR</dt><dd>Electronic Nursing Record</dd>
-  <dt>ETRI</dt><dd>Electronics and Telecommunications Research Institute</dd>
-  <dt>ETSI</dt><dd>European Telecommunications Standards Institute</dd>
-  <dt>EuSoMII</dt><dd>European Society of Medical Imaging Informatics</dd>
-  <dt>EWS</dt><dd>Early Warning System</dd>
-  <dt>FDA</dt><dd>Food and Drug Administration</dd>
-  <dt>FHIR</dt><dd>Fast Healthcare Interoperability Resource</dd>
-  <dt>FG-AI4H</dt><dd>Focus Group on artificial intelligence for health</dd>
-  <dt>GA4GH</dt><dd>Global Alliance for Genomics and Health</dd>
-  <dt>GAN</dt><dd>Generative Adversarial Network</dd>
-  <dt>GDPR</dt><dd>General Data Protection Regulation</dd>
-  <dt>GFID</dt><dd>Goverment-wide R&D Fund for Infectious Disease Research</dd>
-  <dt>HCPCS</dt><dd>Healthcare Common Procedure Coding System</dd>
-  <dt>HL7</dt><dd>Health Level 7</dd>
-  <dt>IEC</dt><dd>International Electrotechnical Commission</dd>
-  <dt>ICD</dt><dd>International Statistical Classification of Diseases and Related Health Problems</dd>
-  <dt>ICT</dt><dd>Information & Communication Technology</dd>
-  <dt>IEEE</dt><dd>Institute of Electrical and Electronics Engineers</dd>
-  <dt>IHE</dt><dd>Integrating the Healthcare Enterprise</dd>
-  <dt>IHR</dt><dd>International Health Regulations</dd>
-  <dt>IOM</dt><dd>Institute of Medicine</dd>
-  <dt>IoT</dt><dd>Internet of Things</dd>
-  <dt>IMDRF</dt><dd>International Medical Device Regulators Forum</dd>
-  <dt>ISO</dt><dd>International Organization for Standardization</dd>
-  <dt>IT</dt><dd>Information Technology</dd>
-  <dt>ITU</dt><dd>International Telecommunication Union</dd>
-  <dt>ITU-T</dt><dd>ITU Telecommunication Standardization Sector</dd>
-  <dt>JEE</dt><dd>Joint External Evaluation</dd>
-  <dt>JSON</dt><dd>JavaScript Object Notation</dd>
-  <dt>JTC</dt><dd>Joint Technical Committee</dd>
-  <dt>LOINC</dt><dd>Logical Observation Identifiers Names and Codes</dd>
-  <dt>LTE</dt><dd>Long-Term Evolution</dd>
-  <dt>MDR</dt><dd>Medical Device Regulation</dd>
-  <dt>MERS</dt><dd>Middle East respiratory syndrome</dd>
-  <dt>ML</dt><dd>Machine Learning</dd>
-  <dt>MRI</dt><dd>Magnetic resonance imaging</dd>
-  <dt>NSCAI</dt><dd>National Security Commission on Artificial Intelligence</dd>
-  <dt>NLP</dt><dd>Natural language processing</dd>
-  <dt>OCR</dt><dd>Optical Character Recognition</dd>
-  <dt>OCS</dt><dd>Order Communication System</dd>
-  <dt>OECD</dt><dd>Organization for Economic Co-operation and Development</dd>
-  <dt>P2P</dt><dd>Peer-to-Peer</dd>
-  <dt>PACS</dt><dd>Picture Archiving and Communications System</dd>
-  <dt>PACT</dt><dd>Private Automated Contact Tracing</dd>
-  <dt>PEPP-PT</dt><dd>Pan-European Privacy-Preserving Proximity Tracing</dd>
-  <dt>PGHD</dt><dd>Patient Generated Health Data</dd>
-  <dt>PHR</dt><dd>Personal Health Record</dd>
-  <dt>PHD</dt><dd>Personal Health Device</dd>
-  <dt>PPG</dt><dd>PhotoPlethysomoGraphy</dd>
-  <dt>QA</dt><dd>Question Answering</dd>
-  <dt>QR</dt><dd>Quick Response</dd>
-  <dt>R&D</dt><dd>Research and Development</dd>
-  <dt>RKI</dt><dd>Robert Koch Institute</dd>
-  <dt>ROI</dt><dd>Region of Interest</dd>
-  <dt>RSNA</dt><dd>Radiological Society of North America</dd>
-  <dt>RT-PCR</dt><dd>Real Time reverse Transcription Polymerase Chain Reaction</dd>
-  <dt>SARS</dt><dd>Severe Acute Respiratory Syndrome</dd>
-  <dt>SNOMED-CT</dt><dd>Systematized Nomenclature of Medicine -- Clinical Terms</dd>
-  <dt>TG</dt><dd>Topic Group</dd>
-  <dt>UNICEF</dt><dd>United Nations Children's Fund</dd>
-  <dt>UNGP</dt><dd>United Nations Global Pulse</dd>
-  <dt>VCA</dt><dd>Virtual Customer Assistants</dd>
-  <dt>VEA</dt><dd>Virtual Employee Assistants</dd>
-  <dt>VPA</dt><dd>Virtual Personal Assistants</dd>
-  <dt>WG</dt><dd>Working Group</dd>
-  <dt>WHO</dt><dd>World Health Organization</dd>
+  <dt><dfn>AGI</dfn></dt><dd>Artificial General Intelligence</dd>
+  <dt><dfn>AI</dfn></dt><dd>Artificial Intelligence</dd>
+  <dt><dfn>AuI</dfn></dt><dd>Augmented Intelligence</dd>
+  <dt><dfn>AIIA</dfn></dt><dd>Artificial Intelligence Industry Alliance</dd>
+  <dt><dfn>ANSI</dfn></dt><dd>American National Standards Institute</dd>
+  <dt><dfn>API</dfn></dt><dd>Application Programming Interface</dd>
+  <dt><dfn>ARDS</dfn></dt><dd>Acute Respiratory Distress Syndrome</dd>
+  <dt><dfn>AUC</dfn></dt><dd>Area Under the Curve</dd>
+  <dt><dfn>AWS</dfn></dt><dd>Amazon Web Services</dd>
+  <dt><dfn>BLE</dfn></dt><dd>Bluetooth Low Energy</dd>
+  <dt><dfn>CAD</dfn></dt><dd>Computer Aided Diagnosis</dd> 
+  <dt><dfn>CAICT</dfn></dt><dd>China Academy of Information and Communications Technology</dd>
+  <dt><dfn>CCTV</dfn></dt><dd>Closed-Circuit TeleVision</dd>
+  <dt><dfn>CDC</dfn></dt><dd>Centers for Disease Control and Prevention</dd>
+  <dt><dfn>CDSS</dfn></dt><dd>Clinical Decision Support System</dd>
+  <dt><dfn>CNN</dfn></dt><dd>Convolutional Neural Network</dd>
+  <dt><dfn>CORD-19</dfn></dt><dd>COVID-19 Open Research Dataset</dd>
+  <dt><dfn>COVID</dfn></dt><dd>CoronaVirus Disease</dd>
+  <dt><dfn>COVID-19</dfn></dfn></dt><dd>Coronavirus Disease-19</dd>
+  <dt><dfn>CPT</dfn></dt><dd>Current Procedural Terminology</dd>
+  <dt><dfn>CSV</dfn></dt><dd>Comma-Separated Values</dd>
+  <dt><dfn>CT</dfn></dt><dd>Computerized Tomography</dd>
+  <dt><dfn>CTA</dfn></dt><dd>Consumer Technology Association</dd>
+  <dt><dfn>DCTT</dfn></dt><dd>Digital Contact-Tracing Technologies</dd>
+  <dt><dfn>D.N.A</dfn></dt><dd>Data, Network, AI</dd>
+  <dt><dfn>DNA</dfn></dt><dd>DeoxyriboNucleic Acid</dd>
+  <dt><dfn>DICOM</dfn></dt><dd>Digital Imaging and COmmunication in Medicine</dd>
+  <dt><dfn>DL</dfn></dt><dd>Deep Learning</dd>
+  <dt><dfn>DP-3T</dfn></dt><dd>Decentralized Privacy-Preserving Proximity Tracing</dd>
+  <dt><dfn>ECARO</dfn></dt><dd>Europe and Central Asia Region Office</dd>
+  <dt><dfn>ECDC</dfn></dt><dd>European Centre for Disease Prevention and Control</dd>
+  <dt><dfn>ECG</dfn></dt><dd>Electrocardiogram</dd>
+  <dt><dfn>EDI</dfn></dt><dd>Electronic data interchange</dd>
+  <dt><dfn>EHR</dfn></dt><dd>Electronic Healthcare Record</dd>
+  <dt><dfn>EMR</dfn></dt><dd>Electronic Medical Record</dd>
+  <dt><dfn>EMS</dfn></dt><dd>Emergency medical system</dd>
+  <dt><dfn>ENR</dfn></dt><dd>Electronic Nursing Record</dd>
+  <dt><dfn>ETRI</dfn></dt><dd>Electronics and Telecommunications Research Institute</dd>
+  <dt><dfn>ETSI</dfn></dt><dd>European Telecommunications Standards Institute</dd>
+  <dt><dfn>EuSoMII</dfn></dt><dd>European Society of Medical Imaging Informatics</dd>
+  <dt><dfn>EWS</dfn></dt><dd>Early Warning System</dd>
+  <dt><dfn>FDA</dfn></dt><dd>Food and Drug Administration</dd>
+  <dt><dfn>FHIR</dfn></dt><dd>Fast Healthcare Interoperability Resource</dd>
+  <dt><dfn>FG-AI4H</dfn></dt><dd>Focus Group on artificial intelligence for health</dd>
+  <dt><dfn>GA4GH</dfn></dt><dd>Global Alliance for Genomics and Health</dd>
+  <dt><dfn>GAN</dfn></dt><dd>Generative Adversarial Network</dd>
+  <dt><dfn>GDPR</dfn></dt><dd>General Data Protection Regulation</dd>
+  <dt><dfn>GFID</dfn></dt><dd>Goverment-wide R&D Fund for Infectious Disease Research</dd>
+  <dt><dfn>HCPCS</dfn></dt><dd>Healthcare Common Procedure Coding System</dd>
+  <dt><dfn>HL7</dfn></dt><dd>Health Level 7</dd>
+  <dt><dfn>IEC</dfn></dt><dd>International Electrotechnical Commission</dd>
+  <dt><dfn>ICD</dfn></dt><dd>International Statistical Classification of Diseases and Related Health Problems</dd>
+  <dt><dfn>ICT</dfn></dt><dd>Information & Communication Technology</dd>
+  <dt><dfn>IEEE</dfn></dt><dd>Institute of Electrical and Electronics Engineers</dd>
+  <dt><dfn>IHE</dfn></dt><dd>Integrating the Healthcare Enterprise</dd>
+  <dt><dfn>IHR</dfn></dt><dd>International Health Regulations</dd>
+  <dt><dfn>IOM</dfn></dt><dd>Institute of Medicine</dd>
+  <dt><dfn>IoT</dfn></dt><dd>Internet of Things</dd>
+  <dt><dfn>IMDRF</dfn></dt><dd>International Medical Device Regulators Forum</dd>
+  <dt><dfn>ISO</dfn></dt><dd>International Organization for Standardization</dd>
+  <dt><dfn>IT</dfn></dt><dd>Information Technology</dd>
+  <dt><dfn>ITU</dfn></dt><dd>International Telecommunication Union</dd>
+  <dt><dfn>ITU-T</dfn></dt><dd>ITU Telecommunication Standardization Sector</dd>
+  <dt><dfn>JEE</dfn></dt><dd>Joint External Evaluation</dd>
+  <dt><dfn>JSON</dfn></dt><dd>JavaScript Object Notation</dd>
+  <dt><dfn>JTC</dfn></dt><dd>Joint Technical Committee</dd>
+  <dt><dfn>LOINC</dfn></dt><dd>Logical Observation Identifiers Names and Codes</dd>
+  <dt><dfn>LTE</dfn></dt><dd>Long-Term Evolution</dd>
+  <dt><dfn>MDR</dfn></dt><dd>Medical Device Regulation</dd>
+  <dt><dfn>MERS</dfn></dt><dd>Middle East respiratory syndrome</dd>
+  <dt><dfn>ML</dfn></dt><dd>Machine Learning</dd>
+  <dt><dfn>MRI</dfn></dt><dd>Magnetic resonance imaging</dd>
+  <dt><dfn>NSCAI</dfn></dt><dd>National Security Commission on Artificial Intelligence</dd>
+  <dt><dfn>NLP</dfn></dt><dd>Natural language processing</dd>
+  <dt><dfn>OCR</dfn></dt><dd>Optical Character Recognition</dd>
+  <dt><dfn>OCS</dfn></dt><dd>Order Communication System</dd>
+  <dt><dfn>OECD</dfn></dt><dd>Organization for Economic Co-operation and Development</dd>
+  <dt><dfn>P2P</dfn></dt><dd>Peer-to-Peer</dd>
+  <dt><dfn>PACS</dfn></dt><dd>Picture Archiving and Communications System</dd>
+  <dt><dfn>PACT</dfn></dt><dd>Private Automated Contact Tracing</dd>
+  <dt><dfn>PEPP-PT</dfn></dt><dd>Pan-European Privacy-Preserving Proximity Tracing</dd>
+  <dt><dfn>PGHD</dfn></dt><dd>Patient Generated Health Data</dd>
+  <dt><dfn>PHR</dfn></dt><dd>Personal Health Record</dd>
+  <dt><dfn>PHD</dfn></dt><dd>Personal Health Device</dd>
+  <dt><dfn>PPG</dfn></dt><dd>PhotoPlethysomoGraphy</dd>
+  <dt><dfn>QA</dfn></dt><dd>Question Answering</dd>
+  <dt><dfn>QR</dfn></dt><dd>Quick Response</dd>
+  <dt><dfn>R&D</dfn></dt><dd>Research and Development</dd>
+  <dt><dfn>RKI</dfn></dt><dd>Robert Koch Institute</dd>
+  <dt><dfn>ROI</dfn></dt><dd>Region of Interest</dd>
+  <dt><dfn>RSNA</dfn></dt><dd>Radiological Society of North America</dd>
+  <dt><dfn>RT-PCR</dfn></dt><dd>Real Time reverse Transcription Polymerase Chain Reaction</dd>
+  <dt><dfn>SARS</dfn></dt><dd>Severe Acute Respiratory Syndrome</dd>
+  <dt><dfn>SNOMED-CT</dfn></dt><dd>Systematized Nomenclature of Medicine -- Clinical Terms</dd>
+  <dt><dfn>TG</dfn></dt><dd>Topic Group</dd>
+  <dt><dfn>UNICEF</dfn></dt><dd>United Nations Children's Fund</dd>
+  <dt><dfn>UNGP</dfn></dt><dd>United Nations Global Pulse</dd>
+  <dt><dfn>VCA</dfn></dt><dd>Virtual Customer Assistants</dd>
+  <dt><dfn>VEA</dfn></dt><dd>Virtual Employee Assistants</dd>
+  <dt><dfn>VPA</dfn></dt><dd>Virtual Personal Assistants</dd>
+  <dt><dfn>WG</dfn></dt><dd>Working Group</dd>
+  <dt><dfn>WHO</dfn></dt><dd>World Health Organization</dd>
   </section>
 
   <section id="부록1: 방역 단계별 인공지능 기술 적용 사례 및 관련 기술">
@@ -2130,20 +1052,11 @@
 
 <!--
 
-  <p class="issue" title="Share user data with payment app?" data-number=
-  "123">
-    Should payment apps receive user data stored in the user agent upon
-    explicit consent from the user? The payment app could request
-    permission either at installation or when the payment app is first
-    invoked.
+  <p class="issue" title="Share user data with payment app?" data-number="123">
+  issue
   </p>
   <p class="note">
-    Since user agents know that this method is connected to the
-    {{PaymentRequestEvent}}, they SHOULD render the window in a way that is
-    consistent with the flow and not confusing to the user. The resulting
-    window client is bound to the tab/window that initiated the
-    <a>PaymentRequest</a>. A single <a>payment handler</a> SHOULD NOT be
-    allowed to open more than one client window using this method.
+  note 
   </p>
 -->
 
