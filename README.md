@@ -10,9 +10,10 @@ The project started on the basis of the contents of the [감염병 재난에 대
 
 # Opensource book
 
+Start from the Korean version, we want to make it for each major language such as English. 
+
 * [Korean version(한국어판)](https://hollobit.github.io/COVID-19-AI-Book/KR/index.html)
-  * [추가 작업 계획 및 방법 wiki](https://github.com/hollobit/COVID-19-AI-Book/wiki/%ED%95%9C%EA%B5%AD%EC%96%B4%ED%8C%90-%EC%B6%94%EA%B0%80-%EC%9E%91%EC%97%85-%EA%B3%84%ED%9A%8D)
-  
+  * [추가 작업 계획 및 방법 wiki](https://github.com/hollobit/COVID-19-AI-Book/wiki/%ED%95%9C%EA%B5%AD%EC%96%B4%ED%8C%90-%EC%B6%94%EA%B0%80-%EC%9E%91%EC%97%85-%EA%B3%84%ED%9A%8D) 
 * English version 
 
 ## Contributing
