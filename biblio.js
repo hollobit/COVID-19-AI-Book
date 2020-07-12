@@ -126,7 +126,7 @@
       "1" : {
         title : "국내외 감염병 대비.대응 동향, <cite>KIHDI 전문가 리포트</cite>",
         authors : ["이다은"],
-        href : "",
+        href : "http://m.bioin.or.kr/board.do?bid=policy&num=267150&cmd=view&cPage=35&cate1=02&cate2=",
         status : "Published",
         date : "2017-01",
         publisher : "KIHDI"
@@ -142,7 +142,7 @@
       "3" : {
         title : "신종감염병 유행과 감염병 위기대응체계 구축, <cite>Weekly Issue</cite> 제21호",
         authors : ["현정희"],
-        href : "",
+        href : "https://khealth.or.kr/fileDownload?fileGubun=site&menuId=publishMgr&userFileName=Weekly%20Issue_%ED%86%B5%EA%B6%8C21%ED%98%B8.pdf&systemFileName=20172124153618498.pdf",
         status : "Published",
         date : "2017.5.25",
         publisher : "한국건강증진개발원"
@@ -150,7 +150,7 @@
       "4" : {
         title : "신종 감염병 감염관리 현황과 대처방안, HIRA 정책동향 9권 5호",
         authors : ["전병율"],
-        href : "",
+        href : "http://www.hira.or.kr/download.do?src=%2Fshare%2Finternet%2Fpt%2Fbbs%2F479%2F2018%2F08%2FBZ201808033993027.pdf&fnm=2015+HIRA_9%EA%B6%8C+5%ED%98%B8_%EC%A0%95%EC%B1%85%ED%98%84%EC%95%88+02.pdf",
         status : "Published",
         date : "2015",
         publisher : "HIRA"
@@ -166,7 +166,7 @@
       "6" : {
         title : "신종감염병 대응 AI 기술 동향 분석, Bio Economy Brief 81호",
         authors : ["안세희"],
-        href : "",
+        href : "https://www.bioin.or.kr/board.do?cmd=view&bid=tech&num=296620",
         status : "Published",
         date : "2020-04",
         publisher : "한국바이오협회"
@@ -174,13 +174,14 @@
       "7" : {
         title : "AI 융합 감염병 연구의 현재와 미래, BioINPro Vol.73",
         authors : ["안인성"],
-        href : "",
+        href : "https://www.bioin.or.kr/board.do?num=294591&cmd=view&bid=report&cPage=1&cate1=all&cate2=all2",
         status : "Published",
         date : "2020",
         publisher : "생명공학정책연구센터"
       },
       "8" : {
         title : "개인 맞춤형 의료: AI 적용과 당면과제",
+		href : "https://ksp.etri.re.kr/ksp/plan-report/read?id=770",
         authors : ["박종현"],
         date : "2019",
         publisher : "ETRI Insight report, 2019-59"
@@ -201,19 +202,22 @@
       },
       "11" : {
         title : "질병진단 인공지능 개발 동향",
+		href : "https://www.bioin.or.kr/board.do?num=293678&cmd=view&bid=tech",
         authors : ["김규태"],
         date : "2020",
         publisher : "BRIC view 2020-T06"
       },
       "12" : {
         title : "인공지능, 코로나19를 만나다",
-        authors : ["https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000152232"],
+		href : "https://eiec.kdi.re.kr/policy/domesticView.do?ac=0000152232",
+        authors : [""],
         date : "2020.4.15",
         publisher : "KISDI, AI Trend Watch, 2020-4호"
       },
       "13" : {
         title : "코로나19 대응 최일선에서 인공지능(AI)·데이터·클라우드 기업이 함께 뛴다",
-        authors : ["http://www.korea.kr/news/pressReleaseView.do?newsId=156379825"],
+		href : "http://www.korea.kr/news/pressReleaseView.do?newsId=156379825",
+        authors : [""],
         date : "2020.3.13",
         publisher : "과학기술정보통신부 보도자료"
       },
@@ -238,7 +242,8 @@
       },
       "17" : {
         title : "글로벌 의료기기 - 디지털 헬스케어(1): 원격의료, 코로나19에 의한 단기테마가 아닌 헬스케어 산업의 장기 트렌드 중 하나",
-        authors : ["https://www.miraeassetdaewoo.com/public/mw/blog/html/20200323130805.html?ver=20200404172547"],
+		href : "https://www.miraeassetdaewoo.com/public/mw/blog/html/20200323130805.html?ver=20200404172547",
+        authors : [""],
         date : "2020.3.23",
         publisher : "미래에셋대우"
       },
@@ -257,7 +262,7 @@
         publisher : "Scientific reports 8.1 (2018): 1-8"
       },
       "20" : {
-        title : "",
+        title : "Lunit Insight",
         href : "https://insight.lunit.io/",
         authors : [""],
         date : "",
@@ -265,20 +270,20 @@
       },
       "21" : {
         title : "An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction",
-        href : "",
+        href : "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(19)31721-0/fulltext",
         authors : ["Attia", "Zachi I."],
         date : "2019",
         publisher : "The Lancet 394.10201 (2019): 861-867"
       },
       "22" : {
         title : "Handwritten Optical Character Recognition (OCR): A Comprehensive Systematic Literature Review (SLR)",
-        href : "",
+        href : "https://arxiv.org/abs/2001.00139",
         authors : ["Memon", "Jamshed", "Maira Sami", "Rizwan Ahmed Khan"],
         date : "2020",
         publisher : "arXiv:2001.00139"
       },
       "23" : {
-        title : "",
+        title : "Clova OCR",
         href : "https://clova.ai/ocr",
         authors : [""],
         date : "",
@@ -286,20 +291,20 @@
       },
       "24" : {
         title : "Deepid3: Face recognition with very deep neural networks",
-        href : "",
+        href : "https://arxiv.org/abs/1502.00873",
         authors : ["Sun", "Yi"],
         date : "2015",
         publisher : "arXiv:1502.00873"
       },
       "25" : {
         title : "Computerized bone age estimation using deep learning based program: evaluation of the accuracy and efficiency",
-        href : "",
+        href : "https://pubmed.ncbi.nlm.nih.gov/28898126/",
         authors : ["Kim, Jeong Rye"],
         date : "2017",
         publisher : "American Journal of Roentgenology 209.6 (2017): 1374-1380"
       },
       "26" : {
-        title : "",
+        title : "Vuno Boneage",
         href : "https://boneage.vuno.co/",
         authors : [""],
         date : "",
@@ -307,10 +312,10 @@
       },
       "27" : {
         title : "Points of significance: statistics versus machine learning",
-        href : "",
+        href : "https://www.nature.com/articles/nmeth.4642",
         authors : ["Bzdok", "Danilo", "Naomi Altman", "Martin Krzywinski"],
         date : "2018",
-        publisher : ""
+        publisher : "Nature Methods, Nature Publishing Group, 2018, pp.1-7. ffhal-01723223f"
       },
       "28" : {
         title : "의료 AI, 현실성 없는 의학 드라마가 되지 않으려면",
@@ -321,56 +326,56 @@
       },
       "29" : {
         title : "Methodologic guide for evaluating clinical performance and effect of artificial intelligence technology for medical diagnosis and prediction",
-        href : "",
+        href : "https://pubmed.ncbi.nlm.nih.gov/29309734/",
         authors : ["Park, Seong Ho","Kyunghwa Han"],
         date : "2018",
         publisher : "Radiology 286.3 (2018): 800-809"
       },
       "30" : {
         title : "Digital technology and COVID-19",
-        href : "",
+        href : "https://www.nature.com/articles/s41591-020-0824-5",
         authors : ["Ting", "Daniel Shu Wei"],
         date : "2020",
         publisher : "Nature medicine 26.4 (2020): 459-461"
       },
       "31" : {
         title : "Identification of COVID-19 can be quicker through artificial intelligence framework using a mobile phone–based survey when cities and towns are under quarantine",
-        href : "",
+        href : "https://pubmed.ncbi.nlm.nih.gov/32122430/",
         authors : ["Rao", "Arni SR Srinivasa", "Jose A. Vazquez"],
         date : "2020",
         publisher : "Infection Control & Hospital Epidemiology (2020): 1-5"
       },
       "32" : {
-        title : "",
+        title : "Worldmeters",
         href : "https://www.worldometers.info/coronavirus/",
         authors : [""],
         date : "",
-        publisher : "Worldmeters"
+        publisher : ""
       },
       "33" : {
         title : "The role of imaging in the detection and management of COVID-19: a review",
-        href : "",
+        href : "https://pubmed.ncbi.nlm.nih.gov/32356760/",
         authors : ["Dong", "Di"],
         date : "2020",
         publisher : "IEEE Reviews in Biomedical Engineering (2020)"
       },
       "34" : {
         title : "Artificial intelligence distinguishes COVID-19 from community acquired pneumonia on chest CT",
-        href : "",
+        href : "https://pubs.rsna.org/doi/10.1148/radiol.2020200905",
         authors : ["Li", "Lin"],
         date : "2020",
         publisher : "Radiology (2020): 200905"
       },
       "35" : {
         title : "Addressing COVID‐19 Drug Development with Artificial Intelligence",
-        href : "",
+        href : "https://onlinelibrary.wiley.com/doi/full/10.1002/aisy.202000070",
         authors : ["Ho", "Dean"],
         date : "",
         publisher : "Advanced Intelligent Systems"
       },
       "36" : {
         title : "Prediction models for diagnosis and prognosis of covid-19 infection: systematic review and critical appraisal",
-        href : "",
+        href : "https://www.bmj.com/content/369/bmj.m1328",
         authors : ["Wynants", "Laure"],
         date : "2020",
         publisher : "bmj 369 (2020)"
@@ -384,7 +389,7 @@
       },
       "38" : {
         title : "How to Use AI to Fight COVID-19 and Beyond",
-        href : "",
+        href : "https://www.gartner.com/en/documents/3983523/how-to-use-ai-to-fight-covid-19-and-beyond",
         authors : ["Pieter den Harmer"],
         date : "2020",
         publisher : "Gartner Report 723862"
@@ -398,84 +403,84 @@
       },
       "40" : {
         title : "False-negative results of initial RT-PCR assays for COVID-19: A systematic review",
-        href : "",
+        href : "https://www.medrxiv.org/content/10.1101/2020.04.16.20066787v1",
         authors : ["Ingrid"],
         date : "April 2020",
         publisher : "medRxiv 2020.04.16.20066787"
       },
       "41" : {
         title : "CT Imaging of the 2019 Novel Coronavirus (2019-nCoV) Pneumonia",
-        href : "",
+        href : "https://pubs.rsna.org/doi/10.1148/radiol.2020200236",
         authors : ["J. Lei"],
         date : "Jan 2020",
         publisher : "Radiology"
       },
       "42" : {
         title : "Radiological findings from 81 patients with COVID-19 pneumonia in Wuhan, China: a descriptive study",
-        href : "",
+        href : "https://www.thelancet.com/article/S1473-3099(20)30086-4/fulltext",
         authors : ["H. Shi"],
         date : "Feb 2020",
         publisher : "The Lancet Infectious Disease"
       },
       "43" : {
         title : "CT Imaging Features of 2019 Novel Coronavirus (2019-nCoV)",
-        href : "",
+        href : "https://pubs.rsna.org/doi/10.1148/radiol.2020200230",
         authors : ["M. Chung"],
         date : "Feb 2020",
         publisher : "Radiology"
       },
       "44" : {
         title : "Temporal Changes of CT Findings in 90 Patients with COVID-19 Pneumonia : A Longitudinal Study",
-        href : "",
+        href : "https://pubs.rsna.org/doi/full/10.1148/radiol.2020200843",
         authors : ["Y. Wang"],
         date : "Mar 2020",
         publisher : "Radiology"
       },
       "45" : {
         title : "Sensitivity of Chest CT for COVID-19: comparison to RT-PCR",
-        href : "",
+        href : "https://pubs.rsna.org/doi/full/10.1148/radiol.2020200432",
         authors : ["Y. Fang"],
         date : "Feb 2020",
         publisher : "Radiology"
       },
       "46" : {
         title : "Correlation of Chest CT and RT-PCR Testing in Coronavirus Disease 2019 (COVID-19) in China: A Report of 1014 Cases",
-        href : "",
+        href : "https://pubs.rsna.org/doi/full/10.1148/radiol.2020200642",
         authors : ["T. Ai"],
         date : "Feb 2020",
         publisher : "Radiology"
       },
       "47" : {
         title : "Clinically Applicable AI System for Accurate Diagnosis, Quantitative Measurements, and Prognosis of COVID-19 Pneumonia Using Computed Tomography",
-        href : "",
+        href : "https://www.sciencedirect.com/science/article/pii/S0092867420305511",
         authors : ["K. Zhang"],
         date : "May 2020",
         publisher : "Cell"
       },
       "48" : {
-        title : "",
+        title : "radiopaedia",
         href : "https://radiopaedia.org/cases/covid-19-pneumonia-incidental-finding-in-asymptomatic-patient-2",
         authors : [""],
         date : "",
-        publisher : "radiopaedia"
+        publisher : ""
       },
       "49" : {
         title : "Incidental typical COVID-19 appearance on the lung bases, visualized at abdominal CT for a patient that presented with abdominal pain and nausea",
-        href : "",
+        href : "https://www.sciencedirect.com/science/article/pii/S1930043320302090",
         authors : ["A. A. Sendi"],
         date : "May 2020",
         publisher : "Radiology Case Reports"
       },
       "50" : {
         title : "Artificial Intelligence Distinguishes COVID-19 from Community Acquired Pneumonia on Chest CT",
-        href : "",
+        href : "https://pubs.rsna.org/doi/10.1148/radiol.2020200905",
         authors : ["L. Li"],
         date : "Mar 2020",
         publisher : "Radiology"
       },
       "51" : {
         title : "Artificial intelligence–enabled rapid diagnosis of patients with COVID-19",
-        href : "",
+        href : "https://www.nature.com/articles/s41591-020-0931-3",
         authors : ["X. Mei"],
         date : "May 2020",
         publisher : "Nature Medicine"
@@ -502,7 +507,7 @@
         publisher : "npj Digital Medicine volume 3, Article number: 65"
       },
       "55" : {
-        title : "",
+        title : "A public data lake for analysis of COVID-19 data",
         href : "https://aws.amazon.com/blogs/big-data/a-public-data-lake-for-analysis-of-covid-19-data/",
         authors : [""],
         date : "",
@@ -523,14 +528,14 @@
         publisher : "The Lancet"
       },
       "58" : {
-        title : "",
+        title : "COVID-19 resources",
         href : "http://www.healthdata.org/covid",
         authors : [""],
         date : "",
         publisher : "healthdata"
       },
       "59" : {
-        title : "",
+        title : "COVID-19 Forecasts",
         href : "https://reichlab.io/covid19-forecast-hub/",
         authors : [""],
         date : "",
@@ -544,21 +549,21 @@
         publisher : "Science, Vol. 368, Issue 6493, pp. 860-868"
       },
       "61" : {
-        title : "",
+        title : "REMAP-CAP response to the COVID-19 pandemic",
         href : "https://www.remapcap.org/coronavirus",
         authors : [""],
         date : "",
         publisher : "remapcap"
       },
       "62" : {
-        title : "",
+        title : "New Cases of COVID-19 In World Countries",
         href : "https://coronavirus.jhu.edu/data/new-cases",
         authors : [""],
         date : "",
-        publisher : "JHU"
+        publisher : "Johns Hopkins University"
       },
       "63" : {
-        title : "",
+        title : "Evaluating the Effectiveness of Social Distancing Interventions to Delay or Flatten the Epidemic Curve of Coronavirus Disease",
         href : "https://wwwnc.cdc.gov/eid/article/26/8/20-1093_article",
         authors : [""],
         date : "",
@@ -664,7 +669,7 @@
       },
       "78" : {
         title : "해외 코로나19 관련 데이터 개방 현황 및 주요 질병관리 통계 기관의 데이터 개방 현황",
-        href : "",
+        href : "https://www.data.go.kr/bbs/rcr/selectRecsroom.do?originId=PDS_0000000000000704&atchFileId=FILE_000000001617068",
         authors : [""],
         date : "2020.4.8",
         publisher : "NIA Global Open Data Now, 제20호"
@@ -727,7 +732,7 @@
       },
       "87" : {
         title : "인공지능 최신 동향과 시사점",
-        href : "",
+        href : "https://spri.kr/posts/view/22890?code=ai_brief",
         authors : [""],
         date : "2020.4.7",
         publisher : "소프트웨어정책연구소, SPRi AI Brief AIB-011호"
@@ -874,7 +879,7 @@
       },
       "108" : {
         title : "Quantifying SARS-CoV-2 transmission suggests epidemic control with digital contact tracing",
-        href : "",
+        href : "https://science.sciencemag.org/content/368/6491/eabb6936",
         authors : ["Ferretti L", "Wymant C", "Kendall M"],
         date : "May 8, 2020",
         publisher : "Science"
@@ -902,7 +907,7 @@
       },
       "112" : {
         title : "An Algorithm based on Deep Learning for Predicting In-Hospital Cardiac Arrest",
-        href : "",
+        href : "https://pubmed.ncbi.nlm.nih.gov/29945914/",
         authors : ["Kwon JM", "Lee Y", "Lee S"],
         date : "2018",
         publisher : "J Am. Heart Assoc. 2018;7(13):e008678"
