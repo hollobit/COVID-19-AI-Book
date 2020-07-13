@@ -1,6 +1,6 @@
 # COVID-19-AI-Book
 
-This is a repository for the opensource book project of [Technology and Standardization Trends on Medical AI for responding to infectious disease disasters, including COVID-19](http://hollobit.github.io/COVID-19-AI-Book).
+This is a repository for the opensource book project of [Current Trends and Standardization Efforts of Medical Artificial Intelligence on Infectious Disease Outbreaks, including COVID-19](http://hollobit.github.io/COVID-19-AI-Book).
 
 # Information
 
