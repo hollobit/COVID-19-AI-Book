@@ -65,7 +65,7 @@
 			name : "Hwiyoung Kim (김휘영)",
 			w3cid : "",
 			company : "Yonsei University",
-			companyURL : "https://medicine.yonsei.ac.kr/en/index.asp""
+			companyURL : "https://medicine.yonsei.ac.kr/en/index.asp"
 		},
 		{
 			name : "Joo Heung Yoon (윤주흥)",
