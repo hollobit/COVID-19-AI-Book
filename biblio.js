@@ -25,6 +25,7 @@
     editors : [
       {
     name : "Jonghong Jeon (전종홍)",
+	url : "mailto:hollobit@etri.re.kr",
     w3cid : "",
     company : "ETRI",
     companyURL : "http://www.etri.re.kr/eng/main/index.etri"
