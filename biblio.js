@@ -26,64 +26,64 @@
       {
     name : "Jonghong Jeon (전종홍)",
     w3cid : "",
-    company : "ETRI.",
+    company : "ETRI",
     companyURL : "http://www.etri.re.kr/eng/main/index.etri"
   },
   {
-    name : "신수용",
+    name : "Soo-Yong Shin (신수용)",
     w3cid : "",
-    company : "성균관대학교",
-    companyURL : ""
+    company : "SungKyunKwan University",
+    companyURL : "http://saihst.skku.edu/m2/index.php"
   },
   {
-    name : "홍헬렌",
+    name : "Helen Hong (홍헬렌)",
     w3cid : "",
-    company : "서울여자대학교",
-    companyURL : ""
+    company : "Seoul Women’s University",
+    companyURL : "https://www.swu.ac.kr/englishindex.do"
   },
   {
-    name : "심규원",
+    name : "Kyuwon Shim (심규원)",
     w3cid : "",
-    company : "연세대학교",
-    companyURL : ""
+    company : "Yonsei University",
+    companyURL : "https://medicine.yonsei.ac.kr/en/index.asp"
   }
     ],
     authors : [
     		{
 			name : "Jonghong Jeon (전종홍)",
 			w3cid : "",
-			company : "ETRI.",
+			company : "ETRI",
 			companyURL : "http://www.etri.re.kr/eng/main/index.etri"
     		},
 		{
-			name : "권인호",
+			name : "In Ho Kwon (권인호)",
 			w3cid : "",
-			company : "동아대병원",
-			companyURL : ""
+			company : "Clinical Professor of Department of Emergency Medicine @ DongA University Hospital",
+			companyURL : "https://www.damc.or.kr/eng/main/main.php"
 		},
 		{
-			name : "김휘영",
+			name : "Hwiyoung Kim (김휘영)",
 			w3cid : "",
-			company : "연세대학교",
-			companyURL : ""
+			company : "Yonsei University",
+			companyURL : "https://medicine.yonsei.ac.kr/en/index.asp""
 		},
 		{
-			name : "윤주흥",
+			name : "Joo Heung Yoon (윤주흥)",
 			w3cid : "",
-			company : "피츠버그 대학교",
-			companyURL : ""
+			company : "Pulmonary and Critical Care Medicine, University of Pittsburgh",
+			companyURL : "https://dom.pitt.edu/paccm/"
 		},
     {
-			name : "정규환",
+			name : "Kyu-Hwan Jung (정규환)",
 			w3cid : "",
-			company : "Vuno",
-			companyURL : ""
+			company : "VUNO Inc.",
+			companyURL : "https://www.vuno.co/"
 		},
     {
-			name : "표경호",
+			name : "Kyoung-Ho Pyo (표경호)",
 			w3cid : "",
-			company : "연세대학교",
-			companyURL : ""
+			company : "Yonsei University",
+			companyURL : "https://www.yonsei.ac.kr/en_sc/"
 		}
 	],
 
