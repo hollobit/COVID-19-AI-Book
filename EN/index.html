@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="tablestyle.css">
+<title>Current Trends and Standardization Efforts of Medical Artificial Intelligence on Infectious Disease Outbreaks, especially COVID-19</title>
+<script class="remove"
+    src="https://www.w3.org/Tools/respec/respec-w3c-common"></script>
+<script class="remove" src="https://hollobit.github.io/COVID-19-AI-Book/biblio.js"></script>
+</head>
+<body>
+	<section id="abstract">
+		<p>
+      In the midst of rapid environmental disruption caused by globalization and climate changes, the influence and consequence of infectious disease outbreaks have been accelerating unprecedently to become a major threat to individual health and social well-being.
+    </p>
+    <p>
+      In particular, as evidenced by recent Coronavirus Disease (COVID-19) pandemic, careful monitoring and timely intervention on infectious disease outbreak is essential to minimize morbidity and mortality. Thus, a dire need to develop a system to deliver rapid triage, diagnosis, and treatment arises, to overcome current global crisis.
+    </p>
+    <p>
+      Since various methodologies using artificial intelligence (AI) have proven efficient and effective in industries including healthcare, many attempts have been made to apply AI technology to better understand current COVID-19 crisis, and develop diagnostic and interventional tools. At the same time, we have observed the emergence of many technical pitfalls and challenges such as reliability of the data, trustworthiness of applications, and privacy protection.
+    </p>
+    <p>
+      In this report, we summarized the cases of infectious disease outbreak responses using AI-driven technology and trends of related standardization efforts. We also investigated essential elements needed to construct the AI-driven infectious disease response systems at the national and global level.
+    </p>
+
+    <h3>Keyword</h3>
+		<p> Infectious disease outbreak, <a>COVID-19</a>, Coronavirus, SARS-CoV-2, infectious disease, artificial intelligence, standardization, computer-aided diagnosis, clinical decision support system, machine learning, prediction
+    </P>
+
+    <h3>DOI</h3>
+    <p>
+      <b><a href="http://doi.org/10.22648/ETRI.2020.B.000005" ALT="DOI">DOI:10.22648/ETRI.2020.B.000005</a></b>
+    </p>
+
+    <h3>I18N(Internationalization)</h3>
+    <p>
+      <b><a href="https://hollobit.github.io/COVID-19-AI-Book/KR/" ALT="korean(한국어)">Korean(한국어)</a></b>, <b><a href="https://hollobit.github.io/COVID-19-AI-Book/KR/" ALT="English">English</a></a>
+    </p>
+
+    <h3>Executive Summary</h3>
+	<ul>
+	<li><h4>Necessity and Potentional Power of AI-based Infectious Disease Response System</h4></li>
+  <p>
+    <b>(Conceptual Stage)</b> Research on AI-based tools for infectious diseases outbreak is in its infancy. However, we observe a rapidly growing body of literature with international collaboration on research and development.
+  </p>
+  <p>
+    <b>(Necessity of AI-based infectious disease response system)</b> This collaboration is based on the consensus that the infectious disease outbreak is one of the great challenges that human civilization encounters now.
+  </p>
+  <p>
+    <b>(Artificial Intelligence - an excellent tool for infection diseases response system)</b> With the enormous power to recognize characteristic patterns from complex data, the AI-based tools provided excellent performances throughout the entire process of infectious diseases response system in current COVID-19 crisis, including early prediction of the disaese outbreak, development of diagnostic technology, tracking of contacts, and the development of new therapeutic agents. In addition, Post-COVID-19 pandemic, we anticipate the contribution of AI-based technology will continue in advancing the national disease monitoring system and improving public health at an individual or community level.
+  </p>
+  <p>
+    <b>(Expanding Horizon for AI-based Technologies and Applications)</b> AI-based technologies including time-series analysis, natural language processing, and speech recognition are rapidly converging and developing. Continuous investment and robust research and development plans will emerge in areas with the highest level of commercialization and market potential, which includes clinical decision support system, remote patient monitoring, prognosis prediction, automatized response to disaster, contact tracing, and drug discovery research.
+  </p>
+
+	<li><h4>Considerations on limitations of Model and Data Privacy</h4></lI>
+  <p>
+    <b>(Constraints and limitations)</b> We observe the regulation and restrictions on the use of medical data for AI-based researches. May of the prediction model performances are not very reliable, thus cannot be used in the medical field. Only few models have reached at technical maturity, and a lot of cross-validation or external validation results have not been published. It is essential to recognize these limitations before developing AI-based tools.
+  </p>
+  <p>
+    <b>(Privacy and Ethics)</b> In order to achieve the desired level of quality in all aspects through development, not only securing and processing high-quality data, but also resolving privacy protection and ethical issues are important.
+  </p>
+
+	<lI><h4>Open Multi-disciplinary Collaboration</h4></lI>
+	<p>
+    <b>(Multi-disciplinary Cooperation)</b> Multidisciplinary collaborative research efforts involve a team consisted with clinical experts including infectious disease specialists, artificial intelligence experts, as well as biology domain experts.
+  </p>
+  <p>
+    <b>(Innovative Approaches)</b> Infectious disease outbreak is not confined to a single country. International cooperation needs to be open and multi-directional to achieve a timely response to a rapidly evolving and spreading disease. The importance of open data, open source, and open science cannot be emphasized more, as these open cooperation and innovative efforts will further accelerate the evolution of the AI-based models and foster the growth of related industries.
+  </p>
+
+	<lI><h4>The Needs to Establish the International Standards for Artificial Intelligence-based Development, through Global Collaboration </h4></lI>
+	<p>
+    <b>(Overcoming Disparities Among Countries)</b> A joint effort through international collaboration is required to tackle multiple agendas for consensus, such as reliability, standardization, interoperability, quality of the data as well as standard for interpretation. Country-specific rules and regulations should be discussed beforehand.
+  </p>
+  <p>
+    <b>(Establishing an International Rapid Response System)</b> A system that can quickly share and utilize high-quality data is needed, and an open global repository for sharing anonymous medical images and clinical data should be discussed. Standardized operational procedures and data protection systems to securely transfer/distribute/use data should also be established.
+  </p>
+  <p>
+    <b>(Application of the Standardization System)</b> In order to better respond to new infectious diseases in the future, a standardized interoperable system to plug AI-based tools and allow analysis and interpretation need to be agreed upon. One of these early efforts could entail the modification and application of the infection control system developed by the Centers for Disease Control and Prevention in Republic of Korea, which has been also partially related to the AI-based research projects and operational protocols.
+  </p>
+	</ul>
+	</section>
+
+	<section id="Necessity of Medical AI for Infectious ">
+		<h1>Necessity of Medical AI for Infectious </h1>
+
+    <section id="Infectious Disease Disaster">
+    <h2>Infectious Disease Disaster</h2>
+    </section>
+
+    <section id="Infectious Disease Response System">
+    <h2>Infectious Disease Response System</h2>
+    </section>
+
+    <section id="R&D trends in Government-wide Infectious Disease Response System">
+    <h2>R&D trends in Government-wide Infectious Disease Response System</h2>
+    </section>
+
+    <section id="Technological understanding of medical AI ">
+    <h2>Technological understanding of medical AI </h2>
+    </section>
+
+    <section id="Necessity of Medical AI technology to cope with infectious diseases">
+    <h2>Necessity of Medical AI technology to cope with infectious diseases</h2>
+    </section>
+  </section>
+
+  <section id="Infectious disease disaster and medical AI use cases">
+  <h1>Infectious disease disaster and medical AI use cases</h1>
+
+    <section id="Overview">
+    <h2>Overview</h2>
+    </section>
+
+    <section id="Computer-Aided Detection and Diagnosis">
+    <h2>Computer-Aided Detection and Diagnosis</h2>
+    </section>
+
+    <section id="Remote patient monitoring and prognosis prediction">
+    <h2>Remote patient monitoring and prognosis prediction</h2>
+    </section>
+
+    <section id="Self-diagnosis test and speech/sound recognition">
+    <h2>Self-diagnosis test and speech/sound recognition</h2>
+
+      <section id="Chatbot">
+      <h3>Chatbot</h3>
+      </section>
+
+      <section id="Voice Support Agent">
+      <h3>Voice Support Agent</h3>
+      </section>
+
+      <section id="Electronic Medical Record Interactions through Voice">
+      <h3>Electronic Medical Record Interactions through Voice</h3>
+      </section>
+
+      <section id="Other Sound Recognition">
+      <h3>Other Sound Recognition</h3>
+      </section>
+    </section>
+
+    <section id="Disease and Disaster Prediction and Monitoring">
+    <h2>Disease and Disaster Prediction and Monitoring</h2>
+
+      <section id="Quality of input data">
+      <h3>Quality of input data</h3>
+      </section>
+
+      <section id="Input Data Governance">
+      <h3>Input Data Governance</h3>
+      </section>
+
+      <section id="Algorithm Development">
+      <h3>Algorithm Development</h3>
+      </section>
+
+      <section id="Prospective clinical trial techniques">
+      <h3>Prospective clinical trial techniques</h3>
+      </section>
+
+      <section id="Control of disease by prospective surveillance">
+      <h3>Control of disease by prospective surveillance</h3>
+      </section>
+    </section>
+
+    <section id="Contact tracking and monitoring">
+    <h2>Contact tracking and monitoring</h2>
+
+      <section id="Digital contact tracking and monitoring spread">
+      <h3>Digital contact tracking and monitoring spread</h3>
+      </section>
+
+      <section id="Short-distance contact tracking technology with enhanced privacy protection">
+      <h3>Short-distance contact tracking technology with enhanced privacy protection</h3>
+      </section>
+
+      <section id="Risks and recommendations for AI-based contact tracking ">
+      <h3>Risks and recommendations for AI-based contact tracking </h3>
+      </section>
+    </section>
+
+    <section id="Drug Development and Discovery">
+    <h2>Drug Development and Discovery</h2>
+    </section>
+  </section>
+
+  <section id="Standardization Trend">
+  <h1>Standardization Trend</h1>
+
+    <section id="International Standardization trends">
+    <h2>International Standardization trends</h2>
+
+      <section id="Overview">
+      <h3>Overview</h3>
+      </section>
+
+      <section id="ITU-T/WHO FG-AI4H">
+      <h3>ITU-T/WHO FG-AI4H</h3>
+
+	    <h4>1) Outbreak detection (TG-Outbreak)</h4>
+
+	    <h4>2) Symptom assessment (TG-Symptom)</h4>
+
+  	  <h4>3) <a>COVID-19</a> Ad-hoc group</h4>
+      </section>
+
+      <section id="DICOM/IHE">
+      <h3><a>DICOM</a>/IHE</h3>
+      </section>
+
+      <section id="HL7/FHIR">
+      <h3>HL7/FHIR</h3>
+
+  	  <h4>1) SANER (Sterational Awareness for Novel Epidemic Response: SANER)</h4>
+
+  	  <h4>2) <a>COVID-19</a> Interoperability Project</h4>
+      </section>
+
+      <section id="United States">
+      <h3>United States</h3>
+
+      <section id="China">
+      <h3>China</h3>
+      </section>
+    </section>
+
+    <section id="Standardization trends in Korea">
+    <h2>Standardization trends in Korea</h2>
+
+      <section id="Utilization of standard framework for responding to infectious diseases">
+      <h3>Utilization of standard framework for responding to infectious diseases</h3>
+      </section>
+
+      <section id="Reflecting non-face-to-face medical requirements to prevent medical staff infection">
+      <h3>Reflecting non-face-to-face medical requirements to prevent medical staff infection</h3>
+      </section>
+
+      <section id="Standardization Direction by Classification of Medical Devices and Non-Medical Devices">
+      <h3>Standardization Direction by Classification of Medical Devices and Non-Medical Devices</h3>
+      </section>
+
+      <section id="Future follow-up and improvement directions">
+      <h3>Future follow-up and improvement directions</h3>
+      </section>
+    </section>
+  </section>
+
+  <section id="Conclusion and Implications">
+  <h1>Conclusion and Implications</h1>
+
+    <section id="DDL/ML related research trends and issues">
+    <h2>DL/ML related research trends and issues</h2>
+    </section>
+
+    <section id="Open Data and Open Science Issues">
+    <h2>Open Data and Open Science Issues</h2>
+
+      <section id="Occurrence statistics and case data">
+      <h3>Occurrence statistics and case data</h3>
+      </section>
+
+      <section id="Government Open Dataset (Public Data)">
+      <h3>Government Open Dataset (Public Data)</h3>
+      </section>
+
+      <section id="Open Research Datasets and Challenges">
+      <h3>Open Research Datasets and Challenges</h3>
+      </section>
+
+      <section id="Medical image data">
+      <h3>Medical image data</h3>
+      </section>
+
+      <section id="Other issues">
+      <h3>Other issues</h3>
+      </section>
+    </section>
+
+    <section id="Standardization issues">
+    <h2>Standardization issues</h2>
+    </section>
+  </section>
+
+  <section id="Abbreviation">
+  <h1>Abbreviation</h1>
+  <dt><dfn>AGI</dfn></dt><dd>Artificial General Intelligence</dd>
+  <dt><dfn>AI</dfn></dt><dd>Artificial Intelligence</dd>
+  <dt><dfn>AuI</dfn></dt><dd>Augmented Intelligence</dd>
+  <dt><dfn>AIIA</dfn></dt><dd>Artificial Intelligence Industry Alliance</dd>
+  <dt><dfn>ANSI</dfn></dt><dd>American National Standards Institute</dd>
+  <dt><dfn>API</dfn></dt><dd>Application Programming Interface</dd>
+  <dt><dfn>ARDS</dfn></dt><dd>Acute Respiratory Distress Syndrome</dd>
+  <dt><dfn>AUC</dfn></dt><dd>Area Under the Curve</dd>
+  <dt><dfn>AWS</dfn></dt><dd>Amazon Web Services</dd>
+  <dt><dfn>BLE</dfn></dt><dd>Bluetooth Low Energy</dd>
+  <dt><dfn>CAD</dfn></dt><dd>Computer Aided Diagnosis</dd>
+  <dt><dfn>CAICT</dfn></dt><dd>China Academy of Information and Communications Technology</dd>
+  <dt><dfn>CCTV</dfn></dt><dd>Closed-Circuit TeleVision</dd>
+  <dt><dfn>CDC</dfn></dt><dd>Centers for Disease Control and Prevention</dd>
+  <dt><dfn>CDSS</dfn></dt><dd>Clinical Decision Support System</dd>
+  <dt><dfn>CNN</dfn></dt><dd>Convolutional Neural Network</dd>
+  <dt><dfn>CORD-19</dfn></dt><dd>COVID-19 Open Research Dataset</dd>
+  <dt><dfn>COVID</dfn></dt><dd>CoronaVirus Disease</dd>
+  <dt><dfn>COVID-19</dfn></dfn></dt><dd>Coronavirus Disease-19</dd>
+  <dt><dfn>CPT</dfn></dt><dd>Current Procedural Terminology</dd>
+  <dt><dfn>CSV</dfn></dt><dd>Comma-Separated Values</dd>
+  <dt><dfn>CT</dfn></dt><dd>Computerized Tomography</dd>
+  <dt><dfn>CTA</dfn></dt><dd>Consumer Technology Association</dd>
+  <dt><dfn>DCTT</dfn></dt><dd>Digital Contact-Tracing Technologies</dd>
+  <dt><dfn>D.N.A</dfn></dt><dd>Data, Network, AI</dd>
+  <dt><dfn>DNA</dfn></dt><dd>DeoxyriboNucleic Acid</dd>
+  <dt><dfn>DICOM</dfn></dt><dd>Digital Imaging and COmmunication in Medicine</dd>
+  <dt><dfn>DL</dfn></dt><dd>Deep Learning</dd>
+  <dt><dfn>DP-3T</dfn></dt><dd>Decentralized Privacy-Preserving Proximity Tracing</dd>
+  <dt><dfn>ECARO</dfn></dt><dd>Europe and Central Asia Region Office</dd>
+  <dt><dfn>ECDC</dfn></dt><dd>European Centre for Disease Prevention and Control</dd>
+  <dt><dfn>ECG</dfn></dt><dd>Electrocardiogram</dd>
+  <dt><dfn>EDI</dfn></dt><dd>Electronic data interchange</dd>
+  <dt><dfn>EHR</dfn></dt><dd>Electronic Healthcare Record</dd>
+  <dt><dfn>EMR</dfn></dt><dd>Electronic Medical Record</dd>
+  <dt><dfn>EMS</dfn></dt><dd>Emergency medical system</dd>
+  <dt><dfn>ENR</dfn></dt><dd>Electronic Nursing Record</dd>
+  <dt><dfn>ETRI</dfn></dt><dd>Electronics and Telecommunications Research Institute</dd>
+  <dt><dfn>ETSI</dfn></dt><dd>European Telecommunications Standards Institute</dd>
+  <dt><dfn>EuSoMII</dfn></dt><dd>European Society of Medical Imaging Informatics</dd>
+  <dt><dfn>EWS</dfn></dt><dd>Early Warning System</dd>
+  <dt><dfn>FDA</dfn></dt><dd>Food and Drug Administration</dd>
+  <dt><dfn>FHIR</dfn></dt><dd>Fast Healthcare Interoperability Resource</dd>
+  <dt><dfn>FG-AI4H</dfn></dt><dd>Focus Group on artificial intelligence for health</dd>
+  <dt><dfn>GA4GH</dfn></dt><dd>Global Alliance for Genomics and Health</dd>
+  <dt><dfn>GAN</dfn></dt><dd>Generative Adversarial Network</dd>
+  <dt><dfn>GDPR</dfn></dt><dd>General Data Protection Regulation</dd>
+  <dt><dfn>GFID</dfn></dt><dd>Goverment-wide R&D Fund for Infectious Disease Research</dd>
+  <dt><dfn>HCPCS</dfn></dt><dd>Healthcare Common Procedure Coding System</dd>
+  <dt><dfn>HL7</dfn></dt><dd>Health Level 7</dd>
+  <dt><dfn>IEC</dfn></dt><dd>International Electrotechnical Commission</dd>
+  <dt><dfn>ICD</dfn></dt><dd>International Statistical Classification of Diseases and Related Health Problems</dd>
+  <dt><dfn>ICT</dfn></dt><dd>Information & Communication Technology</dd>
+  <dt><dfn>IEEE</dfn></dt><dd>Institute of Electrical and Electronics Engineers</dd>
+  <dt><dfn>IHE</dfn></dt><dd>Integrating the Healthcare Enterprise</dd>
+  <dt><dfn>IHR</dfn></dt><dd>International Health Regulations</dd>
+  <dt><dfn>IOM</dfn></dt><dd>Institute of Medicine</dd>
+  <dt><dfn>IoT</dfn></dt><dd>Internet of Things</dd>
+  <dt><dfn>IMDRF</dfn></dt><dd>International Medical Device Regulators Forum</dd>
+  <dt><dfn>ISO</dfn></dt><dd>International Organization for Standardization</dd>
+  <dt><dfn>IT</dfn></dt><dd>Information Technology</dd>
+  <dt><dfn>ITU</dfn></dt><dd>International Telecommunication Union</dd>
+  <dt><dfn>ITU-T</dfn></dt><dd>ITU Telecommunication Standardization Sector</dd>
+  <dt><dfn>JEE</dfn></dt><dd>Joint External Evaluation</dd>
+  <dt><dfn>JSON</dfn></dt><dd>JavaScript Object Notation</dd>
+  <dt><dfn>JTC</dfn></dt><dd>Joint Technical Committee</dd>
+  <dt><dfn>LOINC</dfn></dt><dd>Logical Observation Identifiers Names and Codes</dd>
+  <dt><dfn>LTE</dfn></dt><dd>Long-Term Evolution</dd>
+  <dt><dfn>MDR</dfn></dt><dd>Medical Device Regulation</dd>
+  <dt><dfn>MERS</dfn></dt><dd>Middle East respiratory syndrome</dd>
+  <dt><dfn>ML</dfn></dt><dd>Machine Learning</dd>
+  <dt><dfn>MRI</dfn></dt><dd>Magnetic resonance imaging</dd>
+  <dt><dfn>NSCAI</dfn></dt><dd>National Security Commission on Artificial Intelligence</dd>
+  <dt><dfn>NLP</dfn></dt><dd>Natural language processing</dd>
+  <dt><dfn>OCR</dfn></dt><dd>Optical Character Recognition</dd>
+  <dt><dfn>OCS</dfn></dt><dd>Order Communication System</dd>
+  <dt><dfn>OECD</dfn></dt><dd>Organization for Economic Co-operation and Development</dd>
+  <dt><dfn>P2P</dfn></dt><dd>Peer-to-Peer</dd>
+  <dt><dfn>PACS</dfn></dt><dd>Picture Archiving and Communications System</dd>
+  <dt><dfn>PACT</dfn></dt><dd>Private Automated Contact Tracing</dd>
+  <dt><dfn>PEPP-PT</dfn></dt><dd>Pan-European Privacy-Preserving Proximity Tracing</dd>
+  <dt><dfn>PGHD</dfn></dt><dd>Patient Generated Health Data</dd>
+  <dt><dfn>PHR</dfn></dt><dd>Personal Health Record</dd>
+  <dt><dfn>PHD</dfn></dt><dd>Personal Health Device</dd>
+  <dt><dfn>PPG</dfn></dt><dd>PhotoPlethysomoGraphy</dd>
+  <dt><dfn>QA</dfn></dt><dd>Question Answering</dd>
+  <dt><dfn>QR</dfn></dt><dd>Quick Response</dd>
+  <dt><dfn>R&D</dfn></dt><dd>Research and Development</dd>
+  <dt><dfn>RKI</dfn></dt><dd>Robert Koch Institute</dd>
+  <dt><dfn>ROI</dfn></dt><dd>Region of Interest</dd>
+  <dt><dfn>RSNA</dfn></dt><dd>Radiological Society of North America</dd>
+  <dt><dfn>RT-PCR</dfn></dt><dd>Real Time reverse Transcription Polymerase Chain Reaction</dd>
+  <dt><dfn>SARS</dfn></dt><dd>Severe Acute Respiratory Syndrome</dd>
+  <dt><dfn>SNOMED-CT</dfn></dt><dd>Systematized Nomenclature of Medicine -- Clinical Terms</dd>
+  <dt><dfn>TG</dfn></dt><dd>Topic Group</dd>
+  <dt><dfn>UNICEF</dfn></dt><dd>United Nations Children's Fund</dd>
+  <dt><dfn>UNGP</dfn></dt><dd>United Nations Global Pulse</dd>
+  <dt><dfn>VCA</dfn></dt><dd>Virtual Customer Assistants</dd>
+  <dt><dfn>VEA</dfn></dt><dd>Virtual Employee Assistants</dd>
+  <dt><dfn>VPA</dfn></dt><dd>Virtual Personal Assistants</dd>
+  <dt><dfn>WG</dfn></dt><dd>Working Group</dd>
+  <dt><dfn>WHO</dfn></dt><dd>World Health Organization</dd>
+  </section>
+
+  <section id="Appendix 1: AI application cases and related technologies for each stage of infection prevention">
+  <h1>Appendix 1: AI application cases and related technologies for each stage of infection prevention</h1>
+  </section>
+
+  <section id="Appendix 2: Development cases of COVID-19 CADx system (Korea, China)">
+  <h1>Appendix 2: Development cases of COVID-19 CADx system (Korea, China)</h1>
+  </section>
+
+  <section id="Appendix 3: Authors and Editorial Committee">
+  <h1>Appendix 3: Authors and Editorial Committee</h1>
+  </section>
+
+<!--
+
+  <p class="issue" title="Share user data with payment app?" data-number="123">
+  issue
+  </p>
+  <p class="note">
+  note
+  </p>
+-->
+
+</body>
+</html>
