@@ -58,7 +58,7 @@
 		{
 			name : "In Ho Kwon (권인호)",
 			w3cid : "",
-			company : "Clinical Professor of Department of Emergency Medicine @ DongA University Hospital",
+			company : "Department of Emergency Medicine @ DongA University Hospital",
 			companyURL : "https://www.damc.or.kr/eng/main/main.php"
 		},
 		{
